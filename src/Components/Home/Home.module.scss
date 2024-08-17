@@ -1,3 +1,5 @@
+@import "src/Styles/mixins.scss";
+
 .homePage {}
 
 .backgroundImage {
@@ -7,7 +9,19 @@
   left: 0;
   top: 109px;
   z-index: -1;
-  border: solid red;
+}
+
+@include medium {
+  .backgroundImage {
+    height: 700px;
+  }
+}
+
+@include small {
+  .backgroundImage {
+    top: 0;
+    height: 740px;
+  }
 }
 
 .backgroundImage>img {
@@ -22,12 +36,44 @@
   object-position: 100% 0;
 }
 
+@include small {
+  .backgroundImage .top {
+    top: 60px;
+  }
+}
+
+@include very-small {
+  .backgroundImage .top {
+    top: 70px;
+    scale: 1 1.1;
+  }
+}
+
 .backgroundImage .bottom {
   position: absolute;
   left: 0;
-  bottom: 80px;
-  object-position: -20% 0;
-  scale: 1 1.1;
+  bottom: 60px;
+  object-position: 0 0;
+  scale: 1 1.05;
+}
+
+@include small {
+  .backgroundImage .bottom {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .backgroundImage .bottom {
+    bottom: -60px;
+  }
+}
+
+@include very-small {
+  .backgroundImage .bottom {
+    bottom: -160px;
+    scale: 1 1.4;
+  }
 }
 
 .backgroundImage::before {
@@ -41,4 +87,10 @@
       rgba(0, 0, 0, 0) 0%,
       #000000 100%);
   z-index: 1;
+}
+
+@include medium {
+  .backgroundImage::before {
+    height: 240px;
+  }
 }
