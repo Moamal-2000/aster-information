@@ -3,7 +3,7 @@
 .header {
   background-color: var(--website-bg);
   width: 100%;
-  padding: 30px 0;
+  padding: 20px 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -50,5 +50,6 @@
 @include small {
   .header>div>a>span {
     font-size: .8rem;
+    letter-spacing: .3em;
   }
 }

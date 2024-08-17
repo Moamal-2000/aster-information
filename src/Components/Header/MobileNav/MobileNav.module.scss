@@ -2,6 +2,7 @@
 
 .nav {
   margin-right: 170px;
+  transition: opacity 0, top 0;
 }
 
 @media (max-width: 1900px) {
@@ -26,10 +27,9 @@
     background-color: var(--white);
     padding-top: 140px;
     opacity: 0;
-    transition: opacity .3s, top 1s;
+    transition: opacity .3s .1s, top 1s;
 
     &.active {
-      transition: opacity .6s, top 1s;
       top: 0;
       opacity: 1;
     }

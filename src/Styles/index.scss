@@ -16,7 +16,8 @@ html {
 
 body {
   background-color: var(--website-bg);
-  font-family: "Montserrat", sans-serif;
+  color: var(--black);
+  font-family: Montserrat, sans-serif;
 }
 
 img {
@@ -54,6 +55,7 @@ svg {
 
 main {
   min-height: 100vh;
+  margin-top: 216px;
 }
 
 .container {

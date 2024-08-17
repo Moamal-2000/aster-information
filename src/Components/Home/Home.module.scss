@@ -1,3 +1,44 @@
-.homePage {
-  
+.homePage {}
+
+.backgroundImage {
+  width: 100%;
+  height: 970px;
+  position: absolute;
+  left: 0;
+  top: 109px;
+  z-index: -1;
+  border: solid red;
+}
+
+.backgroundImage>img {
+  object-fit: contain;
+  height: 50%;
+}
+
+.backgroundImage .top {
+  position: absolute;
+  right: 0;
+  top: 0;
+  object-position: 100% 0;
+}
+
+.backgroundImage .bottom {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  object-position: -20% 0;
+  scale: 1 1.1;
+}
+
+.backgroundImage::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(180deg,
+      rgba(0, 0, 0, 0) 0%,
+      #000000 100%);
+  z-index: 1;
 }
