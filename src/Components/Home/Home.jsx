@@ -7,8 +7,8 @@ const Home = () => {
   return (
     <main id="homePage">
       <div className={s.backgroundImage}>
-        <img src={homeBgTop} className={s.top} alt="" />
-        <img src={homeBgBottom} className={s.bottom} alt="" />
+        <img src={homeBgTop} className={s.top} alt="Hero Section Top Image" />
+        <img src={homeBgBottom} className={s.bottom} alt="Hero Section Bottom Image" />
       </div>
 
       <div className="container">
