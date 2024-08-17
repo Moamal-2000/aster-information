@@ -8,11 +8,9 @@ export const iconsData = [
         height="342"
         width="866.457"
         viewBox="-1114.562 -1428.5 866.457 342"
-        xmlns="http://www.w3.org/2000/svg"
         data-type="ugc"
         role="presentation"
         aria-hidden="true"
-        aria-label=""
       >
         <g>
           <path
@@ -20,8 +18,8 @@ export const iconsData = [
             d="M-961.313-1428h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
           ></path>
           <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
+            strokeLinejoin="round"
+            strokeLinecap="round"
             stroke="#000000"
             d="M-961.313-1428h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
             fill="none"
@@ -31,8 +29,8 @@ export const iconsData = [
             d="M-961.313-1187h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
           ></path>
           <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
+            strokeLinejoin="round"
+            strokeLinecap="round"
             stroke="#000000"
             d="M-961.313-1187h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
             fill="none"
@@ -42,8 +40,8 @@ export const iconsData = [
             d="M-1110.062-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
           ></path>
           <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
+            strokeLinejoin="round"
+            strokeLinecap="round"
             stroke="#000000"
             d="M-1110.062-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
             fill="none"
@@ -53,8 +51,8 @@ export const iconsData = [
             d="M-527.062-1307.5h274.457a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.457a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
           ></path>
           <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
+            strokeLinejoin="round"
+            strokeLinecap="round"
             stroke="#000000"
             d="M-527.062-1307.5h274.457a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.457a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
             fill="none"
