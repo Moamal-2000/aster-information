@@ -1,6 +1,7 @@
-@import "src/Styles/mixins.scss";
-@import "src/Styles/colors.scss";
-@import "src/Styles/variables.scss";
+@import "./mixins.scss";
+@import "./colors.scss";
+@import "./variables.scss";
+@import "./fonts.css";
 
 * {
   margin: 0;
@@ -16,7 +17,7 @@ html {
 body {
   background-color: var(--black);
   color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
