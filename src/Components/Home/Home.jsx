@@ -1,7 +1,8 @@
-import homeBgBottom from "../../Assets/home-bg-bottom.png";
-import homeBgTop from "../../Assets/home-bg-top.png";
+import homeBgBottom from "src/Assets/home-bg-bottom.png";
+import homeBgTop from "src/Assets/home-bg-top.png";
 import s from "./Home.module.scss";
 import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
+import VisionSection from "./VisionSection/VisionSection";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
 
       <div className="container">
         <HomeHeroSection />
+        <VisionSection />
       </div>
     </main>
   );
