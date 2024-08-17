@@ -58,6 +58,12 @@ main {
   margin-top: 216px;
 }
 
+@include small {
+  main {
+    margin-top: 140px;
+  }
+}
+
 .container {
   width: var(--container-width);
   margin: 0 auto;
