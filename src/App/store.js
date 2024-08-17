@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import globalReducer from "../Features/globalReducer";
+import globalSlice from "../Features/globalSlice";
 
 export const store = configureStore({
   reducer: {
-    global: globalReducer,
+    global: globalSlice,
   },
 });
