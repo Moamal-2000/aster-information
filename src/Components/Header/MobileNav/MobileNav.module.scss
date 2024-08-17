@@ -36,15 +36,16 @@
 }
 
 .nav>ul>li>a {
-  color: #000;
+  color: var(--black);
   padding: 15px;
   transition: color .4s ease;
 
   &:hover {
-    color: #c45308;
+    color: var(--dark-orange);
+    
   }
 
   &[class=active] {
-    color: #707070;
+    color: var(--gray);
   }
 }

@@ -1,7 +1,7 @@
 @import "src/Styles/mixins.scss";
 
 .header {
-  background-color: #fff;
+  background-color: var(--website-bg);
   width: 100%;
   padding: 30px 0;
   position: fixed;
@@ -42,7 +42,7 @@
 .header>div>a>span {
   display: block;
   letter-spacing: .35em;
-  color: #000;
+  color: var(--black);
   font-weight: 700;
   font-size: 1.25rem;
 }
