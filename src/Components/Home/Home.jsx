@@ -5,7 +5,7 @@ import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
 
 const Home = () => {
   return (
-    <main className={s.homePage}>
+    <main id="homePage">
       <div className={s.backgroundImage}>
         <img src={homeBgTop} className={s.top} alt="" />
         <img src={homeBgBottom} className={s.bottom} alt="" />
