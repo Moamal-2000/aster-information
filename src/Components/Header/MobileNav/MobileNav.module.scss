@@ -20,15 +20,16 @@
   .nav {
     position: fixed;
     left: 0;
-    top: -110%;
+    top: -10%;
     width: 100%;
     height: 100%;
     background-color: var(--white);
     padding-top: 140px;
-    transition: opacity .5s, top .5s .1s;
     opacity: 0;
+    transition: opacity .3s, top 1s;
 
     &.active {
+      transition: opacity .6s, top 1s;
       top: 0;
       opacity: 1;
     }
@@ -43,7 +44,7 @@
   .nav>ul {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
   }
 }
 
@@ -59,5 +60,19 @@
 
   &[class=active] {
     color: var(--gray);
+  }
+}
+
+@include small {
+  .nav>ul>li>a {
+    font-size: 1.1rem;
+
+    &:hover {
+      color: var(--black);
+    }
+
+    &[class=active] {
+      color: var(--dark-orange);
+    }
   }
 }
