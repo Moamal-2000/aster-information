@@ -1,4 +1,4 @@
-import { visionSectionBg } from "../../../Assets/Images/Images";
+import { visionSectionBg } from "src/Assets/Images/Images";
 import s from "./VisionSection.module.scss";
 
 const VisionSection = () => {
@@ -8,8 +8,10 @@ const VisionSection = () => {
 
       <div className={s.content}>
         <h2>VISION</h2>
-        <p>Driving Innovation in Information Management</p>
-        <p>
+        <p className={s.subTitle}>
+          Driving Innovation in Information Management
+        </p>
+        <p className={s.description}>
           At Aster Information Limited, we're committed to revolutionizing the
           way businesses manage data and IT solutions. By harnessing the power
           of AI, we aim to deliver services that redefine efficiency and
@@ -21,6 +23,7 @@ const VisionSection = () => {
 
       <div className={s.imgHolder}>
         <img
+          loading="lazy"
           src={visionSectionBg}
           alt="Abstract digital cube with illuminated circuits and data panels, representing advanced technology and information management."
         />

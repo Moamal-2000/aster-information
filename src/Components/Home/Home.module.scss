@@ -86,7 +86,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 380px;
+  height: var(--shadow-height);
   background: linear-gradient(180deg,
       rgba(0, 0, 0, 0) 0%,
       #000000 100%);
@@ -95,6 +95,6 @@
 
 @include medium {
   .backgroundImage::before {
-    height: 240px;
+    --shadow-height: 240px;
   }
 }
