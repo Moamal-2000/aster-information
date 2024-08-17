@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import SvgIcon from "../Shared/MiniComponents/SvgIcon";
 import s from "./Header.module.scss";
 
@@ -10,12 +10,16 @@ const Header = () => {
         <span>ASTER INFORMATION</span>
       </Link>
 
-      <nav>
+      <nav className={s.nav}>
         <ul>
           <li>
-            <Link to="/technology">Technology</Link>
-            <Link to="/about">About</Link>
-            <Link to="/careers">Careers</Link>
+            <NavLink to="/technology">Technology</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/careers">Careers</NavLink>
           </li>
         </ul>
       </nav>
