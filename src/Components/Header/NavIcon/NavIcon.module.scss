@@ -1,0 +1,56 @@
+@import "src/Styles/mixins.scss";
+
+.navIcon {
+  position: relative;
+  display: none;
+}
+
+@include small {
+  .navIcon {
+    width: 22px;
+    height: 12px;
+    display: block;
+  }
+}
+
+.navIcon::before,
+.navIcon::after {
+  --duration: .3s;
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+  pointer-events: none;
+  transition:
+    top var(--duration) var(--duration),
+    bottom var(--duration) var(--duration),
+    rotate var(--duration);
+}
+
+.navIcon::before {
+  top: 0;
+}
+
+.navIcon::after {
+  bottom: 0;
+}
+
+.navIcon.active::after,
+.navIcon.active::before {
+  transition:
+    top var(--duration),
+    bottom var(--duration),
+    rotate var(--duration) var(--duration);
+}
+
+.navIcon.active::before {
+  top: 36%;
+  rotate: 45deg;
+}
+
+.navIcon.active::after {
+  bottom: 45%;
+  rotate: -45deg;
+}
