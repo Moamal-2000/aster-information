@@ -27,11 +27,13 @@
     background-color: var(--white);
     padding-top: 140px;
     opacity: 0;
+    pointer-events: none;
     transition: opacity .3s, top 1s;
 
     &.active {
       top: 0;
       opacity: 1;
+      pointer-events: all;
     }
   }
 }
