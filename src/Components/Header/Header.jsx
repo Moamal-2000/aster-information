@@ -1,6 +1,7 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SvgIcon from "../Shared/MiniComponents/SvgIcon";
 import s from "./Header.module.scss";
+import MobileNav from "./MobileNav/MobileNav";
 import NavIcon from "./NavIcon/NavIcon";
 
 const Header = () => {
@@ -12,20 +13,7 @@ const Header = () => {
           <span>ASTER INFORMATION</span>
         </Link>
 
-        <nav className={s.nav}>
-          <ul>
-            <li>
-              <NavLink to="/technology">Technology</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/careers">Careers</NavLink>
-            </li>
-          </ul>
-        </nav>
-
+        <MobileNav />
         <NavIcon />
       </div>
     </header>

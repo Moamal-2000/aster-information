@@ -1,0 +1,50 @@
+@import "src/Styles/mixins.scss";
+
+.nav {
+  margin-right: 170px;
+}
+
+@media (max-width: 1900px) {
+  .nav {
+    margin-right: 100px;
+  }
+}
+
+@include large {
+  .nav {
+    margin-right: 0;
+  }
+}
+
+@include small {
+  .nav {
+    position: fixed;
+    left: 0;
+    top: -110%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+
+    &.active {
+      top: 0;
+    }
+  }
+}
+
+.nav>ul {
+  display: flex;
+}
+
+.nav>ul>li>a {
+  color: #000;
+  padding: 15px;
+  transition: color .4s ease;
+
+  &:hover {
+    color: #c45308;
+  }
+
+  &[class=active] {
+    color: #707070;
+  }
+}
