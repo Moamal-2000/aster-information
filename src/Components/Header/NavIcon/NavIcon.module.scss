@@ -3,6 +3,7 @@
 .navIcon {
   position: relative;
   display: none;
+  z-index: 2;
 }
 
 @include small {
