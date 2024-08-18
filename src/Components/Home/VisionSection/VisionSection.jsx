@@ -1,11 +1,12 @@
 import { visionSectionBg } from "src/Assets/Images/Images";
+import AnimatedLine from "../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./VisionSection.module.scss";
 
 const VisionSection = () => {
   return (
     <section className={s.visionSection}>
       <div className="container">
-        {/* Animated Line */}
+        <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />
 
         <div className={s.content}>
           <h2 className={s.title}>VISION</h2>

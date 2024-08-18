@@ -1,0 +1,22 @@
+@import "src/Styles/mixins.scss";
+
+.line {
+  background-color: var(--light-gray);
+  width: 2px;
+  height: 440px;
+  position: relative;
+}
+
+.line .animatedLine {
+  position: absolute;
+  top: 0;
+  right: -3px;
+  background-color: var(--white);
+  width: 3px;
+  height: 129px;
+  transition: top 1s .3s;
+
+  &.active {
+    top: 60px !important;
+  }
+}
