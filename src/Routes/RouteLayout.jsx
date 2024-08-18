@@ -7,7 +7,10 @@ const RouteLayout = () => {
     <div className="App">
       <Header />
       <Outlet />
-      <Footer />
+
+      <div className="container">
+        <Footer />
+      </div>
     </div>
   );
 };
