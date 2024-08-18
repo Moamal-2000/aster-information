@@ -99,3 +99,16 @@
     --shadow-height: 240px;
   }
 }
+
+@include small {
+  .backgroundImage::after {
+    content: '';
+    position: absolute;
+    bottom: -370px;
+    left: 0;
+    width: 100%;
+    height: var(--shadow-height);
+    background-color: var(--black);
+    z-index: 1;
+  }
+}
