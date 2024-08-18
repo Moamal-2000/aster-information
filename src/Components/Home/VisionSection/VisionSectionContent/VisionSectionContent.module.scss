@@ -1,0 +1,51 @@
+@import "src/Styles/mixins.scss";
+
+.content {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+
+@include small {
+  .content {
+    max-width: 290px;
+    gap: 30px;
+  }
+}
+
+@include very-small {
+  .content {
+    max-width: 280px;
+  }
+}
+
+.title {
+  letter-spacing: .16em;
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.subTitle {
+  line-height: 1.8em;
+  font-size: 1.5rem;
+}
+
+@include small {
+  .subTitle {
+    font-size: 1.2rem;
+  }
+}
+
+.description {
+  line-height: 1.8em;
+  font-size: 1rem;
+}
+
+@include small {
+  .description {
+    font-size: .9rem;
+  }
+}
