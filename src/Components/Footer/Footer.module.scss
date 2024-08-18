@@ -2,39 +2,55 @@
 
 .footer {
   background-color: var(--website-bg);
-  padding: 60px 0;
+  padding: 97px 0 46px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 
 .footerDetails {
-
-}
-
-.footerDetails>a {
-
+  display: flex;
+  justify-content: space-around;
 }
 
 .infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.infoSection>a {
+  display: block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: .35em;
+  color: var(--black);
+  margin-bottom: 56px;
+}
+
+.infoSection .wrapper {
+  display: flex;
+  gap: 60px;
 }
 
 .infoSection .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+
+.nav>li {
 
 }
 
-.nav>ul {
-
-}
-
-.nav>ul>li {
-
-}
-
-.nav>ul>li>a {
-
+.nav>li>a {
+  color: var(--black);
 }
 
 .infoSection .details {
-
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
 }
 
 .details>span {
@@ -42,23 +58,26 @@
 }
 
 .details>a {
-
+  color: var(--black);
 }
 
 .details>p {
-
+  width: 200px;
 }
 
 .footerDetails .subscribeSection {
-
 }
 
 .subscribeSection>h2 {
-
+  margin: 96px 0 36px;
+  line-height: 1.8em;
+  font-size: 1.125rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
 }
 
 .subscribeSection>p {
-
+  margin-bottom: 39px;
 }
 
 .subEmailForm {
@@ -66,23 +85,31 @@
 }
 
 .subEmailForm>label {
-
+  display: block;
+  margin-bottom: 32px;
 }
 
 .subEmailForm .input {
-
+  border: solid 2px var(--black);
+  border-radius: 5px;
+  display: flex;
 }
 
 .subEmailForm .input>input {
-
+  flex: 1;
+  padding: 9px 0;
 }
 
 .subEmailForm .input>button {
-
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 4px 10px;
 }
 
 .footerBottom {
-
+  display: flex;
+  justify-content: space-between;
 }
 
 .copyright {
@@ -91,6 +118,7 @@
 
 .socialMedia {
   display: flex;
+  gap: 20px;
 }
 
 .socialMedia>li {
@@ -99,8 +127,8 @@
 
 .socialMedia>li>a {
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 }
 
 .socialMedia>li>a>img {
