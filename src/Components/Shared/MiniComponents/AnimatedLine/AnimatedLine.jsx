@@ -8,14 +8,11 @@ const AnimatedLine = ({ lineHeight, yAxis, animateTo }) => {
   const [lineHeightValue, lineHeightUnit] = lineHeight.match(/\d+|.+/g);
   const rootMargin = +lineHeightValue - 150 + lineHeightUnit;
   const isVisible = useOnScreen(lineRef, { rootMargin, threshold: 1 });
+  const topValue = hasAnimated ? animateTo : yAxis;
 
   useEffect(() => {
-    if (isVisible && !hasAnimated) {
-      setHasAnimated(true);
-    }
+    if (isVisible && !hasAnimated) setHasAnimated(true);
   }, [isVisible, hasAnimated]);
-
-  const topValue = hasAnimated ? animateTo : yAxis;
 
   return (
     <div className={s.line} ref={lineRef} style={{ height: lineHeight }}>
