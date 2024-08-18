@@ -14,7 +14,7 @@ const Home = () => {
       </div>
 
       <VisionSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
     </main>
   );
 };
