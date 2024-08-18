@@ -1,23 +1,17 @@
-import { homeBgBottom, homeBgTop } from "src/Assets/Images/Images";
 import s from "./Home.module.scss";
+import HomeBackground from "./HomeHeroSection/HomeBackground/HomeBackground";
 import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
 import VisionSection from "./VisionSection/VisionSection";
 
 const Home = () => {
   return (
-    <main id="homePage">
-      <div className={s.backgroundImage}>
-        <img src={homeBgTop} className={s.top} alt="Hero Section Top Image" />
-        <img
-          src={homeBgBottom}
-          className={s.bottom}
-          alt="Hero Section Bottom Image"
-        />
-      </div>
+    <main className={s.homePage} id="homePage">
+      <HomeBackground />
 
       <div className="container">
         <HomeHeroSection />
       </div>
+
       <VisionSection />
     </main>
   );
