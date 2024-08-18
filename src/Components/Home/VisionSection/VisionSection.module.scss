@@ -8,13 +8,46 @@
   margin-bottom: 90px;
 }
 
+@media (max-width: 1300px) {
+  .visionSection {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    height: auto;
+  }
+}
+
+@include large {
+  .visionSection {
+    padding-bottom: 0;
+  }
+}
+
 .visionSection>div {
   display: flex;
+}
+
+@media (max-width: 1300px) {
+  .visionSection>div {
+    gap: 100px;
+  }
+}
+
+@include large {
+  .visionSection>div {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .wrapper {
   display: flex;
   gap: 50px;
+}
+
+@include small {
+  .wrapper {
+    gap: 30px;
+  }
 }
 
 .wrapper .content {
@@ -24,6 +57,19 @@
   gap: 50px;
   max-width: 320px;
   flex-shrink: 0;
+}
+
+@include small {
+  .wrapper .content {
+    max-width: 290px;
+    gap: 30px;
+  }
+}
+
+@include very-small {
+  .wrapper .content {
+    max-width: 280px;
+  }
 }
 
 .wrapper .title {
@@ -37,9 +83,21 @@
   font-size: 1.5rem;
 }
 
+@include small {
+  .wrapper .subTitle {
+    font-size: 1.2rem;
+  }
+}
+
 .wrapper .description {
   line-height: 1.8em;
   font-size: 1rem;
+}
+
+@include small {
+  .wrapper .description {
+    font-size: .9rem;
+  }
 }
 
 .imgHolder {
@@ -50,6 +108,20 @@
   width: 50vw;
 }
 
+@media (max-width: 1300px) {
+  .imgHolder {
+    overflow: visible;
+    position: static;
+    width: 700px;
+  }
+}
+
+@include small {
+  .imgHolder {
+    width: 100%;
+  }
+}
+
 .imgHolder .img {
   background-image: url("src/Assets/Images/vision-section-bg.png");
   background-repeat: no-repeat;
@@ -58,4 +130,20 @@
   min-height: 700px;
   background-position-x: 90px;
   scale: 1.3 1.2;
+}
+
+@media (max-width: 1300px) {
+  .imgHolder .img {
+    background-size: cover;
+    min-height: 600px;
+    scale: 1;
+  }
+}
+
+@include small {
+  .imgHolder .img {
+    min-height: auto;
+    aspect-ratio: 1/1;
+    scale: 1.064 1;
+  }
 }
