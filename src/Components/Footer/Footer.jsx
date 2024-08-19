@@ -6,28 +6,14 @@ import {
 } from "src/Assets/Images/Images";
 import s from "./Footer.module.scss";
 import FooterInfoSection from "./FooterInfoSection/FooterInfoSection";
+import FooterSubscribeSection from "./FooterSubscribeSection/FooterSubscribeSection";
 
 const Footer = () => {
   return (
     <footer className={s.footer}>
       <div className={s.footerDetails}>
         <FooterInfoSection />
-
-        <section className={s.subscribeSection}>
-          <h2>SUBSCRIBE</h2>
-          <p>Sign up to receive Autono news and updates.</p>
-
-          <form
-            className={s.subEmailForm}
-            onSubmit={(event) => event.preventDefault()}
-          >
-            <label htmlFor="sub-email">Email *</label>
-            <div className={s.input}>
-              <input type="email" name="sub-email" id="sub-email" required />
-              <button type="submit">Subscribe</button>
-            </div>
-          </form>
-        </section>
+        <FooterSubscribeSection />
       </div>
 
       <section className={s.footerBottom}>
