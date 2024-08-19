@@ -4,7 +4,15 @@ import s from "./ServicesIntro.module.scss";
 const ServicesIntro = () => {
   return (
     <div className={s.servicesIntro}>
-      <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />
+      <AnimatedLine
+        lineHeight="200px"
+        yAxis="150px"
+        animateTo="40px"
+        lineColors={{
+          lineColor: "#707070",
+          animatedLineColor: "#000",
+        }}
+      />
 
       <div className={s.content}>
         <h2>SERVICES</h2>
