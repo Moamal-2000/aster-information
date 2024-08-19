@@ -11,6 +11,15 @@
 .footerDetails {
   display: flex;
   justify-content: space-around;
+  gap: 60px;
+}
+
+@include medium {
+  .footerDetails {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
 
 .infoSection {
@@ -28,9 +37,27 @@
   margin-bottom: 44px;
 }
 
+@include small {
+  .infoSection>a {
+    font-size: 1rem;
+  }
+}
+
 .infoSection .wrapper {
   display: flex;
   gap: 60px;
+}
+
+@include medium {
+  .infoSection .wrapper {
+    gap: 40px;
+  }
+}
+
+@include small {
+  .infoSection .wrapper {
+    gap: 20px;
+  }
 }
 
 .infoSection .nav {
@@ -39,11 +66,21 @@
   gap: 41px;
 }
 
-.nav>li {}
+@include small {
+  .infoSection .nav {
+    gap: 30px;
+  }
+}
 
 .nav>li>a {
   color: var(--black);
   letter-spacing: .04em;
+}
+
+@include small {
+  .nav>li>a {
+    font-size: .8rem;
+  }
 }
 
 .infoSection .details {
@@ -52,11 +89,21 @@
   gap: 41px;
 }
 
+@include small {
+  .infoSection .details {
+    gap: 30px;
+  }
+}
+
 .details>* {
   letter-spacing: .04em;
 }
 
-.details>span {}
+@include small {
+  .details>* {
+    font-size: .8rem;
+  }
+}
 
 .details>a {
   color: var(--black);
@@ -65,6 +112,12 @@
 .details>p {
   width: 234px;
   line-height: 1.8em;
+}
+
+@include small {
+  .details>p {
+    width: 170px
+  }
 }
 
 .footerDetails .subscribeSection {}
@@ -77,13 +130,31 @@
   letter-spacing: .1rem;
 }
 
+@include medium {
+  .subscribeSection>h2 {
+    margin-top: 30px;
+  }
+}
+
+@include small {
+  .subscribeSection>h2 {
+    font-size: 1rem;
+    margin-bottom: 25px;
+  }
+}
+
 .subscribeSection>p {
   line-height: 1.8em;
   letter-spacing: .05em;
   margin-bottom: 39px;
 }
 
-.subEmailForm {}
+@include small {
+  .subscribeSection>p {
+    margin-bottom: 25px;
+    line-height: 1.5em;
+  }
+}
 
 .subEmailForm>label {
   display: block;
@@ -92,6 +163,8 @@
 
 .subEmailForm .input {
   display: flex;
+  width: 100%;
+  position: relative;
 }
 
 .subEmailForm .input>input {
@@ -106,7 +179,6 @@
   min-height: 40px;
   max-width: 100%;
 
-
   &:hover {
     border-width: 2px;
     background-color: var(--very-light-gray);
@@ -115,6 +187,12 @@
   &:focus {
     border-width: 2px;
     background-color: var(--white);
+  }
+}
+
+@include small {
+  .subEmailForm .input>input {
+    padding-right: 110px;
   }
 }
 
@@ -139,9 +217,27 @@
   }
 }
 
+@include small {
+  .subEmailForm .input>button {
+    position: absolute;
+    right: 0;
+    font-size: .8rem;
+    min-width: 100px;
+  }
+}
+
 .footerBottom {
   display: flex;
   justify-content: space-between;
+}
+
+@include medium {
+  .footerBottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
 }
 
 .copyright {
@@ -149,9 +245,21 @@
   line-height: 1.8em;
 }
 
+@include small {
+  .copyright {
+    font-size: .9rem;
+  }
+}
+
 .socialMedia {
   display: flex;
   gap: 32px;
+}
+
+@include small {
+  .socialMedia {
+    gap: 20px;
+  }
 }
 
 .socialMedia>li>a {
@@ -159,5 +267,3 @@
   width: 24px;
   height: 24px;
 }
-
-.socialMedia>li>a>img {}
