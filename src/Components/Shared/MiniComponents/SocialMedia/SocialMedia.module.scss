@@ -1,0 +1,18 @@
+@import "src/Styles/mixins.scss";
+
+.socialMedia {
+  display: flex;
+  gap: 32px;
+}
+
+@include small {
+  .socialMedia {
+    gap: 20px;
+  }
+}
+
+.socialMedia>li>a {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
