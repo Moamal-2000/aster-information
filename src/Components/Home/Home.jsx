@@ -9,6 +9,7 @@ const Home = () => {
     <>
       <Helmet>
         <title>Home | Aster Information</title>
+        <meta name="description" content="Home page description" />
       </Helmet>
 
       <main className={s.homePage} id="homePage">
