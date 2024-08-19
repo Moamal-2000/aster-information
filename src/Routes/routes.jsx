@@ -1,6 +1,7 @@
 import About from "../Components/About/About";
 import Careers from "../Components/Careers/Careers";
 import Home from "../Components/Home/Home";
+import PageNotFound from "../Components/PageNotFound/PageNotFound";
 import Technology from "../Components/Technology/Technology";
 
 export const ROUTES_CONFIG = [
