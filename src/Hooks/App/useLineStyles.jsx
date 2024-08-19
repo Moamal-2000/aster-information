@@ -6,6 +6,7 @@ const useLineStyles = ({
   animateTo,
   lineColors,
   hasAnimated,
+  animatedLineHeight,
 }) => {
   const lineStyles = useMemo(
     () => ({
@@ -18,6 +19,7 @@ const useLineStyles = ({
   const animatedLineStyles = useMemo(
     () => ({
       top: hasAnimated ? animateTo : yAxis,
+      height: animatedLineHeight,
       backgroundColor: lineColors?.animatedLineColor,
     }),
     [hasAnimated, animateTo, yAxis, lineColors?.animatedLineColor]

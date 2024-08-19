@@ -3,7 +3,7 @@ import useLineStyles from "src/Hooks/App/useLineStyles";
 import useOnScreen from "src/Hooks/Helper/useOnScreen";
 import s from "./AnimatedLine.module.scss";
 
-const AnimatedLine = ({ lineHeight, yAxis, animateTo, lineColors }) => {
+const AnimatedLine = ({ lineHeight, animatedLineHeight, yAxis, animateTo, lineColors }) => {
   const lineRef = useRef();
   const [hasAnimated, setHasAnimated] = useState(false);
   const [lineHeightValue, lineHeightUnit] = lineHeight.match(/\d+|.+/g);
@@ -16,6 +16,7 @@ const AnimatedLine = ({ lineHeight, yAxis, animateTo, lineColors }) => {
     animateTo,
     lineColors,
     hasAnimated,
+    animatedLineHeight
   });
 
   useEffect(() => {

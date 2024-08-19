@@ -5,9 +5,10 @@ const ServicesIntro = () => {
   return (
     <div className={s.servicesIntro}>
       <AnimatedLine
-        lineHeight="200px"
-        yAxis="150px"
-        animateTo="40px"
+        lineHeight="188px"
+        animatedLineHeight="129px"
+        yAxis="120px"
+        animateTo="59px"
         lineColors={{
           lineColor: "#707070",
           animatedLineColor: "#000",
