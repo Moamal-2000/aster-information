@@ -1,0 +1,99 @@
+@import "src/Styles/mixins.scss";
+
+.infoSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.infoSection>a {
+  display: block;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: .35em;
+  color: var(--black);
+  margin-bottom: 44px;
+}
+
+@include small {
+  .infoSection>a {
+    font-size: 1rem;
+  }
+}
+
+.infoSection .wrapper {
+  display: flex;
+  gap: 60px;
+}
+
+@include medium {
+  .infoSection .wrapper {
+    gap: 40px;
+  }
+}
+
+@include small {
+  .infoSection .wrapper {
+    gap: 20px;
+  }
+}
+
+.infoSection .nav {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+
+@include small {
+  .infoSection .nav {
+    gap: 30px;
+  }
+}
+
+.nav>li>a {
+  color: var(--black);
+  letter-spacing: .04em;
+}
+
+@include small {
+  .nav>li>a {
+    font-size: .8rem;
+  }
+}
+
+.infoSection .details {
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+
+@include small {
+  .infoSection .details {
+    gap: 30px;
+  }
+}
+
+.details>* {
+  letter-spacing: .04em;
+}
+
+@include small {
+  .details>* {
+    font-size: .8rem;
+  }
+}
+
+.details>a {
+  color: var(--black);
+}
+
+.details>p {
+  width: 234px;
+  line-height: 1.8em;
+}
+
+@include small {
+  .details>p {
+    width: 170px
+  }
+}
