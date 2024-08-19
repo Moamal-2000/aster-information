@@ -5,7 +5,7 @@
   padding: 97px 0 46px;
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 150px;
 }
 
 .footerDetails {
@@ -25,7 +25,7 @@
   font-size: 1.25rem;
   letter-spacing: .35em;
   color: var(--black);
-  margin-bottom: 56px;
+  margin-bottom: 44px;
 }
 
 .infoSection .wrapper {
@@ -39,12 +39,11 @@
   gap: 41px;
 }
 
-.nav>li {
-
-}
+.nav>li {}
 
 .nav>li>a {
   color: var(--black);
+  letter-spacing: .04em;
 }
 
 .infoSection .details {
@@ -53,20 +52,22 @@
   gap: 41px;
 }
 
-.details>span {
-
+.details>* {
+  letter-spacing: .04em;
 }
+
+.details>span {}
 
 .details>a {
   color: var(--black);
 }
 
 .details>p {
-  width: 200px;
+  width: 234px;
+  line-height: 1.8em;
 }
 
-.footerDetails .subscribeSection {
-}
+.footerDetails .subscribeSection {}
 
 .subscribeSection>h2 {
   margin: 96px 0 36px;
@@ -77,12 +78,12 @@
 }
 
 .subscribeSection>p {
+  line-height: 1.8em;
+  letter-spacing: .05em;
   margin-bottom: 39px;
 }
 
-.subEmailForm {
-
-}
+.subEmailForm {}
 
 .subEmailForm>label {
   display: block;
@@ -90,21 +91,52 @@
 }
 
 .subEmailForm .input {
-  border: solid 2px var(--black);
-  border-radius: 5px;
   display: flex;
 }
 
 .subEmailForm .input>input {
+  outline: none;
+  border: solid 1px var(--black);
+  border-radius: 10px;
+  background-color: var(--white);
+  color: var(--black);
   flex: 1;
-  padding: 9px 0;
+  padding: 3px;
+  padding-left: 16px;
+  min-height: 40px;
+  max-width: 100%;
+
+
+  &:hover {
+    border-width: 2px;
+    background-color: var(--very-light-gray);
+  }
+
+  &:focus {
+    border-width: 2px;
+    background-color: var(--white);
+  }
 }
 
 .subEmailForm .input>button {
+  outline: none;
   background-color: var(--black);
   color: var(--white);
-  border-radius: 5px;
+  font-size: 1rem;
+  letter-spacing: .04em;
+  border: solid 1px var(--black);
+  border-radius: 10px;
   padding: 4px 10px;
+  position: relative;
+  right: 18px;
+  transition: color .4s ease, background-color .4s ease;
+  min-width: 120px;
+  height: 40px;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
 }
 
 .footerBottom {
@@ -113,16 +145,13 @@
 }
 
 .copyright {
-
+  letter-spacing: .04em;
+  line-height: 1.8em;
 }
 
 .socialMedia {
   display: flex;
-  gap: 20px;
-}
-
-.socialMedia>li {
-
+  gap: 32px;
 }
 
 .socialMedia>li>a {
@@ -131,6 +160,4 @@
   height: 24px;
 }
 
-.socialMedia>li>a>img {
-
-}
+.socialMedia>li>a>img {}

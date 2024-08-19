@@ -44,7 +44,10 @@ const Footer = () => {
           <h2>SUBSCRIBE</h2>
           <p>Sign up to receive Autono news and updates.</p>
 
-          <form className={s.subEmailForm}>
+          <form
+            className={s.subEmailForm}
+            onSubmit={(event) => event.preventDefault()}
+          >
             <label htmlFor="sub-email">Email *</label>
             <div className={s.input}>
               <input type="email" name="sub-email" id="sub-email" required />
