@@ -1,21 +1,27 @@
+import { Helmet } from "react-helmet-async";
 import s from "./Home.module.scss";
 import HomeBackground from "./HomeHeroSection/HomeBackground/HomeBackground";
 import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
-import ServicesSection from "./ServicesSection/ServicesSection";
 import VisionSection from "./VisionSection/VisionSection";
 
 const Home = () => {
   return (
-    <main className={s.homePage} id="homePage">
-      <HomeBackground />
+    <>
+      <Helmet>
+        <title>Home | Aster Information</title>
+      </Helmet>
 
-      <div className="container">
-        <HomeHeroSection />
-      </div>
+      <main className={s.homePage} id="homePage">
+        <HomeBackground />
 
-      <VisionSection />
-      {/* <ServicesSection /> */}
-    </main>
+        <div className="container">
+          <HomeHeroSection />
+        </div>
+
+        <VisionSection />
+        {/* <ServicesSection /> */}
+      </main>
+    </>
   );
 };
 export default Home;
