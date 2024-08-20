@@ -3,7 +3,7 @@
 .services {
   display: flex;
   flex-direction: column;
-  gap: 127px;
+  margin-bottom: 190px;
 }
 
 .serviceImgHolder {
@@ -20,4 +20,22 @@
 
 .serviceImgHolder>img {
 
+}
+
+[dir=ltr] .serviceImgHolder1 {
+  right: 75px;
+}
+
+.serviceImgHolder1>img {
+  scale: 1.25;
+}
+
+[dir=ltr] .serviceImgHolder3::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background-color: var(--website-bg);
 }

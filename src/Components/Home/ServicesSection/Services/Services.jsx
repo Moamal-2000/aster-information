@@ -25,7 +25,7 @@ const Services = () => {
           />
         </div>
 
-        <div className={s.serviceImgHolder}>
+        <div className={`${s.serviceImgHolder} ${s.serviceImgHolder1}`}>
           <img src={serviceSectionBg1} alt="" />
         </div>
       </Service>
@@ -64,7 +64,7 @@ const Services = () => {
           />
         </div>
 
-        <div className={s.serviceImgHolder}>
+        <div className={`${s.serviceImgHolder} ${s.serviceImgHolder3}`}>
           <img src={serviceSectionBg3} alt="" />
         </div>
       </Service>
