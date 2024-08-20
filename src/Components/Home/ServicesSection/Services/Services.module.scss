@@ -1,5 +1,23 @@
 @import "src/Styles/mixins.scss";
 
 .services {
-  
+  display: flex;
+  flex-direction: column;
+  gap: 127px;
+}
+
+.serviceImgHolder {
+  position: absolute;
+}
+
+[dir=ltr] .serviceImgHolder {
+  right: 0;
+}
+
+[dir=rtl] .serviceImgHolder {
+  left: 0;
+}
+
+.serviceImgHolder>img {
+
 }
