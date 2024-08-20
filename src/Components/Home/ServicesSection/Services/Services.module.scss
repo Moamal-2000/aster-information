@@ -40,7 +40,8 @@
 @include medium {
   .serviceImgHolder {
     display: block;
-    position: static;
+    position: relative;
+    inset: auto !important;
   }
 }
 
@@ -98,4 +99,16 @@
   height: 50px;
   width: 100%;
   background-color: var(--website-bg);
+}
+
+@include medium {
+  [dir=ltr] .serviceImgHolder3::before {
+    display: none;
+  }
+}
+
+@include small {
+  [dir=ltr] .serviceImgHolder3::before {
+    display: block;
+  }
 }
