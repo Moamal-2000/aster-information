@@ -1,14 +1,18 @@
+import useLineProperties from "src/Hooks/App/useLineProperties";
 import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./ServicesIntro.module.scss";
 
 const ServicesIntro = () => {
+  const { lineHeight, yAxis, animateTo, animatedLineHeight } =
+    useLineProperties();
+
   return (
     <div className={s.servicesIntro}>
       <AnimatedLine
-        lineHeight="194px"
-        animatedLineHeight="129px"
-        yAxis="130px"
-        animateTo="65px"
+        lineHeight={lineHeight}
+        animatedLineHeight={animatedLineHeight}
+        yAxis={yAxis}
+        animateTo={animateTo}
         lineColors={{
           lineColor: "#707070",
           animatedLineColor: "#000",
