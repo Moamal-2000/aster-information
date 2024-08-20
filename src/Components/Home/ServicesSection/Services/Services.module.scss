@@ -21,7 +21,9 @@
 
 @include medium {
   .services [data-container] {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -35,16 +37,19 @@
   }
 }
 
+@include medium {
+  .serviceImgHolder {
+    display: block;
+    position: static;
+  }
+}
+
 [dir=ltr] .serviceImgHolder {
   right: 0;
 }
 
 [dir=rtl] .serviceImgHolder {
   left: 0;
-}
-
-.serviceImgHolder>img {
-
 }
 
 [dir=ltr] .serviceImgHolder1 {
@@ -64,6 +69,24 @@
 @media (max-width: 1300px) {
   [dir=rtl] .serviceImgHolder2 {
     width: 680px;
+  }
+}
+
+@include medium {
+  [dir=rtl] .serviceImgHolder2 {
+    width: 553px;
+  }
+}
+
+@include small {
+  [dir=rtl] .serviceImgHolder2 {
+    width: 100%;
+  }
+}
+
+@include small {
+  [dir=ltr] .serviceImgHolder3 {
+    width: 100%;
   }
 }
 

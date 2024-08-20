@@ -2,8 +2,14 @@
 
 .servicesIntro {
   display: flex;
-  margin-bottom: 220px;
+  margin-bottom: 120px;
   position: relative;
+}
+
+@include large {
+  .servicesIntro {
+    margin-bottom: 60px;
+  }
 }
 
 @include medium {

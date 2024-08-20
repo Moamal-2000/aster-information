@@ -12,6 +12,15 @@
   }
 }
 
+@include medium {
+  .service {
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    gap: 40px;
+  }
+}
+
 .service>img {
 
 }
