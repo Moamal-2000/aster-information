@@ -1,7 +1,7 @@
 @import "src/Styles/mixins.scss";
 
 .serviceContent {
-  width: 360px;
+  width: 340px;
 }
 
 [dir=rtl] .serviceContent {
@@ -34,6 +34,10 @@
   border-radius: 8px;
 }
 
+[dir=rtl] .button {
+  flex-direction: row-reverse;
+}
+
 .button>span {
   color: var(--black);
   white-space: nowrap;
@@ -46,12 +50,13 @@
   color: var(--white);
 }
 
-.button .arrowRight {
-  height: 100%;
+.button .arrowHolder {
+  width: 40px;
   border-left: solid 1px var(--black);
+  @include center-x-y;
 }
 
-.button .arrowRight>svg {
-  min-width: 16px;
-  min-height: 16px;
+.button .arrowHolder>svg {
+  width: 16px;
+  height: 16px;
 }
