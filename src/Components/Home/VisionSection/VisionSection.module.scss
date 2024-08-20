@@ -42,10 +42,23 @@
 .wrapper {
   display: flex;
   gap: 50px;
+  position: relative;
 }
 
 @include small {
   .wrapper {
     gap: 30px;
+  }
+}
+
+.wrapper .animatedLine {
+  position: absolute;
+  left: -57px;
+}
+
+@include small {
+  .wrapper .animatedLine {
+    // left: -30px;
+    left: 0;
   }
 }

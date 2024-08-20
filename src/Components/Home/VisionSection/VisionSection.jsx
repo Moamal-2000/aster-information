@@ -8,7 +8,9 @@ const VisionSection = () => {
     <section className={s.visionSection}>
       <div className="container">
         <div className={s.wrapper}>
-          <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />
+          <div className={s.animatedLine}>
+            <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />
+          </div>
           <VisionSectionContent />
         </div>
 

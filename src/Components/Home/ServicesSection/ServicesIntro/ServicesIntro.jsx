@@ -8,16 +8,18 @@ const ServicesIntro = () => {
 
   return (
     <div className={s.servicesIntro}>
-      <AnimatedLine
-        lineHeight={lineHeight}
-        animatedLineHeight={animatedLineHeight}
-        yAxis={yAxis}
-        animateTo={animateTo}
-        lineColors={{
-          lineColor: "#707070",
-          animatedLineColor: "#000",
-        }}
-      />
+      <div className={s.animatedLine}>
+        <AnimatedLine
+          lineHeight={lineHeight}
+          animatedLineHeight={animatedLineHeight}
+          yAxis={yAxis}
+          animateTo={animateTo}
+          lineColors={{
+            lineColor: "#707070",
+            animatedLineColor: "#000",
+          }}
+        />
+      </div>
 
       <div className={s.content}>
         <h2>SERVICES</h2>

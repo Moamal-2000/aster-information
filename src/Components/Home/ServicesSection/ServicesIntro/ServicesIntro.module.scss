@@ -3,6 +3,7 @@
 .servicesIntro {
   display: flex;
   margin-bottom: 220px;
+  position: relative;
 }
 
 @include medium {
@@ -12,8 +13,15 @@
   }
 }
 
-.content {
-  margin-left: 57px;
+.servicesIntro .animatedLine {
+  position: absolute;
+  left: -57px;
+}
+
+@include small {
+  .servicesIntro .animatedLine {
+    left: 0;
+  }
 }
 
 @include small {
