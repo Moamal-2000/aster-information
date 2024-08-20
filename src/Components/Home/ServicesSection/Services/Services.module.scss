@@ -6,8 +6,33 @@
   margin-bottom: 190px;
 }
 
+@include large {
+  .services {
+    align-items: center;
+  }
+}
+
+@include medium {
+  .services {
+    margin: 0 auto 190px;
+    width: fit-content;
+  }
+}
+
+@include medium {
+  .services [data-container] {
+    width: 100%;
+  }
+}
+
 .serviceImgHolder {
   position: absolute;
+}
+
+@include large {
+  .serviceImgHolder {
+    display: none;
+  }
 }
 
 [dir=ltr] .serviceImgHolder {
@@ -28,6 +53,18 @@
 
 .serviceImgHolder1>img {
   scale: 1.25;
+}
+
+@media (max-width: 1300px) {
+  .serviceImgHolder1>img {
+    scale: 1;
+  }
+}
+
+@media (max-width: 1300px) {
+  [dir=rtl] .serviceImgHolder2 {
+    width: 680px;
+  }
 }
 
 [dir=ltr] .serviceImgHolder3::before {

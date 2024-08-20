@@ -5,6 +5,13 @@
   height: 680px;
 }
 
+@include large {
+  .service {
+    height: auto;
+    width: 100%;
+  }
+}
+
 .service>img {
 
 }

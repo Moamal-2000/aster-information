@@ -11,7 +11,7 @@ const Services = () => {
   return (
     <div className={s.services}>
       <Service dir="ltr">
-        <div className="container">
+        <div className="container" data-container>
           <ServiceContent
             title={"INTEGRATED MANAGEMENT"}
             description={`Comprehensive Information and Data Management
@@ -31,7 +31,7 @@ const Services = () => {
       </Service>
 
       <Service dir="rtl">
-        <div className="container">
+        <div className="container" data-container>
           <ServiceContent
             title={"SOFTWARE SOLUTIONS"}
             description={`We offer custom software development services designed
@@ -45,13 +45,13 @@ const Services = () => {
           />
         </div>
 
-        <div className={s.serviceImgHolder}>
+        <div className={`${s.serviceImgHolder} ${s.serviceImgHolder2}`}>
           <img src={serviceSectionBg2} alt="" />
         </div>
       </Service>
 
       <Service dir="ltr">
-        <div className="container">
+        <div className="container" data-container>
           <ServiceContent
             title={"IT CONSULTING"}
             description={`Our IT Consulting services provide strategic guidance in
