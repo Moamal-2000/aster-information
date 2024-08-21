@@ -6,7 +6,7 @@ import VisionSectionContent from "./VisionSectionContent/VisionSectionContent";
 const VisionSection = () => {
   return (
     <section className={s.visionSection}>
-      <div className="container">
+      <div className="container" data-container>
         <div className={s.wrapper}>
           <div className={s.animatedLine}>
             <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />

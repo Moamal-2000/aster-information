@@ -4,14 +4,21 @@
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 240px;
-  width: 50vw;
+  top: -41px;
+  width: 768px;
+}
+
+@media (max-width: 1600px) {
+  .imgHolder {
+    top: 240px;
+  }
 }
 
 @media (max-width: 1300px) {
   .imgHolder {
     overflow: visible;
     top: 220px;
+    width: 50vw;
   }
 }
 
