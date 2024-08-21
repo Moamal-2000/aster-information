@@ -56,9 +56,14 @@
   left: -57px;
 }
 
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .wrapper .animatedLine {
+    left: -25px;
+  }
+}
+
 @include small {
   .wrapper .animatedLine {
-    // left: -30px;
     left: 0;
   }
 }

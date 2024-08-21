@@ -24,6 +24,12 @@
   left: -57px;
 }
 
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .servicesIntro .animatedLine {
+    left: -25px;
+  }
+}
+
 @include small {
   .servicesIntro .animatedLine {
     left: 0;
