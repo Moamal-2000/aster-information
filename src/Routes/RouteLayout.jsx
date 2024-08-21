@@ -2,8 +2,12 @@ import { Outlet } from "react-router-dom";
 import Footer from "../Components/Footer/Footer";
 import Header from "../Components/Header/Header";
 import ScrollToTopIcon from "../Components/Shared/MiniComponents/ScrollToTopIcon/ScrollToTopIcon";
+import { SCREEN_SIZES } from "../Data/variables";
+import useGetResizeWindow from "../Hooks/Helper/useGetResizeWindow";
 
 const RouteLayout = () => {
+  const { windowWidth } = useGetResizeWindow();
+
   return (
     <div className="App">
       <Header />
@@ -13,7 +17,7 @@ const RouteLayout = () => {
         <Footer />
       </div>
 
-      <ScrollToTopIcon />
+      {windowWidth < SCREEN_SIZES.tablet && <ScrollToTopIcon />}
     </div>
   );
 };
