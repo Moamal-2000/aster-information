@@ -5,7 +5,6 @@
   flex-direction: column;
   gap: 60px;
   margin-bottom: 190px;
-  border: solid;
 }
 
 @include large {
@@ -23,9 +22,26 @@
   }
 }
 
+@include small {
+  .services {
+    gap: 0;
+  }
+}
+
+@include very-small {
+  .services {
+    gap: 20px;
+  }
+}
+
 .services [data-container] {
   position: relative;
-  border: solid red;
+}
+
+@media (max-width: 1500px) {
+  .services [data-container] {
+    position: static;
+  }
 }
 
 @include medium {
@@ -33,6 +49,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
   }
 }
 
@@ -82,12 +99,6 @@
   height: 680px;
 }
 
-@media (max-width: 1300px) {
-  [dir=rtl] .serviceImgHolder2 {
-    // width: 680px;
-  }
-}
-
 @include medium {
   [dir=rtl] .serviceImgHolder2 {
     width: 553px;
@@ -98,13 +109,29 @@
   [dir=rtl] .serviceImgHolder2 {
     max-width: 553px;
     min-width: 100%;
+    height: 60%;
     width: auto;
+    scale: 1.06 1;
+  }
+}
+
+@include very-small {
+  [dir=rtl] .serviceImgHolder2 {
+    height: 55%;
+  }
+}
+
+[dir=rtl] .serviceImgHolder3 {}
+
+@include medium {
+  [dir=rtl] .serviceImgHolder3 {
   }
 }
 
 @include small {
   [dir=ltr] .serviceImgHolder3 {
     width: 100%;
+    scale: 1.06 1;
   }
 }
 

@@ -15,8 +15,7 @@
 
 @include medium {
   .servicesIntro {
-    margin: 0 auto;
-    width: fit-content;
+    margin-bottom: 50px;
   }
 }
 
@@ -33,7 +32,7 @@
 
 @include small {
   .content {
-    margin-left: 30px;
+    margin-left: var(--left-margin-content);
   }
 }
 
@@ -66,7 +65,7 @@
 
 @include very-small {
   .content>p {
-    width: 100%;
+    width: 260px;
     font-size: 1rem;
   }
 }

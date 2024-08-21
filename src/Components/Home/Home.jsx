@@ -14,10 +14,10 @@ const Home = () => {
       </Helmet>
 
       <main className={s.homePage} id="homePage">
-        <HomeBackground />
+        {/* <HomeBackground /> */}
 
         <div className="container">
-          <HomeHeroSection />
+          {/* <HomeHeroSection /> */}
         </div>
 
         <VisionSection />

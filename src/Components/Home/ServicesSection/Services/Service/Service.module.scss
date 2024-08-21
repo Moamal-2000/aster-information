@@ -5,6 +5,12 @@
   height: 680px;
 }
 
+@media (max-width: 1500px) {
+  .service {
+    position: relative;
+  }
+}
+
 @include large {
   .service {
     height: auto;
@@ -19,8 +25,4 @@
     width: fit-content;
     gap: 40px;
   }
-}
-
-.service>img {
-
 }

@@ -13,13 +13,13 @@
   .content {
     max-width: 290px;
     gap: 30px;
-    margin-left: 30px;
+    margin-left: var(--left-margin-content);
   }
 }
 
 @include very-small {
   .content {
-    max-width: 280px;
+    max-width: 260px;
   }
 }
 
