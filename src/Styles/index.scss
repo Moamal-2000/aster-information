@@ -89,6 +89,12 @@ main {
 
 @include small {
   .container {
-    --container-width: 340px;
+    --container-width: 88%;
+  }
+}
+
+@include very-small {
+  .container {
+    --container-width: 94%;
   }
 }

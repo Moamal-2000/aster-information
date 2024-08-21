@@ -1,5 +1,17 @@
 @import "src/Styles/mixins.scss";
 
+@include medium {
+  .subscribeSection {
+    width: 375px;
+  }
+}
+
+@include small {
+  .subscribeSection {
+    width: 292px;
+  }
+}
+
 .subscribeSection>h2 {
   margin: 96px 0 36px;
   line-height: 1.8em;
@@ -31,12 +43,19 @@
   .subscribeSection>p {
     margin-bottom: 25px;
     line-height: 1.5em;
+    font-size: .9rem;
   }
 }
 
 .subEmailForm>label {
   display: block;
   margin-bottom: 32px;
+}
+
+@include small {
+  .subEmailForm>label {
+    font-size: .9rem;
+  }
 }
 
 .subEmailForm .input {

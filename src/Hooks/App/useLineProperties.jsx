@@ -16,7 +16,7 @@ const useLineProperties = () => {
 
     return {
       lineHeight: "160px",
-      yAxis: "100px",
+      yAxis: "110px",
       animateTo: "58px",
       animatedLineHeight: "102px",
     };
