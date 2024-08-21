@@ -15,8 +15,16 @@ const ScrollToTopIcon = () => {
     timerId = setTimeout(() => setIsScrolling(false), HIDE_SCROLL_TOP_MS);
   });
 
+  function handleScrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
-    <button type="button" className={`${s.button} ${activeClass}`}>
+    <button
+      type="button"
+      className={`${s.button} ${activeClass}`}
+      onClick={handleScrollToTop}
+    >
       <SvgIcon name="arrowTop" />
     </button>
   );
