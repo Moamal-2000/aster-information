@@ -11,6 +11,12 @@
 @media (max-width: 1300px) {
   .imgHolder {
     overflow: visible;
+    top: 220px;
+  }
+}
+
+@include large {
+  .imgHolder {
     position: static;
     width: 700px;
   }
@@ -44,6 +50,12 @@
   .imgHolder .img {
     min-height: auto;
     aspect-ratio: 1/1;
-    scale: 1.064 1;
+    scale: 1.137 1;
+  }
+}
+
+@include very-small {
+  .imgHolder .img {
+    scale: 1.064;
   }
 }
