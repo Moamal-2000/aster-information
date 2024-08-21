@@ -5,12 +5,12 @@ import Header from "../Components/Header/Header";
 const RouteLayout = () => {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <Outlet />
 
-      {/* <div className="container">
+      <div className="container">
         <Footer />
-      </div> */}
+      </div>
     </div>
   );
 };

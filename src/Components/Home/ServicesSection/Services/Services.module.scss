@@ -121,13 +121,6 @@
   }
 }
 
-[dir=rtl] .serviceImgHolder3 {}
-
-@include medium {
-  [dir=rtl] .serviceImgHolder3 {
-  }
-}
-
 @include small {
   [dir=ltr] .serviceImgHolder3 {
     width: 100%;
