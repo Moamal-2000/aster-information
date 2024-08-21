@@ -1,7 +1,7 @@
 @import "src/Styles/mixins.scss";
 
 .button {
-  border: solid 2px var(--black);
+  border: solid 1px var(--black);
   background-color: var(--white);
   border-radius: 50%;
   width: 50px;
@@ -22,6 +22,6 @@
 }
 
 .button>svg {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
 }
