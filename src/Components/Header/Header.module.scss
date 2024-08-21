@@ -47,9 +47,15 @@
   font-size: 1.25rem;
 }
 
+@include medium {
+  .header>div>a>span {
+    font-size: 1rem;
+    letter-spacing: .3em;
+  }
+}
+
 @include small {
   .header>div>a>span {
     font-size: .8rem;
-    letter-spacing: .3em;
   }
 }
