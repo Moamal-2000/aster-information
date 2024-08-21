@@ -23,10 +23,10 @@ const Services = () => {
             buttonText={"Read More"}
             buttonPath={"/technology"}
           />
-        </div>
 
-        <div className={`${s.serviceImgHolder} ${s.serviceImgHolder1}`}>
-          <img src={serviceSectionBg1} alt="" />
+          <div className={`${s.serviceImgHolder} ${s.serviceImgHolder1}`}>
+            <img src={serviceSectionBg1} alt="" />
+          </div>
         </div>
       </Service>
 
@@ -43,10 +43,10 @@ const Services = () => {
             buttonText={"Read More"}
             buttonPath={"/technology"}
           />
-        </div>
 
-        <div className={`${s.serviceImgHolder} ${s.serviceImgHolder2}`}>
-          <img src={serviceSectionBg2} alt="" />
+          <div className={`${s.serviceImgHolder} ${s.serviceImgHolder2}`}>
+            <img src={serviceSectionBg2} alt="" />
+          </div>
         </div>
       </Service>
 
@@ -62,10 +62,10 @@ const Services = () => {
             buttonText={"Read More"}
             buttonPath={"/technology"}
           />
-        </div>
 
-        <div className={`${s.serviceImgHolder} ${s.serviceImgHolder3}`}>
-          <img src={serviceSectionBg3} alt="" />
+          <div className={`${s.serviceImgHolder} ${s.serviceImgHolder3}`}>
+            <img src={serviceSectionBg3} alt="" />
+          </div>
         </div>
       </Service>
     </div>

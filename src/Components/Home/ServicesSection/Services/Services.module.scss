@@ -3,7 +3,9 @@
 .services {
   display: flex;
   flex-direction: column;
+  gap: 60px;
   margin-bottom: 190px;
+  border: solid;
 }
 
 @include large {
@@ -21,6 +23,11 @@
   }
 }
 
+.services [data-container] {
+  position: relative;
+  border: solid red;
+}
+
 @include medium {
   .services [data-container] {
     display: flex;
@@ -31,6 +38,7 @@
 
 .serviceImgHolder {
   position: absolute;
+  top: 0;
 }
 
 @include large {
@@ -69,9 +77,14 @@
   }
 }
 
+[dir=rtl] .serviceImgHolder2 {
+  width: 634px;
+  height: 680px;
+}
+
 @media (max-width: 1300px) {
   [dir=rtl] .serviceImgHolder2 {
-    width: 680px;
+    // width: 680px;
   }
 }
 
