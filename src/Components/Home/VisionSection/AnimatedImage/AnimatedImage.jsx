@@ -8,11 +8,11 @@ const AnimatedImage = () => {
   const { windowWidth } = useGetResizeWindow();
 
   useEventListener(window, "scroll", () => {
-    if (windowWidth > 1300 && windowWidth < 1600) moveImageOnScroll(90, 0, 900);
+    if (windowWidth > 1300 && windowWidth < 1550) moveImageOnScroll(90, 0, 900);
   });
 
   useEffect(() => {
-    if (windowWidth < 1300 || windowWidth > 1600)
+    if (windowWidth < 1300 || windowWidth > 1550)
       visionImageRef.current.style.backgroundPositionX = "center";
   }, [windowWidth]);
 
