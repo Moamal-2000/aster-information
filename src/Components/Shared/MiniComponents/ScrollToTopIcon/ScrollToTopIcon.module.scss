@@ -10,9 +10,8 @@
   right: 20px;
   bottom: 50px;
   z-index: 1000;
-  @include center-x-y;
-  opacity: 0;
-  pointer-events: none;
+  // opacity: 0;
+  // pointer-events: none;
   transition: opacity .4s ease;
 
   &.active {
@@ -21,7 +20,23 @@
   }
 }
 
-.button>svg {
-  width: 26px;
-  height: 26px;
+.button::before,
+.button::after {
+  --x-axis: 12.1px;
+  --rotate: 40deg;
+  content: '';
+  position: absolute;
+  background-color: var(--black);
+  width: 14px;
+  height: 2px;
+}
+
+.button::before {
+  left: var(--x-axis);
+  rotate: calc(var(--rotate) - (var(--rotate) * 2));
+}
+
+.button::after {
+  right: var(--x-axis);
+  rotate: var(--rotate);
 }

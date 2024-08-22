@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { HIDE_SCROLL_TOP_MS } from "src/Data/variables";
 import useEventListener from "src/Hooks/Helper/useEventListener";
-import SvgIcon from "../SvgIcon";
 import s from "./ScrollToTopIcon.module.scss";
 
 const ScrollToTopIcon = () => {
@@ -9,13 +8,13 @@ const ScrollToTopIcon = () => {
   const activeClass = isScrolling ? s.active : "";
   let timerId;
 
-  useEventListener(window, "scroll", () => {
-    clearTimeout(timerId);
-    setIsScrolling(true);
-    timerId = setTimeout(() => {
-      setIsScrolling(false)
-    }, HIDE_SCROLL_TOP_MS);
-  });
+  // useEventListener(window, "scroll", () => {
+  //   clearTimeout(timerId);
+  //   setIsScrolling(true);
+  //   timerId = setTimeout(() => {
+  //     setIsScrolling(false);
+  //   }, HIDE_SCROLL_TOP_MS);
+  // });
 
   function handleScrollToTop() {
     window.scrollTo(0, 0);
@@ -26,9 +25,7 @@ const ScrollToTopIcon = () => {
       type="button"
       className={`${s.button} ${activeClass}`}
       onClick={handleScrollToTop}
-    >
-      <SvgIcon name="arrowTop" />
-    </button>
+    ></button>
   );
 };
 export default ScrollToTopIcon;
