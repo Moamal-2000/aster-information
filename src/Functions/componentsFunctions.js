@@ -6,3 +6,5 @@ export function watchScrollState(shouldHide) {
 
   document.body.style.overflow = "";
 }
+
+export const scrollToTop = () => window.scrollTo(0, 0);

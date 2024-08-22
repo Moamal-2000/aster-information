@@ -6,4 +6,4 @@ export const SCREEN_SIZES = {
   smaller: 376,
 };
 
-export const HIDE_SCROLL_TOP_MS = 4000
+export const HIDE_SCROLL_TOP_MS = 3000;
