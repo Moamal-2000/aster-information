@@ -2,7 +2,6 @@
 
 .whyUsSection {
   padding: 500px 0;
-  width: 100%;
 }
 
 .backgroundImg {
@@ -15,4 +14,36 @@
   width: 100%;
   z-index: -1000;
   height: 100dvh;
+}
+
+.card {
+  position: relative;
+  background-color: var(--black);
+  color: var(--white);
+  width: 490px;
+  padding: 56px 31px 66px 92px;
+  display: flex;
+  gap: 40px;
+  border-radius: 16px;
+}
+
+.card .animatedLine {
+
+}
+
+.card .content {
+
+}
+
+.content .title {
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.content .subTitle {
+  margin-bottom: 71px;
+}
+
+.content .description {
+  margin-bottom: 51px;
 }
