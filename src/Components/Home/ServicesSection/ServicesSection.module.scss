@@ -1,5 +1,8 @@
 @import "src/Styles/mixins.scss";
 
 .servicesSection {
-  
+  background-color: var(--website-bg);
+  padding-top: 150px;
+  padding-bottom: 117px;
+  height: fit-content;
 }

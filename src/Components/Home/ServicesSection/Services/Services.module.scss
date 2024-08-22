@@ -3,7 +3,6 @@
 .services {
   display: flex;
   flex-direction: column;
-  margin-bottom: 190px;
 }
 
 @media (max-width: 1300px) {
@@ -16,14 +15,13 @@
   .services {
     align-items: center;
     width: 374px;
-    margin: 0 auto 190px;
+    margin: 0 auto;
     gap: 0;
   }
 }
 
 @include medium {
   .services {
-    margin: 0 auto 190px;
     width: fit-content;
     display: flex;
     flex-direction: column;

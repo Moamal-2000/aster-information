@@ -1,7 +1,18 @@
 @import "src/Styles/mixins.scss";
 
 .whyUsSection {
-  padding: 120px 0;
+  padding: 500px 0;
   width: 100%;
-  background-image: url("../../../Assets/Images/servers.jpg");
+}
+
+.backgroundImg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-image: url("src/Assets/Images/servers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: -1000;
+  height: 100dvh;
 }

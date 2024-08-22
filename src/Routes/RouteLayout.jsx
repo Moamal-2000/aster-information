@@ -4,6 +4,7 @@ import Header from "../Components/Header/Header";
 import ScrollToTopIcon from "../Components/Shared/MiniComponents/ScrollToTopIcon/ScrollToTopIcon";
 import { SCREEN_SIZES } from "../Data/variables";
 import useGetResizeWindow from "../Hooks/Helper/useGetResizeWindow";
+import s from "./RouteLayout.module.scss";
 
 const RouteLayout = () => {
   const { windowWidth } = useGetResizeWindow();
@@ -13,8 +14,10 @@ const RouteLayout = () => {
       <Header />
       <Outlet />
 
-      <div className="container">
-        <Footer />
+      <div className={s.footerLayer}>
+        <div className="container">
+          <Footer />
+        </div>
       </div>
 
       {windowWidth < SCREEN_SIZES.tablet && <ScrollToTopIcon />}
