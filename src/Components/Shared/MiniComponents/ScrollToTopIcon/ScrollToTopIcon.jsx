@@ -22,6 +22,7 @@ const ScrollToTopIcon = () => {
       type="button"
       className={`${s.button} ${activeClass}`}
       onClick={scrollToTop}
+      aria-label="Scroll to top"
     ></button>
   );
 };
