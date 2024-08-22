@@ -1,6 +1,5 @@
-import { WEBSITE_NAME } from "src/Data/variables";
-import Button from "../../Shared/Buttons/Button/Button";
 import AnimatedLine from "../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import WhyUsContent from "./WhyUsContent/WhyUsContent";
 import s from "./WhyUsSection.module.scss";
 
 const WhyUsSection = () => {
@@ -22,23 +21,7 @@ const WhyUsSection = () => {
             />
           </div>
 
-          <div className={s.content}>
-            <h2 className={s.title}>Why {WEBSITE_NAME}</h2>
-
-            <p className={s.subTitle}>
-              A different approach, using a new method of Information
-              Management.
-            </p>
-
-            <p className={s.description}>
-              Experience a distinct edge in Information Management and IT
-              solutions. With advanced techniques and cutting-edge technology,
-              we deliver tailored solutions that drive operational efficiency
-              and strategic growth across industries.
-            </p>
-
-            <Button text="Read More" path="/about" invertColors={true} />
-          </div>
+          <WhyUsContent />
         </div>
       </div>
     </section>

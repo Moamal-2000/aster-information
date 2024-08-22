@@ -5,7 +5,5 @@ export const SCREEN_SIZES = {
   mobile: 428,
   smaller: 376,
 };
-
 export const HIDE_SCROLL_TOP_MS = 3000;
-
 export const WEBSITE_NAME = "Ister Information";
