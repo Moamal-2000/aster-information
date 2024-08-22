@@ -10,7 +10,7 @@ const Technology = () => {
       </Helmet>
 
       <main className={s.technology} id="technology-page">
-        Technology
+        Technology page
       </main>
     </>
   );

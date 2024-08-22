@@ -10,7 +10,7 @@ const Careers = () => {
       </Helmet>
 
       <main className={s.careers} id="careers-page">
-        Careers
+        Careers page
       </main>
     </>
   );

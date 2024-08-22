@@ -10,7 +10,7 @@ const About = () => {
       </Helmet>
 
       <main className={s.about} id="about-page">
-        About
+        About page
       </main>
     </>
   );
