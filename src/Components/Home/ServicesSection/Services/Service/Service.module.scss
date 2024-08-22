@@ -12,6 +12,12 @@
   }
 }
 
+@media (max-width: 1300px) {
+  .service {
+    height: auto;
+  }
+}
+
 @include large {
   .service {
     height: auto;

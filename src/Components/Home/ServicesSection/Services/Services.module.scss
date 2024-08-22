@@ -3,9 +3,13 @@
 .services {
   display: flex;
   flex-direction: column;
-  // gap: 60px;
   margin-bottom: 190px;
-  // background-color: rgba(0, 0, 255, 0.155);
+}
+
+@media (max-width: 1300px) {
+  .services {
+    gap: 80px;
+  }
 }
 
 @include large {
@@ -13,6 +17,7 @@
     align-items: center;
     width: 374px;
     margin: 0 auto 190px;
+    gap: 0;
   }
 }
 
@@ -20,12 +25,10 @@
   .services {
     margin: 0 auto 190px;
     width: fit-content;
-  }
-}
-
-@include small {
-  .services {
-    gap: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 }
 
@@ -33,10 +36,6 @@
   .services {
     gap: 20px;
   }
-}
-
-.services [data-container] {
-  // position: relative;
 }
 
 @media (max-width: 1500px) {
@@ -56,7 +55,8 @@
 
 .serviceImgHolder {
   position: absolute;
-  top: 0;
+  top: 50%;
+  translate: 0 -50%;
   width: 50%;
 }
 
@@ -69,8 +69,16 @@
 @include medium {
   .serviceImgHolder {
     display: block;
-    position: relative;
-    inset: auto !important;
+    position: static;
+    translate: 0 0;
+    inset: auto;
+    width: 100%;
+  }
+}
+
+@include very-small {
+  .serviceImgHolder {
+    scale: 1.066;
   }
 }
 
@@ -83,49 +91,9 @@
 }
 
 [dir=ltr] .serviceImgHolder1 {
-  right: 75px;
+  right: 0;
 }
 
 .serviceImgHolder1>img {
-  // scale: 1.25;
-}
-
-@media (max-width: 1300px) {
-  .serviceImgHolder1>img {
-    scale: 1;
-  }
-}
-
-[dir=rtl] .serviceImgHolder2 {
-  width: 759px;
-  // height: 540px;
-}
-
-@include medium {
-  [dir=rtl] .serviceImgHolder2 {
-    width: 553px;
-  }
-}
-
-@include small {
-  [dir=rtl] .serviceImgHolder2 {
-    max-width: 553px;
-    min-width: 100%;
-    height: 60%;
-    width: auto;
-    scale: 1.06 1;
-  }
-}
-
-@include very-small {
-  [dir=rtl] .serviceImgHolder2 {
-    height: 55%;
-  }
-}
-
-@include small {
-  [dir=ltr] .serviceImgHolder3 {
-    width: 100%;
-    scale: 1.06 1;
-  }
+  scale: .95;
 }
