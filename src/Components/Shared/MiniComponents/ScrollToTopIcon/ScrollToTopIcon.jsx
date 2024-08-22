@@ -8,13 +8,13 @@ const ScrollToTopIcon = () => {
   const activeClass = isScrolling ? s.active : "";
   let timerId;
 
-  // useEventListener(window, "scroll", () => {
-  //   clearTimeout(timerId);
-  //   setIsScrolling(true);
-  //   timerId = setTimeout(() => {
-  //     setIsScrolling(false);
-  //   }, HIDE_SCROLL_TOP_MS);
-  // });
+  useEventListener(window, "scroll", () => {
+    clearTimeout(timerId);
+    setIsScrolling(true);
+    timerId = setTimeout(() => {
+      setIsScrolling(false);
+    }, HIDE_SCROLL_TOP_MS);
+  });
 
   function handleScrollToTop() {
     window.scrollTo(0, 0);

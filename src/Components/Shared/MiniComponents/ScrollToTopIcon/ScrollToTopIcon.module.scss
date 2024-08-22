@@ -22,13 +22,13 @@
 
 .button::before,
 .button::after {
-  --x-axis: 12.1px;
+  --x-axis: 12px;
   --rotate: 40deg;
   content: '';
   position: absolute;
   background-color: var(--black);
   width: 14px;
-  height: 2px;
+  height: 1px;
 }
 
 .button::before {
