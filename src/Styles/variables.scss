@@ -8,8 +8,44 @@
   --left-margin-content: 30px;
 }
 
+@media (max-width: 1600px) {
+  :root {
+    --container-width: 1100px;
+  }
+}
+
 @media (max-width: 1510px) {
   :root {
     --website-width: 1510px;
+  }
+}
+
+@media (max-width: 1509px) {
+  :root {
+    --website-width: 100%;
+  }
+}
+
+@include large {
+  :root {
+    --container-width: 900px;
+  }
+}
+
+@include medium {
+  :root {
+    --container-width: 700px;
+  }
+}
+
+@include small {
+  :root {
+    --container-width: 88%;
+  }
+}
+
+@include very-small {
+  :root {
+    --container-width: 94%;
   }
 }

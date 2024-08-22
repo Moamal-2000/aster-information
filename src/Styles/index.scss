@@ -70,33 +70,3 @@ main {
   width: var(--container-width);
   margin: 0 auto;
 }
-
-@media (max-width: 1600px) {
-  .container {
-    --container-width: 1100px;
-  }
-}
-
-@include large {
-  .container {
-    --container-width: 900px;
-  }
-}
-
-@include medium {
-  .container {
-    --container-width: 700px;
-  }
-}
-
-@include small {
-  .container {
-    --container-width: 88%;
-  }
-}
-
-@include very-small {
-  .container {
-    --container-width: 94%;
-  }
-}
