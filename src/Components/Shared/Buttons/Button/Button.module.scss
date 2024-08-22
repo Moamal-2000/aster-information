@@ -1,0 +1,44 @@
+@import "src/Styles/mixins.scss";
+
+.button {
+  border: solid 1px var(--black);
+  display: flex;
+  width: fit-content;
+  border-radius: 8px;
+}
+
+@include small {
+  .button {
+    scale: .9;
+    position: relative;
+    left: -6px;
+  }
+}
+
+[dir=rtl] .button {
+  flex-direction: row-reverse;
+}
+
+.button>span {
+  color: var(--black);
+  white-space: nowrap;
+  padding: 10px;
+  border-radius: 7px 0 0 7px;
+  transition: color .4s ease, background-color .4s ease;
+}
+
+.button:hover>span {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.button .arrowHolder {
+  width: 40px;
+  border-left: solid 1px var(--black);
+  @include center-x-y;
+}
+
+.button .arrowHolder>svg {
+  width: 16px;
+  height: 16px;
+}
