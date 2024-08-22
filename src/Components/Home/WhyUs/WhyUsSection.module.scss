@@ -41,8 +41,20 @@
 
 @include small {
   .card {
-    width: 100%;
+    width: 400px;
     gap: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@include very-small {
+  .card {
+    padding: 30px 20px;
   }
 }
 

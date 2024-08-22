@@ -1,7 +1,7 @@
 @import "src/Styles/mixins.scss";
 
 .content {
-  
+
 }
 
 .content .title {
@@ -12,11 +12,32 @@
   font-weight: 400;
 }
 
+@include small {
+  .content .title {
+    margin-bottom: 30px;
+    font-size: .7rem;
+  }
+}
+
 .content .subTitle {
   margin-bottom: 71px;
   letter-spacing: .08em;
   font-size: 1.5rem;
   line-height: 1.8em;
+}
+
+@include small {
+  .content .subTitle {
+    margin-bottom: 50px;
+    font-size: 1.1rem;
+  }
+}
+
+@include very-small {
+  .content .subTitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
 }
 
 .content .description {
@@ -25,4 +46,17 @@
   font-size: 1rem;
   line-height: 1.8rem;
   width: 340px;
+}
+
+@include small {
+  .content .description {
+    width: 290px;
+    font-size: .8rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .content .description {
+    width: 100%;
+  }
 }
