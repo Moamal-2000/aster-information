@@ -21,3 +21,9 @@
     justify-content: flex-start;
   }
 }
+
+@include small {
+  .footer {
+    padding-bottom: 0;
+  }
+}
