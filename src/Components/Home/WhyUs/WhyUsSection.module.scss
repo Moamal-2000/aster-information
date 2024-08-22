@@ -1,7 +1,7 @@
 @import "src/Styles/mixins.scss";
 
 .whyUsSection {
-  padding: 500px 0;
+  padding: 120px 0;
 }
 
 .backgroundImg {
@@ -21,9 +21,9 @@
   background-color: var(--black);
   color: var(--white);
   width: 490px;
-  padding: 56px 31px 66px 92px;
+  padding: 56px 31px 66px;
   display: flex;
-  gap: 40px;
+  gap: 58px;
   border-radius: 16px;
 }
 
@@ -38,12 +38,22 @@
 .content .title {
   text-transform: uppercase;
   margin-bottom: 42px;
+  letter-spacing: .16em;
+  font-size: .875rem;
+  font-weight: 400;
 }
 
 .content .subTitle {
   margin-bottom: 71px;
+  letter-spacing: .08em;
+  font-size: 1.5rem;
+  line-height: 1.8em;
 }
 
 .content .description {
   margin-bottom: 51px;
+  line-height: 1.8em;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  width: 340px;
 }
