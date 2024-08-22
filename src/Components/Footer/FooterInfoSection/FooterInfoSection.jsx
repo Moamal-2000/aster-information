@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./FooterInfoSection.module.scss";
 
 const FooterInfoSection = () => {
   return (
     <section className={s.infoSection}>
-      <Link to="/">ASTER INFORMATION</Link>
+      <Link to="/">{WEBSITE_NAME}</Link>
 
       <div className={s.wrapper}>
         <ul className={s.nav}>

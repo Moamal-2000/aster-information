@@ -13,6 +13,8 @@
   letter-spacing: .35em;
   color: var(--black);
   margin-bottom: 44px;
+  text-transform: uppercase;
+  width: fit-content;
 }
 
 @include small {

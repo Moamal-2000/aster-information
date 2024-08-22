@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { WEBSITE_NAME } from "src/Data/variables";
 import SvgIcon from "../Shared/MiniComponents/SvgIcon";
 import s from "./Header.module.scss";
 import MobileNav from "./MobileNav/MobileNav";
@@ -10,7 +11,7 @@ const Header = () => {
       <div className="container">
         <Link to="/">
           <SvgIcon name="mainIcon" />
-          <span>ASTER INFORMATION</span>
+          <span>{WEBSITE_NAME}</span>
         </Link>
 
         <MobileNav />
