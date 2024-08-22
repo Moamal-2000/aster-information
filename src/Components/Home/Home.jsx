@@ -4,6 +4,7 @@ import HomeBackground from "./HomeHeroSection/HomeBackground/HomeBackground";
 import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import VisionSection from "./VisionSection/VisionSection";
+import WhyUsSection from "./WhyUs/WhyUsSection";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
 
         <VisionSection />
         <ServicesSection />
+        <WhyUsSection />
       </main>
     </>
   );
