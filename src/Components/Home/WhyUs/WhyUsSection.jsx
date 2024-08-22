@@ -1,4 +1,5 @@
 import { WEBSITE_NAME } from "src/Data/variables";
+import Button from "../../Shared/Buttons/Button/Button";
 import AnimatedLine from "../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./WhyUsSection.module.scss";
 
@@ -36,7 +37,7 @@ const WhyUsSection = () => {
               and strategic growth across industries.
             </p>
 
-            <button type="button">Read More</button>
+            <Button text="Read More" path="/about" invertColors={true} />
           </div>
         </div>
       </div>

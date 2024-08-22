@@ -5,6 +5,10 @@
   display: flex;
   width: fit-content;
   border-radius: 8px;
+
+  &.invert {
+    border-color: var(--white);
+  }
 }
 
 @include small {
@@ -27,9 +31,18 @@
   transition: color .4s ease, background-color .4s ease;
 }
 
+.button.invert>span {
+  color: var(--white);
+}
+
 .button:hover>span {
   background-color: var(--black);
   color: var(--white);
+}
+
+.button.invert:hover>span {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .button .arrowHolder {
@@ -38,7 +51,15 @@
   @include center-x-y;
 }
 
+.button.invert .arrowHolder {
+  border-left-color: var(--white);
+}
+
 .button .arrowHolder>svg {
   width: 16px;
   height: 16px;
+}
+
+.button.invert .arrowHolder>svg {
+  fill: var(--white);
 }
