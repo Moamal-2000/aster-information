@@ -1,6 +1,15 @@
+@import "src/Styles/mixins.scss";
+
 :root {
+  --website-width: 1518px;
   --container-width: 1400px;
   --button-active-scale: .991;
   --shadow-height: 380px;
   --left-margin-content: 30px;
+}
+
+@media (max-width: 1510px) {
+  :root {
+    --website-width: 1510px;
+  }
 }

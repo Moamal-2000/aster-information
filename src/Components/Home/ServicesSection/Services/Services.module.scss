@@ -3,8 +3,9 @@
 .services {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  // gap: 60px;
   margin-bottom: 190px;
+  // background-color: rgba(0, 0, 255, 0.155);
 }
 
 @include large {
@@ -35,7 +36,7 @@
 }
 
 .services [data-container] {
-  position: relative;
+  // position: relative;
 }
 
 @media (max-width: 1500px) {
@@ -56,6 +57,7 @@
 .serviceImgHolder {
   position: absolute;
   top: 0;
+  width: 50%;
 }
 
 @include large {
@@ -85,7 +87,7 @@
 }
 
 .serviceImgHolder1>img {
-  scale: 1.25;
+  // scale: 1.25;
 }
 
 @media (max-width: 1300px) {
@@ -95,8 +97,8 @@
 }
 
 [dir=rtl] .serviceImgHolder2 {
-  width: 634px;
-  height: 680px;
+  width: 759px;
+  // height: 540px;
 }
 
 @include medium {
@@ -125,27 +127,5 @@
   [dir=ltr] .serviceImgHolder3 {
     width: 100%;
     scale: 1.06 1;
-  }
-}
-
-[dir=ltr] .serviceImgHolder3::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  background-color: var(--website-bg);
-}
-
-@include medium {
-  [dir=ltr] .serviceImgHolder3::before {
-    display: none;
-  }
-}
-
-@include small {
-  [dir=ltr] .serviceImgHolder3::before {
-    display: block;
   }
 }
