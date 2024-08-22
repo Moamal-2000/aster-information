@@ -21,7 +21,13 @@
 
 .servicesIntro .animatedLine {
   position: absolute;
-  left: -57px;
+  left: -30px;
+}
+
+@media (max-width: 1600px) {
+  .servicesIntro .animatedLine {
+    left: -57px;
+  }
 }
 
 @media (max-width: 1300px) and (min-width: 1200px) {
