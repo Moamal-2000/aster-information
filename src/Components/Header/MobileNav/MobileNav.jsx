@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { NavLink } from "react-router-dom";
+import { navLinksData } from "src/Data/staticData";
 import { watchScrollState } from "src/Functions/componentsFunctions";
 import s from "./MobileNav.module.scss";
 
@@ -15,15 +16,11 @@ const MobileNav = () => {
   return (
     <nav className={`${s.nav} ${activeClass}`}>
       <ul>
-        <li>
-          <NavLink to="/technology">Technology</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/careers">Careers</NavLink>
-        </li>
+        {navLinksData.map(({ id, path, text }) => (
+          <li key={id}>
+            <NavLink to={path}>{text}</NavLink>
+          </li>
+        ))}
       </ul>
     </nav>
   );

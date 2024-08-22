@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./FooterInfoSection.module.scss";
+import { navLinksData } from "src/Data/staticData";
 
 const FooterInfoSection = () => {
   return (
@@ -9,15 +10,11 @@ const FooterInfoSection = () => {
 
       <div className={s.wrapper}>
         <ul className={s.nav}>
-          <li>
-            <Link to="/technology">Technology</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/careers">Careers</Link>
-          </li>
+          {navLinksData.map(({ id, path, text }) => (
+            <li key={id}>
+              <Link to={path}>{text}</Link>
+            </li>
+          ))}
         </ul>
 
         <div className={s.details}>
