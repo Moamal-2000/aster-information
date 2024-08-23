@@ -17,6 +17,12 @@
   }
 }
 
+@include small {
+  .infoSection {
+    padding-top: 100px;
+  }
+}
+
 .infoSection [data-container] {
   display: flex;
   justify-content: flex-end;
@@ -55,5 +61,17 @@
     translate: 0;
     width: 100%;
     background-position-x: 50%;
+  }
+}
+
+@include small {
+  .backgroundImg {
+    height: 500px;
+  }
+}
+
+@include very-small {
+  .backgroundImg {
+    height: 350px;
   }
 }

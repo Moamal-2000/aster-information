@@ -16,6 +16,18 @@
   }
 }
 
+@include small {
+  .content>h2 {
+    font-size: 1.4rem;
+  }
+}
+
+@include very-small {
+  .content>h2 {
+    font-size: 1.2rem;
+  }
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -27,5 +39,11 @@
   .stats {
     width: fit-content;
     margin: 0 auto;
+  }
+}
+
+@include small {
+  .stats {
+    gap: 60px 50px;
   }
 }

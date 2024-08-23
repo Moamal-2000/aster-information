@@ -10,10 +10,17 @@
   letter-spacing: .08em;
   font-size: 2.5rem;
   opacity: 0;
+  width: fit-content;
   transition: opacity 1s ease;
 
   &.active {
     opacity: 1;
+  }
+}
+
+@include small {
+  .stat>span {
+    font-size: 2rem;
   }
 }
 
@@ -22,4 +29,11 @@
   font-size: .875rem;
   font-weight: 400;
   text-transform: uppercase;
+  width: fit-content;
+}
+
+@include small {
+  .stat>h3 {
+    font-size: .7rem;
+  }
 }

@@ -7,6 +7,12 @@
   position: relative;
 }
 
+@include small {
+  .line {
+    width: 100%;
+  }
+}
+
 .line .animatedLine {
   background-color: var(--black);
   width: 24px;
