@@ -41,6 +41,12 @@
   display: flex;
   gap: 30px;
   border-radius: 16px;
+  top: 120px;
+  transition: top 1s .2s ease-in-out;
+
+  &.active {
+    top: 0;
+  }
 }
 
 @media (max-width: 1600px) {

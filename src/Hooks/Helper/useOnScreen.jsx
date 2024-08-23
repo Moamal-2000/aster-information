@@ -17,7 +17,7 @@ function useOnScreen(ref, options = { rootMargin: "0px", threshold: 1 }) {
       if (!ref.current) return;
       observer.unobserve(ref.current);
     };
-  }, []);
+  }, [options]);
 
   return isVisible;
 }
