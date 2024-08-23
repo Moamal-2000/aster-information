@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import s from "./Home.module.scss";
 import HomeBackground from "./HomeHeroSection/HomeBackground/HomeBackground";
 import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
+import IndustrySection from "./IndustrySection/IndustrySection";
 import IntoStatsSection from "./InfoStatsSection/InfoStatsSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import VisionSection from "./VisionSection/VisionSection";
@@ -26,6 +27,7 @@ const Home = () => {
         <ServicesSection />
         <WhyUsSection />
         <IntoStatsSection />
+        <IndustrySection />
       </main>
     </>
   );
