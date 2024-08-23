@@ -4,6 +4,17 @@
   padding: 150px 0 82px;
   background-color: var(--black);
   color: var(--white);
+  position: relative;
+}
+
+.industrySection::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--light-gray);
+  width: 100%;
+  height: 1px;
 }
 
 .industrySection [data-container] {

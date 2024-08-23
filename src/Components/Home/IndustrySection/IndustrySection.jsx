@@ -7,7 +7,12 @@ const IndustrySection = () => {
     <section className={s.industrySection}>
       <div className="container" data-container>
         <div className={s.animatedLine}>
-          <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />
+          <AnimatedLine
+            lineHeight="444px"
+            animatedLineHeight="86px"
+            yAxis="100px"
+            animateTo="60px"
+          />
         </div>
         <IndustryContent />
       </div>
