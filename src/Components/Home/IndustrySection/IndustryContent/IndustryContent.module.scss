@@ -1,0 +1,27 @@
+@import "src/Styles/mixins.scss";
+
+.content {
+
+}
+
+.content .title {
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  letter-spacing: .16em;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.content .subTitle {
+  margin-bottom: 71px;
+  letter-spacing: .08em;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+}
+
+.content .description {
+  margin-bottom: 71px;
+  letter-spacing: .08em;
+  font-size: 1.5rem;
+  line-height: 1.8em;
+}

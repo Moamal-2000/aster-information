@@ -1,6 +1,34 @@
 @import "src/Styles/mixins.scss";
 
 .industrySection {
-  padding: 150px 0;
+  padding: 150px 0 82px;
   background-color: var(--black);
+  color: var(--white);
+}
+
+.industrySection [data-container] {
+  position: relative;
+}
+
+.animatedLine {
+  position: absolute;
+  left: -30px;
+}
+
+@media (max-width: 1600px) {
+  .animatedLine {
+    left: -57px;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .animatedLine {
+    left: -25px;
+  }
+}
+
+@include small {
+  .animatedLine {
+    left: 0;
+  }
 }
