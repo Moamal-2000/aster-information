@@ -1,3 +1,4 @@
+import InfoSectionContent from "./InfoSectionContent/InfoSectionContent";
 import s from "./InfoStatsSection.module.scss";
 
 const InfoStatsSection = () => {
@@ -5,7 +6,9 @@ const InfoStatsSection = () => {
     <section className={s.infoSection}>
       <div className={s.backgroundImg} />
 
-      <div className="container"></div>
+      <div className="container">
+        <InfoSectionContent />
+      </div>
     </section>
   );
 };
