@@ -6,6 +6,7 @@
   --button-active-scale: .991;
   --shadow-height: 380px;
   --left-margin-content: 30px;
+  --why-us-section-padding: 120px;
 }
 
 @media (max-width: 1600px) {
@@ -35,6 +36,7 @@
 @include medium {
   :root {
     --container-width: 700px;
+    --why-us-section-padding: 80px;
   }
 }
 
