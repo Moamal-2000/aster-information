@@ -1,0 +1,13 @@
+@import "src/Styles/mixins.scss";
+
+.line {
+  background-color: var(--gray);
+  width: 169px;
+  height: 1px;
+}
+
+.line .animatedLine {
+  background-color: var(--black);
+  width: 24px;
+  height: 2px;
+}

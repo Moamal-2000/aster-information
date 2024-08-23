@@ -1,4 +1,5 @@
 import { infoStatsData } from "src/Data/staticData";
+import HorizontalAnimatedLine from "../../../Shared/MiniComponents/horizontalAnimatedLine/horizontalAnimatedLine";
 import s from "./InfoSectionContent.module.scss";
 
 const InfoSectionContent = () => {
@@ -10,10 +11,7 @@ const InfoSectionContent = () => {
         {infoStatsData.map(({ id, title, value }) => (
           <div className={s.stat} key={id}>
             <span>{value}</span>
-            {/* <horizontalAnimatedLine /> */}
-            <div className={s.line}>
-              <div className={s.animatedLine}></div>
-            </div>
+            <HorizontalAnimatedLine />
             <h3>{title}</h3>
           </div>
         ))}
