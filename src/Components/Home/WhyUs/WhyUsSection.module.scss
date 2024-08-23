@@ -2,18 +2,34 @@
 
 .whyUsSection {
   padding: 120px 0;
+  position: relative;
+}
+
+@media (max-width: 1600px) {
+  .whyUsSection {
+    position: static;
+  }
 }
 
 .backgroundImg {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   background-image: url("src/Assets/Images/servers.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position-y: -50px;
+  scale: 1 1.3;
   width: 100%;
   z-index: -1000;
-  height: 100dvh;
+  height: 100%;
+}
+
+@media (max-width: 1600px) {
+  .backgroundImg {
+    position: fixed;
+    background-size: cover;
+  }
 }
 
 .card {
