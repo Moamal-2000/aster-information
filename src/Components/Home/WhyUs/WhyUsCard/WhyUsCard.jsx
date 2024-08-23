@@ -23,6 +23,7 @@ const WhyUsCard = () => {
           lineHeight="505px"
           yAxis="150px"
           animateTo="60px"
+          delay=".9s"
           lineColors={{
             lineColor: "#b4b4b4",
             animatedLineColor: "#fff",

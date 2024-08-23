@@ -14,7 +14,7 @@
   background-color: var(--white);
   width: 3px;
   height: 129px;
-  transition: top 1s .3s;
+  transition: top 1s;
 
   &.active {
     top: 60px !important;

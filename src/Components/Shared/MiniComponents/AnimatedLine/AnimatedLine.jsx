@@ -9,6 +9,7 @@ const AnimatedLine = ({
   animatedLineHeight,
   yAxis,
   animateTo,
+  delay,
   lineColors,
 }) => {
   const lineRef = useRef();
@@ -21,6 +22,7 @@ const AnimatedLine = ({
     lineHeight,
     yAxis,
     animateTo,
+    delay,
     lineColors,
     hasAnimated,
     animatedLineHeight,
