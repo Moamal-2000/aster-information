@@ -5,8 +5,8 @@ const InfoSectionContent = () => {
     <div className={s.content}>
       <h2>Aster Info In Numbers</h2>
 
-      <div className={s.states}>
-        <div className={s.state}>
+      <div className={s.stats}>
+        <div className={s.stat}>
           <span>5</span>
 
           {/* <horizontalAnimatedLine /> */}

@@ -5,29 +5,45 @@
 }
 
 .content>h2 {
-
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 74px;
 }
 
-.states {
-
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 88px 97px;
 }
 
-.states .state {
-
+.stats .stat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.state>span {
-
+.stat>span {
+  letter-spacing: .08em;
+  font-size: 2.5rem;
 }
 
 .line {
-
+  background-color: var(--gray);
+  width: 169px;
+  height: 1px;
 }
 
-.line>.animatedLine {
-
+.line .animatedLine {
+  background-color: var(--black);
+  width: 24px;
+  height: 2px;
 }
 
-.state>h3 {
-
+.stat>h3 {
+  letter-spacing: .16em;
+  font-size: .875rem;
+  font-weight: 400;
 }
