@@ -1,0 +1,19 @@
+@import "src/Styles/mixins.scss";
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stat>span {
+  letter-spacing: .08em;
+  font-size: 2.5rem;
+}
+
+.stat>h3 {
+  letter-spacing: .16em;
+  font-size: .875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
