@@ -9,10 +9,15 @@ const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {
   const isElementVisible = useOnScreen(lineRef);
   const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
   const activeClass = hasAnimated ? s.active : "";
+  const delay = `${(parseFloat(lineDelay) - .2).toFixed(1)}s`;
 
   return (
     <div className={s.stat}>
-      <span className={activeClass} ref={lineRef}>
+      <span
+        className={activeClass}
+        ref={lineRef}
+        style={{ transitionDelay: delay }}
+      >
         {value}
       </span>
       <HorizontalAnimatedLine delay={lineDelay} />

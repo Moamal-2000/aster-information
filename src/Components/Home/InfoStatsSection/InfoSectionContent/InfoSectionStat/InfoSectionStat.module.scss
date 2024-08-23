@@ -9,6 +9,12 @@
 .stat>span {
   letter-spacing: .08em;
   font-size: 2.5rem;
+  opacity: 0;
+  transition: opacity 1s ease;
+
+  &.active {
+    opacity: 1;
+  }
 }
 
 .stat>h3 {

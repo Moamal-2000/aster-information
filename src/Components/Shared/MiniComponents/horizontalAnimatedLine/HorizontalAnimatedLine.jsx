@@ -11,7 +11,7 @@ const HorizontalAnimatedLine = ({ delay = "0.2s" }) => {
 
   return (
     <div className={`${s.line} ${activeClass}`} ref={lineRef}>
-      <div className={s.animatedLine} style={{ transitionDelay: `${delay}` }} />
+      <div className={s.animatedLine} style={{ transitionDelay: delay }} />
     </div>
   );
 };
