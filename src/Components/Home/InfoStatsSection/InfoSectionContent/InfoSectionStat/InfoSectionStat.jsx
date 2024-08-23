@@ -9,7 +9,7 @@ const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {
   const isElementVisible = useOnScreen(lineRef);
   const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
   const activeClass = hasAnimated ? s.active : "";
-  const delay = `${(parseFloat(lineDelay) - .2).toFixed(1)}s`;
+  const delay = `${(parseFloat(lineDelay) - 0.2).toFixed(1)}s`;
 
   return (
     <div className={s.stat}>

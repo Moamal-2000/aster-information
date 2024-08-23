@@ -10,9 +10,22 @@
   margin-bottom: 74px;
 }
 
+@include large {
+  .content>h2 {
+    text-align: center;
+  }
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-columns: repeat(2, 1fr);
   gap: 88px 97px;
+}
+
+@include large {
+  .stats {
+    width: fit-content;
+    margin: 0 auto;
+  }
 }

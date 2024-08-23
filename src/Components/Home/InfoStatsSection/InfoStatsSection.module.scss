@@ -5,11 +5,28 @@
   position: relative;
   padding: 170px 0;
   height: 760px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+@include large {
+  .infoSection {
+    height: auto;
+    padding-bottom: 0;
+  }
 }
 
 .infoSection [data-container] {
   display: flex;
   justify-content: flex-end;
+}
+
+@include large {
+  .infoSection [data-container] {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .backgroundImg {
@@ -20,6 +37,23 @@
   background-image: url("src/Assets/Images/info-section-bg.webp");
   background-repeat: no-repeat;
   background-size: contain;
-  width: 759px;
+  width: 760px;
   height: 760px;
+}
+
+@media (max-width: 1500px) {
+  .backgroundImg {
+    width: 600px;
+    height: 600px;
+  }
+}
+
+@include large {
+  .backgroundImg {
+    position: static;
+    inset: auto;
+    translate: 0;
+    width: 100%;
+    background-position-x: 50%;
+  }
 }
