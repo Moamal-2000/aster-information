@@ -8,10 +8,10 @@ const InfoSectionContent = () => {
       <h2>Aster Info In Numbers</h2>
 
       <div className={s.stats}>
-        {infoStatsData.map(({ id, title, value }) => (
+        {infoStatsData.map(({ id, title, value, lineDelay }) => (
           <div className={s.stat} key={id}>
             <span>{value}</span>
-            <HorizontalAnimatedLine />
+            <HorizontalAnimatedLine delay={lineDelay} />
             <h3>{title}</h3>
           </div>
         ))}

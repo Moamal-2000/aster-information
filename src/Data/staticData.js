@@ -55,20 +55,24 @@ export const infoStatsData = [
     id: 1,
     title: "Employees",
     value: "5",
+    lineDelay: ".3s",
   },
   {
     id: 2,
     title: "Core teams",
     value: "2",
+    lineDelay: ".5s",
   },
   {
     id: 3,
     title: "Capital",
     value: "1M$",
+    lineDelay: ".4s",
   },
   {
     id: 4,
     title: "Partners",
     value: "10",
+    lineDelay: ".6s",
   },
 ];
