@@ -2,8 +2,24 @@
 
 .infoSection {
   background-color: var(--website-bg);
+  position: relative;
+  padding: 170px 0;
+  height: 760px;
+}
+
+.infoSection [data-container] {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .backgroundImg {
-  
+  position: absolute;
+  left: 0;
+  top: 50%;
+  translate: 0 -50%;
+  background-image: url("src/Assets/Images/info-section-bg.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 759px;
+  height: 760px;
 }

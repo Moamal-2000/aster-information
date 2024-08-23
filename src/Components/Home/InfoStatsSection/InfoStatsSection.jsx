@@ -6,7 +6,7 @@ const InfoStatsSection = () => {
     <section className={s.infoSection}>
       <div className={s.backgroundImg} />
 
-      <div className="container">
+      <div className="container" data-container>
         <InfoSectionContent />
       </div>
     </section>

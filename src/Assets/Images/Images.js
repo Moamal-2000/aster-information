@@ -8,7 +8,7 @@ import homeBgBottom from "./home-bg-bottom.png";
 import homeBgTop from "./home-bg-top.png";
 import idiSoftwareLogo from "./IDI-software.webp";
 import imogenCarsLogo from "./imogen-cars.webp";
-import infoSectionBg from "./info-section-vg.webp";
+import infoSectionBg from "./info-section-bg.webp";
 import instagramLogo from "./instagram.webp";
 import joinOurTeamBg from "./join-our-team-bg.webp";
 import linkedinLogo from "./linkedin.webp";
@@ -18,7 +18,7 @@ import microsoftLogo from "./microsoft-logo.webp";
 import ourMissionSectionBg from "./our-mission-section-bg.jpg";
 import paloAltotRibunal from "./palo-altot-ribunal.webp";
 import pngaaaLogo from "./pngaaa-logo.webp";
-import serversImage from "./servers.jpg";
+import whyUsSectionBg from "./why-us-section-bg.jpg";
 import serviceSectionBg1 from "./services-bg1.webp";
 import serviceSectionBg2 from "./services-bg2.webp";
 import serviceSectionBg3 from "./services-bg3.webp";
@@ -48,7 +48,7 @@ export {
   ourMissionSectionBg,
   paloAltotRibunal,
   pngaaaLogo,
-  serversImage,
+  whyUsSectionBg,
   serviceSectionBg1,
   serviceSectionBg2,
   serviceSectionBg3,
