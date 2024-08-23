@@ -10,8 +10,8 @@
   right: 20px;
   bottom: 50px;
   z-index: 1000;
-  // opacity: 0;
-  // pointer-events: none;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity .4s ease;
 
   &.active {
