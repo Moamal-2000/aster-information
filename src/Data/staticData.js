@@ -49,3 +49,26 @@ export const navLinksData = [
     text: "Careers",
   },
 ];
+
+export const infoStatsData = [
+  {
+    id: 1,
+    title: "Employees",
+    value: "5",
+  },
+  {
+    id: 2,
+    title: "Core teams",
+    value: "2",
+  },
+  {
+    id: 3,
+    title: "Capital",
+    value: "1M$",
+  },
+  {
+    id: 4,
+    title: "Partners",
+    value: "10",
+  },
+];

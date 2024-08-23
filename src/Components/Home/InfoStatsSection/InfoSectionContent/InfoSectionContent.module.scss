@@ -1,8 +1,6 @@
 @import "src/Styles/mixins.scss";
 
-.content {
-
-}
+.content {}
 
 .content>h2 {
   letter-spacing: .08em;
@@ -46,4 +44,5 @@
   letter-spacing: .16em;
   font-size: .875rem;
   font-weight: 400;
+  text-transform: uppercase;
 }
