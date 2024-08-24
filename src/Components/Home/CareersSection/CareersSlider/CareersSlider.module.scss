@@ -9,6 +9,25 @@
   position: relative;
 }
 
+@include small {
+  .slider {
+    width: 320px;
+    padding: 50px 20px 32px;
+  }
+}
+
+@include very-small {
+  .slider {
+    width: 100%;
+  }
+}
+
 .slideSpace {
   height: 370px;
+}
+
+@include small {
+  .slideSpace {
+    height: 320px;
+  }
 }

@@ -2,6 +2,7 @@
 
 .slide {
   height: 460px;
+  width: calc(100% - 80px);
   position: absolute;
   top: 50px;
   left: 40px;
@@ -15,6 +16,14 @@
   }
 }
 
+@include small {
+  .slide {
+    width: calc(100% - 40px);
+    left: 20px;
+    height: 320px;
+  }
+}
+
 .title {
   letter-spacing: .08em;
   line-height: 1.8em;
@@ -24,12 +33,26 @@
   height: 70px;
 }
 
+@include small {
+  .title {
+    margin-bottom: 40px;
+    font-size: .9rem;
+    height: 50px;
+  }
+}
+
 .location {
   letter-spacing: .08em;
   line-height: 1.8em;
   font-size: .875rem;
   margin-bottom: 20px;
   color: var(--light-gray);
+}
+
+@include small {
+  .location {
+    font-size: .7rem;
+  }
 }
 
 .location>strong {
@@ -42,4 +65,11 @@
   font-size: 1rem;
   margin-bottom: 33px;
   height: 150px;
+}
+
+@include small {
+  .description {
+    font-size: .8rem;
+    height: 130px;
+  }
 }

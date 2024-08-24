@@ -8,6 +8,13 @@
 @include small {
   .content {
     margin-left: var(--left-margin-content);
+    width: 307px;
+  }
+}
+
+@include very-small {
+  .content {
+    width: calc(100% - var(--left-margin-content));
   }
 }
 
@@ -59,6 +66,12 @@
 @include small {
   .content .subTitle {
     margin-bottom: 50px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@include very-small {
+  .content .subTitle {
+    font-size: 1rem;
   }
 }

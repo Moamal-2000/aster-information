@@ -12,3 +12,10 @@
   justify-content: space-between;
   gap: 40px;
 }
+
+@include large {
+  .careersSection [data-container] {
+    flex-direction: column;
+    gap: 90px;
+  }
+}
