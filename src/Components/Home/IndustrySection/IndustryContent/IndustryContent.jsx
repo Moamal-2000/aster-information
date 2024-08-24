@@ -1,8 +1,18 @@
+import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./IndustryContent.module.scss";
 
 const IndustryContent = () => {
   return (
     <div className={s.content}>
+      <div className={s.animatedLine}>
+        <AnimatedLine
+          lineHeight="444px"
+          animatedLineHeight="86px"
+          yAxis="100px"
+          animateTo="60px"
+        />
+      </div>
+
       <h2 className={s.title}>INDUSTRY</h2>
       <p className={s.subTitle}>Our Partners</p>
 

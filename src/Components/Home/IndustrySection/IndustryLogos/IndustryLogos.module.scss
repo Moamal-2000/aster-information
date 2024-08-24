@@ -6,4 +6,11 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 80px 10px;
   align-items: flex-start;
+  padding-top: 10px;
+}
+
+@include large {
+  .logos {
+    gap: 60px 0;
+  }
 }

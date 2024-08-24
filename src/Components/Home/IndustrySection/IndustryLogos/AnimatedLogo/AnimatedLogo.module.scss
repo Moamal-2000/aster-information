@@ -9,6 +9,12 @@
   gap: 24px;
 }
 
+@include large {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 .logoHolder {
   display: flex;
   justify-content: center;
