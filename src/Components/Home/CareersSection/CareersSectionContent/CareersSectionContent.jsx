@@ -6,7 +6,12 @@ const CareersSectionContent = () => {
   return (
     <div className={s.content}>
       <div className={s.animatedLine}>
-        <AnimatedLine lineHeight="470px" yAxis="150px" animateTo="70px" />
+        <AnimatedLine
+          lineHeight="360px"
+          animatedLineHeight="180px"
+          yAxis="140px"
+          animateTo="55px"
+        />
       </div>
 
       <h2 className={s.title}>Careers</h2>

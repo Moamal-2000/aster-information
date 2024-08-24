@@ -1,17 +1,65 @@
 @import "src/Styles/mixins.scss";
 
-.content {
 
+.content {
+  position: relative;
+  width: 374px;
+}
+
+@include small {
+  .content {
+    margin-left: var(--left-margin-content);
+  }
 }
 
 .animatedLine {
-  
+  position: absolute;
+  left: -30px;
 }
 
-.title {
-
+@media (max-width: 1600px) {
+  .animatedLine {
+    left: -57px;
+  }
 }
 
-.subtitle {
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .animatedLine {
+    left: -25px;
+  }
+}
 
+@include small {
+  .animatedLine {
+    left: -25px;
+  }
+}
+
+.content .title {
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  letter-spacing: .16em;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+@include small {
+  .content .title {
+    margin-bottom: 30px;
+    font-size: .7rem;
+  }
+}
+
+.content .subTitle {
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  margin-bottom: 90px;
+}
+
+@include small {
+  .content .subTitle {
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+  }
 }
