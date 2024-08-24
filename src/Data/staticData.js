@@ -123,7 +123,7 @@ export const careersSliderData = [
   },
   {
     id: 2,
-    title: "ARTIFICIAL INTELLIGENCE RESEARCHER",
+    title: "DATA SCIENTIST",
     location: "Remote",
     description: `In search of a Data Scientist with a strong statistical background,
     deep understanding of machine learning algorithms, and passion for turning
