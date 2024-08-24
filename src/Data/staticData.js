@@ -1,9 +1,13 @@
 import {
   facebookLogo,
+  generalTransportLogo,
+  idiSoftwareLogo,
+  imogenCarsLogo,
   instagramLogo,
   linkedinLogo,
+  triNexLogo,
   twitterLogo,
-} from "src/Assets/Images/Images";
+} from "../Assets/Images/Images";
 
 export const socialMedia = [
   {
@@ -74,5 +78,31 @@ export const infoStatsData = [
     title: "Partners",
     value: "10",
     lineDelay: ".6s",
+  },
+];
+
+export const industryLogosData = [
+  {
+    id: 1,
+    title: "VXV DATA",
+    logo: generalTransportLogo,
+  },
+
+  {
+    id: 2,
+    title: "I-AI SOFTWARE",
+    logo: idiSoftwareLogo,
+  },
+
+  {
+    id: 3,
+    title: "IMAGINE CONSULTING",
+    logo: imogenCarsLogo,
+  },
+
+  {
+    id: 4,
+    title: "777 INDEX",
+    logo: triNexLogo,
   },
 ];

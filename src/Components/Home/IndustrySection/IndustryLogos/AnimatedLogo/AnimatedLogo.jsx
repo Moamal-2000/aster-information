@@ -1,10 +1,14 @@
-import s from "./AnimatedLogo.module.scss"
+import s from "./AnimatedLogo.module.scss";
 
-const AnimatedLogo = ({ imgSrc, imgAlt }) => {
+const AnimatedLogo = ({ imgSrc, imgAlt, title }) => {
   return (
-    <div className={s.logoHolder}>
-      <img src={imgSrc} alt={imgAlt} />
+    <div className={s.wrapper}>
+      <div className={s.logoHolder}>
+        <img src={imgSrc} alt={imgAlt} />
+      </div>
+
+      <h2>{title}</h2>
     </div>
-  )
-}
-export default AnimatedLogo
+  );
+};
+export default AnimatedLogo;
