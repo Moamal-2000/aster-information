@@ -1,5 +1,6 @@
 import AnimatedLine from "../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import IndustryContent from "./IndustryContent/IndustryContent";
+import IndustryLogos from "./IndustryLogos/IndustryLogos";
 import s from "./IndustrySection.module.scss";
 
 const IndustrySection = () => {
@@ -15,6 +16,8 @@ const IndustrySection = () => {
           />
         </div>
         <IndustryContent />
+
+        <IndustryLogos />
       </div>
     </section>
   );
