@@ -1,5 +1,9 @@
 @import "src/Styles/mixins.scss";
 
 .logos {
-  
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 80px 10px;
+  align-items: flex-start;
 }

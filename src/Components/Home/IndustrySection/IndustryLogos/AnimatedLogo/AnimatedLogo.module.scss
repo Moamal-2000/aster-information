@@ -1,9 +1,31 @@
 @import "src/Styles/mixins.scss";
 
-.logoHolder {
+.wrapper {
+  width: 240px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 
+.logoHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
 }
 
 .logo>img {
-  
+  height: 140px;
+}
+
+.wrapper>h2 {
+  letter-spacing: .16em;
+  line-height: 1.8em;
+  text-align: center;
+  font-size: .875rem;
+  font-weight: 400;
+  text-transform: uppercase;
 }
