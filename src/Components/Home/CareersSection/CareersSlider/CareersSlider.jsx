@@ -24,6 +24,7 @@ const CareersSlider = () => {
       <CareersPaginationDots
         sliderLength={careersSliderData.length}
         activeDot={activeSlide}
+        setActiveSlide={setActiveSlide}
       />
     </div>
   );
