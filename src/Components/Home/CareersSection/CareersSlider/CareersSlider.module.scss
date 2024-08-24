@@ -7,34 +7,3 @@
   border-radius: 16px;
   padding: 50px 40px 32px;
 }
-
-.slide {
-  height: 370px;
-}
-
-.title {
-  letter-spacing: .08em;
-  line-height: 1.8em;
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin-bottom: 62px;
-}
-
-.location {
-  letter-spacing: .08em;
-  line-height: 1.8em;
-  font-size: .875rem;
-  margin-bottom: 20px;
-  color: var(--light-gray);
-}
-
-.location>strong {
-  font-weight: 400;
-}
-
-.description {
-  letter-spacing: .04em;
-  line-height: 1.8em;
-  font-size: 1rem;
-  margin-bottom: 33px;
-}
