@@ -7,6 +7,7 @@ import IntoStatsSection from "./InfoStatsSection/InfoStatsSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import VisionSection from "./VisionSection/VisionSection";
 import WhyUsSection from "./WhyUs/WhyUsSection";
+import CareersSection from "./CareersSection/CareersSection";
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         <WhyUsSection />
         <IntoStatsSection />
         <IndustrySection />
+        <CareersSection />
       </main>
     </>
   );

@@ -1,0 +1,11 @@
+@import "src/Styles/mixins.scss";
+
+.careersSection {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 120px 0;
+}
+
+.careersSection [data-container] {
+  
+}
