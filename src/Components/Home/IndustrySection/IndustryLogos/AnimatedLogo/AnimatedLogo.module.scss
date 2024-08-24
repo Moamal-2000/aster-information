@@ -15,6 +15,14 @@
   }
 }
 
+@include small {
+  .wrapper {
+    gap: 12px;
+    height: 140px;
+    width: 140px;
+  }
+}
+
 .logoHolder {
   display: flex;
   justify-content: center;
@@ -23,8 +31,20 @@
   height: 120px;
 }
 
-.logo>img {
+.logoHolder>img {
   height: 140px;
+}
+
+@include small {
+  .logoHolder>img {
+    scale: .8;
+  }
+}
+
+@include very-small {
+  .logoHolder>img {
+    scale: .6;
+  }
 }
 
 .wrapper>h2 {
@@ -34,4 +54,11 @@
   font-size: .875rem;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@include small {
+  .wrapper>h2 {
+    font-size: .7rem;
+    letter-spacing: .1em;
+  }
 }

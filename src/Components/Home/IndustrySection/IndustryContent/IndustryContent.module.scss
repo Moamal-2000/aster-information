@@ -29,7 +29,7 @@
 
 @include small {
   .animatedLine {
-    left: calc(var(--left-margin-content) - (var(--left-margin-content) * 2));
+    left: -25px;
   }
 }
 
@@ -72,5 +72,12 @@
 @include small {
   .content .description {
     font-size: .8rem;
+    width: 230px;
+  }
+}
+
+@include very-small {
+  .content .description {
+    width: 100%;
   }
 }

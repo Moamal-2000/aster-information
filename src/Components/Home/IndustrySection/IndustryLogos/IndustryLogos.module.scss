@@ -14,3 +14,15 @@
     gap: 60px 0;
   }
 }
+
+@include small {
+  .logos {
+    gap: 40px 50px;
+  }
+}
+
+@include very-small {
+  .logos {
+    gap: 40px 0;
+  }
+}
