@@ -89,7 +89,6 @@ export const industryLogosData = [
     delay: ".3s",
     width: "150px",
   },
-
   {
     id: 2,
     title: "I-AI SOFTWARE",
@@ -97,7 +96,6 @@ export const industryLogosData = [
     delay: ".6s",
     width: "88px",
   },
-
   {
     id: 3,
     title: "IMAGINE CONSULTING",
@@ -105,12 +103,45 @@ export const industryLogosData = [
     delay: ".3s",
     width: "88px",
   },
-
   {
     id: 4,
     title: "777 INDEX",
     logo: triNexLogo,
     delay: ".8s",
     width: "128px",
+  },
+];
+
+export const careersSliderData = [
+  {
+    id: 1,
+    title: "INTEGRATION ENGINEER",
+    location: "Remote",
+    description: `Seeking a detail-oriented Integration Engineer skilled in system
+      architecture, pretrained in multiple languages, and passionate about
+      data-driven solutions.`,
+  },
+  {
+    id: 2,
+    title: "ARTIFICIAL INTELLIGENCE RESEARCHER",
+    location: "Remote",
+    description: `In search of a Data Scientist with a strong statistical background,
+    deep understanding of machine learning algorithms, and passion for turning
+    data into actionable insights.`,
+  },
+  {
+    id: 3,
+    title: "ARTIFICIAL INTELLIGENCE RESEARCHER",
+    location: "San Francisco, CA",
+    description: `
+    We're on the lookout for an Artificial Intelligence Researcher with expertise in AI,
+    machine learning, and a drive to push the boundaries of technology.`,
+  },
+  {
+    id: 4,
+    title: "DEEP LEARNING ENGINEER",
+    location: "San Francisco, CA",
+    description: `A Deep Learning Engineer with a strong foundation in neural networks,
+    experience with large datasets, and a passion for AI-driven solutions is sought.`,
   },
 ];
