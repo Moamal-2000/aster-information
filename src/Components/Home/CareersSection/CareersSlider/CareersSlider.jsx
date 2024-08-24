@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { careersSliderData } from "src/Data/staticData";
 import CareerSlide from "./CareerSlide/CareerSlide";
+import CareersPaginationDots from "./CareersPaginationDots/CareersPaginationDots";
 import s from "./CareersSlider.module.scss";
 
 const CareersSlider = () => {
@@ -20,7 +21,10 @@ const CareersSlider = () => {
 
       <div className={s.slideSpace} />
 
-      {/* <CareersPaginationDots */}
+      <CareersPaginationDots
+        sliderLength={careersSliderData.length}
+        activeDot={activeSlide}
+      />
     </div>
   );
 };
