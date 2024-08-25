@@ -33,7 +33,10 @@ const CareersSlider = () => {
   useEffect(() => {
     if (isMouseLeave.current) handleSlideSwitching();
 
-    return () => clearTimeout(timerIdRef.current);
+    return () => {
+      clearTimeout(timerIdRef.current);
+      if (!timerIdRef.current) handleSlideSwitching();
+    };
   }, [activeSlide]);
 
   return (
