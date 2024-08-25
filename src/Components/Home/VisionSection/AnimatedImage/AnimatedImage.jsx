@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
+import { visionSectionBg } from "src/Assets/Images/Images";
 import useEventListener from "src/Hooks/Helper/useEventListener";
 import useGetResizeWindow from "src/Hooks/Helper/useGetResizeWindow";
-import { visionSectionBg } from "../../../../Assets/Images/Images";
 import s from "./AnimatedImage.module.scss";
 
 const AnimatedImage = () => {

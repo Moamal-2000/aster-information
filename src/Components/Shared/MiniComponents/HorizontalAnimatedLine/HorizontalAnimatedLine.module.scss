@@ -13,6 +13,12 @@
   }
 }
 
+@include very-small {
+  .line {
+    width: calc(100% - 40px);
+  }
+}
+
 .line .animatedLine {
   background-color: var(--black);
   width: 24px;
