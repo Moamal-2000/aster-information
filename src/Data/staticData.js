@@ -89,27 +89,27 @@ export const industryLogosData = [
     delay: ".2s",
     width: "150px",
   },
-  {
-    id: 2,
-    title: "I-AI SOFTWARE",
-    logo: idiSoftwareLogo,
-    delay: ".4s",
-    width: "88px",
-  },
-  {
-    id: 3,
-    title: "IMAGINE CONSULTING",
-    logo: imogenCarsLogo,
-    delay: ".6s",
-    width: "88px",
-  },
-  {
-    id: 4,
-    title: "777 INDEX",
-    logo: triNexLogo,
-    delay: ".8s",
-    width: "128px",
-  },
+  // {
+  //   id: 2,
+  //   title: "I-AI SOFTWARE",
+  //   logo: idiSoftwareLogo,
+  //   delay: ".4s",
+  //   width: "88px",
+  // },
+  // {
+  //   id: 3,
+  //   title: "IMAGINE CONSULTING",
+  //   logo: imogenCarsLogo,
+  //   delay: ".6s",
+  //   width: "88px",
+  // },
+  // {
+  //   id: 4,
+  //   title: "777 INDEX",
+  //   logo: triNexLogo,
+  //   delay: ".8s",
+  //   width: "128px",
+  // },
 ];
 
 export const careersSliderData = [
