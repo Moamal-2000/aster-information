@@ -25,7 +25,11 @@ const Services = () => {
           />
 
           <div className={s.serviceImgHolder}>
-            <img src={serviceSectionBg1} alt="" loading="lazy" />
+            <img
+              src={serviceSectionBg1}
+              alt="Robot with one eye and holding a shield"
+              loading="lazy"
+            />
           </div>
         </div>
       </Service>
@@ -45,7 +49,11 @@ const Services = () => {
           />
 
           <div className={s.serviceImgHolder}>
-            <img src={serviceSectionBg2} alt="" loading="lazy" />
+            <img
+              src={serviceSectionBg2}
+              alt="Abstract circuit board design with intricate lines and patterns, representing technology or electronics."
+              loading="lazy"
+            />
           </div>
         </div>
       </Service>
@@ -64,7 +72,7 @@ const Services = () => {
           />
 
           <div className={`${s.serviceImgHolder} ${s.serviceImgHolder3}`}>
-            <img src={serviceSectionBg3} alt="" loading="lazy" />
+            <img src={serviceSectionBg3} alt="An electronic white door" loading="lazy" />
           </div>
         </div>
       </Service>
