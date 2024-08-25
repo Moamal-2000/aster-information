@@ -13,12 +13,10 @@ import instagramLogo from "./instagram.webp";
 import joinOurTeamBg from "./join-our-team-bg.webp";
 import linkedinLogo from "./linkedin.webp";
 import locationSectionBg from "./location-section-bg.webp";
-import websiteLogo from "./logo.svg";
 import microsoftLogo from "./microsoft-logo.webp";
 import ourMissionSectionBg from "./our-mission-section-bg.jpg";
 import paloAltotRibunal from "./palo-altot-ribunal.webp";
 import pngaaaLogo from "./pngaaa-logo.webp";
-import whyUsSectionBg from "./why-us-section-bg.jpg";
 import serviceSectionBg1 from "./services-bg1.webp";
 import serviceSectionBg2 from "./services-bg2.webp";
 import serviceSectionBg3 from "./services-bg3.webp";
@@ -27,6 +25,7 @@ import techPageBg from "./tech-bg.webp";
 import triNexLogo from "./tri-nex .webp";
 import twitterLogo from "./twitter.webp";
 import visionSectionBg from "./vision-section-bg.png";
+import whyUsSectionBg from "./why-us-section-bg.jpg";
 
 export {
   amazonAwsLogo,
@@ -48,7 +47,6 @@ export {
   ourMissionSectionBg,
   paloAltotRibunal,
   pngaaaLogo,
-  whyUsSectionBg,
   serviceSectionBg1,
   serviceSectionBg2,
   serviceSectionBg3,
@@ -57,5 +55,5 @@ export {
   triNexLogo,
   twitterLogo,
   visionSectionBg,
-  websiteLogo,
+  whyUsSectionBg,
 };
