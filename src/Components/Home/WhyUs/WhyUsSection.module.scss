@@ -15,10 +15,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-image: url("src/Assets/Images/why-us-section-bg.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: -50px;
+  object-fit: cover;
   scale: 1 1.3;
   width: 100%;
   z-index: -1000;
