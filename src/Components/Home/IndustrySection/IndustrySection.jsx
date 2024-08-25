@@ -7,7 +7,6 @@ const IndustrySection = () => {
     <section className={s.industrySection}>
       <div className="container" data-container>
         <IndustryContent />
-
         <IndustryLogos />
       </div>
     </section>
