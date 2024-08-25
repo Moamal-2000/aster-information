@@ -18,7 +18,7 @@ const WhyUsContent = () => {
         growth across industries.
       </p>
 
-      <Button text="Read More" path="/about" invertColors={true} />
+      <Button text="Read more about us" path="/about" invertColors={true} />
     </div>
   );
 };

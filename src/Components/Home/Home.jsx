@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import CareersSection from "./CareersSection/CareersSection";
 import s from "./Home.module.scss";
 import HomeBackground from "./HomeHeroSection/HomeBackground/HomeBackground";
 import HomeHeroSection from "./HomeHeroSection/HomeHeroSection";
@@ -7,7 +8,6 @@ import IntoStatsSection from "./InfoStatsSection/InfoStatsSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import VisionSection from "./VisionSection/VisionSection";
 import WhyUsSection from "./WhyUs/WhyUsSection";
-import CareersSection from "./CareersSection/CareersSection";
 
 const Home = () => {
   return (

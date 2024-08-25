@@ -20,11 +20,11 @@ const Services = () => {
             maximizing its value. Our services encompass database
             management, data quality, security, and information strategy,
             driving value and business outcomes.`}
-            buttonText={"Read More"}
+            buttonText={"Explore our services"}
             buttonPath={"/technology"}
           />
 
-          <div className={`${s.serviceImgHolder} ${s.serviceImgHolder1}`}>
+          <div className={s.serviceImgHolder}>
             <img src={serviceSectionBg1} alt="" />
           </div>
         </div>
@@ -40,7 +40,7 @@ const Services = () => {
               transform your business operations. From crafting intuitive mobile
               apps to architecting complex enterprise systems, we deliver
               solutions tailored to your needs.`}
-            buttonText={"Read More"}
+            buttonText={"Explore our services"}
             buttonPath={"/technology"}
           />
 
@@ -59,7 +59,7 @@ const Services = () => {
               management, ensuring your technology infrastructure aligns with your
               business objectives. Trust us to be your navigators in the complex
               and ever-evolving tech landscape.`}
-            buttonText={"Read More"}
+            buttonText={"Explore our services"}
             buttonPath={"/technology"}
           />
 
