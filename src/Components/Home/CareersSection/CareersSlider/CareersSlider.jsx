@@ -9,26 +9,31 @@ import s from "./CareersSlider.module.scss";
 const CareersSlider = () => {
   const [activeSlide, setActiveSlide] = useState(1);
   const sliderRef = useRef();
-  let timerId;
+  const timerIdRef = useRef();
+  const isMouseLeave = useRef(false);
 
-  useEventListener(sliderRef, "mouseenter", () => {
-    clearTimeout(timerId);
+  useEventListener(sliderRef, "mousemove", () => {
+    clearTimeout(timerIdRef.current);
+    isMouseLeave.current = false;
   });
 
-  useEventListener(sliderRef, "mouseleave", handleSlideSwitching);
+  useEventListener(sliderRef, "mouseleave", () => {
+    handleSlideSwitching();
+    isMouseLeave.current = true;
+  });
 
   function handleSlideSwitching() {
-    timerId = setTimeout(() => {
+    timerIdRef.current = setTimeout(() => {
       setActiveSlide((currentSlide) =>
-        activeSlide < careersSliderData.length ? ++currentSlide : 1
+        currentSlide < careersSliderData.length ? ++currentSlide : 1
       );
     }, CAREERS_SLIDER_SWITCH_TIME);
   }
 
   useEffect(() => {
-    handleSlideSwitching();
+    if (isMouseLeave.current) handleSlideSwitching();
 
-    return () => clearTimeout(timerId);
+    return () => clearTimeout(timerIdRef.current);
   }, [activeSlide]);
 
   return (

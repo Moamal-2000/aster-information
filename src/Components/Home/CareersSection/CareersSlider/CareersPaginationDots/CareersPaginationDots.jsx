@@ -1,6 +1,10 @@
 import s from "./CareersPaginationDots.module.scss";
 
-const CareersPaginationDots = ({ sliderLength, activeDot, setActiveSlide }) => {
+const CareersPaginationDots = ({
+  sliderLength,
+  activeDot,
+  setActiveSlide,
+}) => {
   const activeClass = (index) => (index === activeDot ? s.active : "");
 
   function handleChangeSlideIndex(index) {

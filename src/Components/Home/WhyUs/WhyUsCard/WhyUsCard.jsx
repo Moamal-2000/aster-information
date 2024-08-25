@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import useClassOnFirstView from "../../../../Hooks/App/useClassOnFirstView";
+import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
 import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import WhyUsContent from "../WhyUsContent/WhyUsContent";
 import s from "./WhyUsCard.module.scss";
