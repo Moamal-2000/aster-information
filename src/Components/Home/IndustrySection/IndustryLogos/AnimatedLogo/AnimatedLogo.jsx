@@ -16,7 +16,12 @@ const AnimatedLogo = ({ imgSrc, imgAlt, title, width, height, delay }) => {
         ref={logoRef}
         style={{ transitionDelay: delay }}
       >
-        <img src={imgSrc} alt={imgAlt} style={{ width, height }} />
+        <img
+          src={imgSrc}
+          alt={imgAlt}
+          loading="lazy"
+          style={{ width, height }}
+        />
       </div>
 
       <h2>{title}</h2>

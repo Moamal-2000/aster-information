@@ -25,7 +25,7 @@ const Services = () => {
           />
 
           <div className={s.serviceImgHolder}>
-            <img src={serviceSectionBg1} alt="" />
+            <img src={serviceSectionBg1} alt="" loading="lazy" />
           </div>
         </div>
       </Service>
@@ -45,7 +45,7 @@ const Services = () => {
           />
 
           <div className={`${s.serviceImgHolder} ${s.serviceImgHolder2}`}>
-            <img src={serviceSectionBg2} alt="" />
+            <img src={serviceSectionBg2} alt="" loading="lazy" />
           </div>
         </div>
       </Service>
@@ -64,7 +64,7 @@ const Services = () => {
           />
 
           <div className={`${s.serviceImgHolder} ${s.serviceImgHolder3}`}>
-            <img src={serviceSectionBg3} alt="" />
+            <img src={serviceSectionBg3} alt="" loading="lazy" />
           </div>
         </div>
       </Service>

@@ -7,7 +7,7 @@ const SocialMedia = () => {
       {socialMedia.map(({ id, link, icon, media }) => (
         <li key={id}>
           <a href={link} target="_blank" rel="noreferrer" title={media}>
-            <img src={icon} alt={media + " Icon"} />
+            <img src={icon} alt={media + " Icon"} loading="lazy" />
           </a>
         </li>
       ))}
