@@ -40,9 +40,7 @@
   left: 0;
   top: 50%;
   translate: 0 -50%;
-  background-image: url("src/Assets/Images/info-section-bg.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
+  object-fit: contain;
   width: 760px;
   height: 760px;
 }
