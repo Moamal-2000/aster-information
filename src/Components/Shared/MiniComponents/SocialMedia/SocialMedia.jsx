@@ -6,7 +6,7 @@ const SocialMedia = () => {
     <ul className={s.socialMedia}>
       {socialMedia.map(({ id, link, icon, media }) => (
         <li key={id}>
-          <a href={link}>
+          <a href={link} target="_blank" rel="noreferrer" title={media}>
             <img src={icon} alt={media + " Icon"} />
           </a>
         </li>
