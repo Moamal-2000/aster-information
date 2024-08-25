@@ -5,36 +5,12 @@ import {
   imogenCarsLogo,
   instagramLogo,
   linkedinLogo,
+  serviceSectionBg1,
+  serviceSectionBg2,
+  serviceSectionBg3,
   triNexLogo,
   twitterLogo,
 } from "../Assets/Images/Images";
-
-export const socialMedia = [
-  {
-    id: 1,
-    link: "#",
-    icon: linkedinLogo,
-    media: "LinkedIn",
-  },
-  {
-    id: 2,
-    link: "#",
-    icon: facebookLogo,
-    media: "Facebook",
-  },
-  {
-    id: 3,
-    link: "#",
-    icon: twitterLogo,
-    media: "Twitter",
-  },
-  {
-    id: 4,
-    link: "#",
-    icon: instagramLogo,
-    media: "Instagram",
-  },
-];
 
 export const navLinksData = [
   {
@@ -51,6 +27,47 @@ export const navLinksData = [
     id: 4,
     path: "/careers",
     text: "Careers",
+  },
+];
+
+export const servicesData = [
+  {
+    id: 1,
+    dir: "ltr",
+    title: "INTEGRATED MANAGEMENT",
+    description: `Comprehensive Information and Data Management
+    services form the core of our offerings. We aim to organize,
+    secure, and streamline your business data,
+    maximizing its value. Our services encompass database
+    management, data quality, security, and information strategy,
+    driving value and business outcomes.`,
+    img: serviceSectionBg1,
+    alt: "Robot with one eye and holding a shield",
+  },
+  {
+    id: 2,
+    dir: "rtl",
+    title: "SOFTWARE SOLUTIONS",
+    description: `We offer custom software development services designed
+    to meet your business needs. Our team specializes in creating
+    efficient, scalable, and robust software solutions that can
+    transform your business operations. From crafting intuitive mobile
+    apps to architecting complex enterprise systems, we deliver
+    solutions tailored to your needs.`,
+    img: serviceSectionBg2,
+    alt: "Abstract circuit board design with intricate lines and patterns, representing technology or electronics.",
+  },
+  {
+    id: 3,
+    dir: "ltr",
+    title: "TECHNOLOGY",
+    description: `Our IT Consulting services provide strategic guidance in
+    leveraging technology for growth. We offer system design and project
+    management, ensuring your technology infrastructure aligns with your
+    business objectives. Trust us to be your navigators in the complex
+    and ever-evolving tech landscape.`,
+    img: serviceSectionBg3,
+    alt: "An electronic white door",
   },
 ];
 
@@ -143,5 +160,32 @@ export const careersSliderData = [
     location: "San Francisco, CA",
     description: `A Deep Learning Engineer with a strong foundation in neural networks,
     experience with large datasets, and a passion for AI-driven solutions is sought.`,
+  },
+];
+
+export const socialMedia = [
+  {
+    id: 1,
+    link: "#",
+    icon: linkedinLogo,
+    media: "LinkedIn",
+  },
+  {
+    id: 2,
+    link: "#",
+    icon: facebookLogo,
+    media: "Facebook",
+  },
+  {
+    id: 3,
+    link: "#",
+    icon: twitterLogo,
+    media: "Twitter",
+  },
+  {
+    id: 4,
+    link: "#",
+    icon: instagramLogo,
+    media: "Instagram",
   },
 ];
