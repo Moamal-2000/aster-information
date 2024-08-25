@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import useEventListener from "src/Hooks/Helper/useEventListener";
 import useGetResizeWindow from "src/Hooks/Helper/useGetResizeWindow";
+import { visionSectionBg } from "../../../../Assets/Images/Images";
 import s from "./AnimatedImage.module.scss";
 
 const AnimatedImage = () => {
@@ -13,7 +14,7 @@ const AnimatedImage = () => {
 
   useEffect(() => {
     if (windowWidth < 1300 || windowWidth > 1550)
-      visionImageRef.current.style.backgroundPositionX = "center";
+      visionImageRef.current.style.objectPosition = "center";
   }, [windowWidth]);
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {
@@ -24,11 +25,18 @@ const AnimatedImage = () => {
       startValue + (distanceFromTop / scrollRange) * (startValue - endValue)
     );
 
-    visionImageRef.current.style.backgroundPositionX = `${newPositionX}px`;
+    visionImageRef.current.style.objectPosition = `${newPositionX}px`;
   }
+
   return (
     <div className={s.imgHolder}>
-      <div className={s.img} ref={visionImageRef} />
+      <img
+        src={visionSectionBg}
+        alt="Vision section background image"
+        loading="lazy"
+        className={s.img}
+        ref={visionImageRef}
+      />
     </div>
   );
 };
