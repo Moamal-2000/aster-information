@@ -82,14 +82,17 @@
 
 [dir=ltr] .serviceImgHolder {
   right: 0;
+  left: auto;
 }
 
 [dir=rtl] .serviceImgHolder {
   left: 0;
+  right: auto;
 }
 
 [dir=ltr] .serviceImgHolder1 {
   right: 0;
+  left: auto;
 }
 
 .serviceImgHolder1>img {

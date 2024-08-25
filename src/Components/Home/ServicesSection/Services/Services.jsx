@@ -44,7 +44,7 @@ const Services = () => {
             buttonPath={"/technology"}
           />
 
-          <div className={`${s.serviceImgHolder} ${s.serviceImgHolder2}`}>
+          <div className={s.serviceImgHolder}>
             <img src={serviceSectionBg2} alt="" loading="lazy" />
           </div>
         </div>
