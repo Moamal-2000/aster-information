@@ -2,8 +2,13 @@ import { useMemo } from "react";
 import useOnScreen from "../Helper/useOnScreen";
 import useHasAnimatedOnScroll from "./useHasAnimatedOnScroll";
 
-const useClassOnFirstView = (ref, cssModule, className = "active") => {
-  const isElementVisible = useOnScreen(ref);
+const useClassOnFirstView = ({
+  elementRef,
+  cssModule,
+  option,
+  className = "active",
+}) => {
+  const isElementVisible = useOnScreen(elementRef, option);
   const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
 
   const activeClass = useMemo(

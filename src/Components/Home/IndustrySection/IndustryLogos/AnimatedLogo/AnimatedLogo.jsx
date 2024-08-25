@@ -4,7 +4,10 @@ import s from "./AnimatedLogo.module.scss";
 
 const AnimatedLogo = ({ imgSrc, imgAlt, title, width, height, delay }) => {
   const logoRef = useRef();
-  const activeClass = useClassOnFirstView(logoRef, s);
+  const activeClass = useClassOnFirstView({
+    elementRef: logoRef,
+    cssModule: s,
+  });
 
   return (
     <div className={s.wrapper}>

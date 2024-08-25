@@ -1,15 +1,19 @@
-import { useRef } from "react";
-import useHasAnimatedOnScroll from "src/Hooks/App/useHasAnimatedOnScroll";
-import useOnScreen from "src/Hooks/Helper/useOnScreen";
+import { useMemo, useRef } from "react";
+import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
 import HorizontalAnimatedLine from "../../../../Shared/MiniComponents/HorizontalAnimatedLine/HorizontalAnimatedLine";
 import s from "./InfoSectionStat.module.scss";
 
 const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {
   const lineRef = useRef();
-  const isElementVisible = useOnScreen(lineRef);
-  const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
-  const activeClass = hasAnimated ? s.active : "";
-  const delay = `${(parseFloat(lineDelay) - 0.2).toFixed(1)}s`;
+  const delay = useMemo(
+    () => `${(parseFloat(lineDelay) - 0.2).toFixed(1)}s`,
+    [lineDelay]
+  );
+
+  const activeClass = useClassOnFirstView({
+    elementRef: lineRef,
+    cssModule: s,
+  });
 
   return (
     <div className={s.stat}>
