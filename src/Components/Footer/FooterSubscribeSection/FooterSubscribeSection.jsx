@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { regexPatterns } from "src/Data/variables";
+import { regexPatterns, SUBMIT_EMAIL_MESSAGE_MS } from "src/Data/variables";
 import s from "./FooterSubscribeSection.module.scss";
 
 const FooterSubscribeSection = () => {
@@ -20,8 +20,8 @@ const FooterSubscribeSection = () => {
       setSubmitEmail(true);
       setEmail("");
 
-      setTimeout(() => setSubmitEmail(false), 4000);
-    }, 2000);
+      setTimeout(() => setSubmitEmail(false), SUBMIT_EMAIL_MESSAGE_MS);
+    }, SUBMIT_EMAIL_MESSAGE_MS / 2);
   }
 
   function handleEmailOnChange(event) {
