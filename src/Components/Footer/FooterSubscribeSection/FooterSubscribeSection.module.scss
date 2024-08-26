@@ -94,6 +94,7 @@
 }
 
 .subEmailForm .input>button {
+  -webkit-tap-highlight-color: transparent;
   outline: none;
   background-color: var(--black);
   color: var(--white);

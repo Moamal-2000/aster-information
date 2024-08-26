@@ -22,6 +22,7 @@
 }
 
 .header>div>a {
+  -webkit-tap-highlight-color: transparent;
   display: flex;
   align-items: center;
   gap: 16px;

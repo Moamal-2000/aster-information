@@ -5,6 +5,7 @@
   display: flex;
   width: fit-content;
   border-radius: 8px;
+  -webkit-tap-highlight-color: transparent;
 
   &.invert {
     border-color: var(--white);
