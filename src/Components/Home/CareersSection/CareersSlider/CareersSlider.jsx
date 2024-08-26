@@ -12,7 +12,7 @@ const CareersSlider = () => {
   const [rootMargin, setRootMargin] = useState("0px");
   const sliderRef = useRef();
   const timerIdRef = useRef();
-  const isMouseLeave = useRef(false);
+  const isMouseLeave = useRef(true);
   const activeClass = useClassOnFirstView({
     elementRef: sliderRef,
     cssModule: s,
@@ -43,10 +43,7 @@ const CareersSlider = () => {
   useEffect(() => {
     if (isMouseLeave.current) handleSlideSwitching();
 
-    return () => {
-      clearTimeout(timerIdRef.current);
-      if (!timerIdRef.current) handleSlideSwitching();
-    };
+    return () => clearTimeout(timerIdRef.current);
   }, [activeSlide]);
 
   useEffect(() => {
