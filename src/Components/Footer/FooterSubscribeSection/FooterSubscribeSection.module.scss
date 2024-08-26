@@ -67,23 +67,27 @@
 .subEmailForm .input>input {
   outline: none;
   border: solid 1px var(--black);
-  border-radius: 10px;
   background-color: var(--white);
   color: var(--black);
+  border-radius: 10px;
   flex: 1;
   padding: 3px;
   padding-left: 16px;
   min-height: 40px;
   max-width: 100%;
 
-  &:hover {
-    border-width: 2px;
-    background-color: var(--very-light-gray);
-  }
-
   &:focus {
     border-width: 2px;
     background-color: var(--white);
+  }
+
+  &:not(:focus) {
+    background-color: var(--white) !important;
+  }
+
+  &:hover {
+    border-width: 2px;
+    background-color: var(--very-light-gray) !important;
   }
 }
 
@@ -91,6 +95,10 @@
   .subEmailForm .input>input {
     padding-right: 110px;
   }
+}
+
+.subEmailForm .input>input.invalid {
+  background-color: var(--light-orange);
 }
 
 .subEmailForm .input>button {
