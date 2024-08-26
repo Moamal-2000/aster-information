@@ -5,15 +5,29 @@ import s from "./FooterSubscribeSection.module.scss";
 const FooterSubscribeSection = () => {
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
-  const ValidationClass = isEmailValid ? "" : s.invalid;
+  const [loadingSubmit, setLoadingSubmit] = useState(false);
+  const [submitEmail, setSubmitEmail] = useState(false);
+  const validationClass = isEmailValid ? "" : s.invalid;
+  const activeClass = submitEmail ? s.active : "";
 
   function handleSubmitEmail(event) {
     event.preventDefault();
+    if (!isEmailValid) return;
+
+    setLoadingSubmit(true);
+    setTimeout(() => {
+      setLoadingSubmit(false);
+      setSubmitEmail(true);
+      setEmail("");
+
+      setTimeout(() => setSubmitEmail(false), 4000);
+    }, 2000);
   }
 
-  function handleEmail(event) {
+  function handleEmailOnChange(event) {
     const value = event.target.value;
     const isValid = regexPatterns.email.test(value);
+
     setEmail(value);
     setIsEmailValid(isValid);
   }
@@ -28,16 +42,29 @@ const FooterSubscribeSection = () => {
 
         <div className={s.input}>
           <input
-            className={ValidationClass}
+            className={validationClass}
             type="email"
             value={email}
-            onChange={handleEmail}
+            onChange={handleEmailOnChange}
             name="sub-email"
             id="sub-email"
             required
           />
-          <button type="submit">Subscribe</button>
+          <button
+            type="submit"
+            disabled={loadingSubmit}
+            aria-disabled={loadingSubmit}
+          >
+            Subscribe
+          </button>
         </div>
+
+        <p
+          className={`${s.submitMessage} ${activeClass}`}
+          aria-hidden={submitEmail}
+        >
+          Thanks for submitting!
+        </p>
       </form>
     </section>
   );
