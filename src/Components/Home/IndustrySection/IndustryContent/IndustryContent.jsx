@@ -1,15 +1,19 @@
+import useLongLineProperties from "src/Hooks/App/useLongLineProperties";
 import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./IndustryContent.module.scss";
 
 const IndustryContent = () => {
+  const { lineHeight, yAxis, animateTo, animatedLineHeight } =
+    useLongLineProperties();
+
   return (
     <div className={s.content}>
       <div className={s.animatedLine}>
         <AnimatedLine
-          lineHeight="444px"
-          animatedLineHeight="86px"
-          yAxis="100px"
-          animateTo="60px"
+          lineHeight={lineHeight}
+          animatedLineHeight={animatedLineHeight}
+          yAxis={yAxis}
+          animateTo={animateTo}
         />
       </div>
 
