@@ -19,3 +19,9 @@
     gap: 90px;
   }
 }
+
+@include small {
+  .careersSection [data-container] {
+    gap: 120px;
+  }
+}

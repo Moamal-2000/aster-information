@@ -30,3 +30,9 @@
     gap: 40px;
   }
 }
+
+@include small {
+  .industrySection [data-container] {
+    gap: 70px;
+  }
+}
