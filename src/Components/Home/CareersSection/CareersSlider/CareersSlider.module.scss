@@ -7,6 +7,12 @@
   border-radius: 16px;
   padding: 50px 40px 32px;
   position: relative;
+  transition: top 1s .2s ease-in-out;
+  top: var(--why-us-section-padding);
+
+  &.active {
+    top: 0;
+  }
 }
 
 @include small {
