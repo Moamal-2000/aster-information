@@ -1,0 +1,23 @@
+@import "src/Styles/mixins.scss";
+
+.skipContent {
+  outline: none;
+  color: var(--blue);
+  background-color: var(--white);
+  border: solid 2px var(--blue);
+  font-size: .9rem;
+  border-radius: 50px;
+  padding: 10px 24px;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  translate: -50% 0;
+  z-index: 100000;
+  opacity: 0;
+  pointer-events: none;
+
+  &:focus {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
