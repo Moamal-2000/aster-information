@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { memo, useRef } from "react";
 import useHasAnimatedOnScroll from "src/Hooks/App/useHasAnimatedOnScroll";
 import useLineStyles from "src/Hooks/App/useLineStyles";
 import useOnScreen from "src/Hooks/Helper/useOnScreen";
@@ -34,4 +34,4 @@ const AnimatedLine = ({
     </div>
   );
 };
-export default AnimatedLine;
+export default memo(AnimatedLine);

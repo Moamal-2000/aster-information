@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { memo, useRef } from "react";
 import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
 import s from "./HorizontalAnimatedLine.module.scss";
 
@@ -15,4 +15,4 @@ const HorizontalAnimatedLine = ({ delay = "0.2s" }) => {
     </div>
   );
 };
-export default HorizontalAnimatedLine;
+export default memo(HorizontalAnimatedLine);

@@ -19,7 +19,6 @@ const Home = () => {
 
       <main className={s.homePage} id="homePage">
         <HomeBackground />
-
         <div className="container">
           <HomeHeroSection />
         </div>

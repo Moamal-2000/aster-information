@@ -14,7 +14,12 @@ const NavIcon = () => {
   }
 
   return (
-    <i className={`${s.navIcon} ${activeClass}`} onClick={toggleMobileNav} />
+    <i
+      className={`${s.navIcon} ${activeClass}`}
+      onClick={toggleMobileNav}
+      role="button"
+      aria-pressed={isMobileNavActive}
+    />
   );
 };
 export default NavIcon;
