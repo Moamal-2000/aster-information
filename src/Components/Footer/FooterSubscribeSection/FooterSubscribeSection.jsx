@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { regexPatterns, SUBMIT_EMAIL_MESSAGE_MS } from "src/Data/variables";
+import { SUBMIT_EMAIL_MESSAGE_MS } from "src/Data/variables";
 import s from "./FooterSubscribeSection.module.scss";
+import SubscribeEmail from "./SubscribeEmail/SubscribeEmail";
 
 const FooterSubscribeSection = () => {
   const [email, setEmail] = useState("");
   const [isEmailValid, setIsEmailValid] = useState(false);
   const [loadingSubmit, setLoadingSubmit] = useState(false);
   const [submitEmail, setSubmitEmail] = useState(false);
-  const validationClass = isEmailValid ? "" : s.invalid;
   const activeClass = submitEmail ? s.active : "";
 
   function handleSubmitEmail(event) {
@@ -24,40 +24,17 @@ const FooterSubscribeSection = () => {
     }, SUBMIT_EMAIL_MESSAGE_MS / 2);
   }
 
-  function handleEmailOnChange(event) {
-    const value = event.target.value;
-    const isValid = regexPatterns.email.test(value);
-
-    setEmail(value);
-    setIsEmailValid(isValid);
-  }
-
   return (
     <section className={s.subscribeSection}>
       <h2>SUBSCRIBE</h2>
-      <p>Sign up to receive Autono news and updates.</p>
+      <p>Sign up to receive Auto no news and updates.</p>
 
       <form className={s.subEmailForm} onSubmit={handleSubmitEmail}>
         <label htmlFor="sub-email">Email *</label>
 
-        <div className={s.input}>
-          <input
-            className={validationClass}
-            type="email"
-            value={email}
-            onChange={handleEmailOnChange}
-            name="sub-email"
-            id="sub-email"
-            required
-          />
-          <button
-            type="submit"
-            disabled={loadingSubmit}
-            aria-disabled={loadingSubmit}
-          >
-            Subscribe
-          </button>
-        </div>
+        <SubscribeEmail
+          {...{ email, setEmail, isEmailValid, setIsEmailValid, loadingSubmit }}
+        />
 
         <p
           className={`${s.submitMessage} ${activeClass}`}
