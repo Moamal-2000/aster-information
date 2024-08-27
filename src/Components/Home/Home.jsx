@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { WEBSITE_NAME } from "src/Data/variables";
 import CareersSection from "./CareersSection/CareersSection";
 import s from "./Home.module.scss";
 import HomeBackground from "./HomeHeroSection/HomeBackground/HomeBackground";
@@ -13,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Home | Aster Information</title>
+        <title>Home | {WEBSITE_NAME}</title>
         <meta name="description" content="Home page description" />
       </Helmet>
 
