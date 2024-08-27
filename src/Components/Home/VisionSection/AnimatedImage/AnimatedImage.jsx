@@ -9,7 +9,8 @@ const AnimatedImage = () => {
   const { windowWidth } = useGetResizeWindow();
 
   useEventListener(window, "scroll", () => {
-    if (windowWidth > 1300 && windowWidth < 1550) moveImageOnScroll(90, 0, 900);
+    if (windowWidth > 1300 && windowWidth < 1550)
+      moveImageOnScroll(90, 0, 1000);
   });
 
   useEffect(() => {
@@ -18,8 +19,7 @@ const AnimatedImage = () => {
   }, [windowWidth]);
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {
-    const visionEleRect = visionImageRef.current.getBoundingClientRect();
-    const distanceFromTop = visionEleRect.top - window.innerHeight;
+    const distanceFromTop = visionImageRef.current.offsetTop - window.scrollY;
     const newPositionX = Math.min(
       startValue,
       startValue + (distanceFromTop / scrollRange) * (startValue - endValue)
