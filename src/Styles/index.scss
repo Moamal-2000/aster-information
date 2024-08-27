@@ -55,6 +55,17 @@ svg {
   display: flex;
 }
 
+button,
+a {
+  transition: outline-offset .2s ease;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: solid 2px var(--blue);
+  outline-offset: 1px;
+}
+
 main {
   min-height: 100vh;
   margin-top: 190px;
