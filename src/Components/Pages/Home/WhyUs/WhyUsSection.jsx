@@ -12,9 +12,9 @@ const WhyUsSection = () => {
     window,
     "scroll",
     () => {
+      const pageHeight = document.documentElement.offsetHeight;
       const isAtVeryBottom =
         window.scrollY + window.innerHeight + 100 >= pageHeight;
-      const pageHeight = document.documentElement.offsetHeight;
 
       setShouldShowImg(!(isAtVeryBottom || window.scrollY <= 0));
     },
