@@ -10,7 +10,7 @@ const About = () => {
         <meta name="description" content="About page description" />
       </Helmet>
 
-      <main className={s.about} id="about-page">
+      <main className={s.about} id="aboutPage">
         About page
       </main>
     </>

@@ -10,7 +10,7 @@ const Careers = () => {
         <meta name="description" content="Careers page description" />
       </Helmet>
 
-      <main className={s.careers} id="careers-page">
+      <main className={s.careers} id="careersPage">
         Careers page
       </main>
     </>

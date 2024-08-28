@@ -10,7 +10,7 @@ const Technology = () => {
         <meta name="description" content="Technology page description" />
       </Helmet>
 
-      <main className={s.technology} id="technology-page">
+      <main className={s.technology} id="technologyPage">
         Technology page
       </main>
     </>

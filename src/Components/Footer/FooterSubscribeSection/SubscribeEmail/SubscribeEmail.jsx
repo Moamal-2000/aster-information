@@ -26,8 +26,8 @@ const SubscribeEmail = ({
         type="email"
         value={email}
         onChange={handleEmailOnChange}
-        name="sub-email"
-        id="sub-email"
+        name="subEmail"
+        id="subEmail"
         required
       />
       <button

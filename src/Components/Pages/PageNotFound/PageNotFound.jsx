@@ -9,7 +9,7 @@ const PageNotFound = () => {
         <meta name="description" content="Page not found description" />
       </Helmet>
 
-      <main className={s.pageNotFound} id="page-not-found-page">
+      <main className={s.pageNotFound} id="PageNotFound">
         Page not found
       </main>
     </>
