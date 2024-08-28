@@ -8,13 +8,12 @@ const SubscribeEmail = ({
   loadingSubmit,
   email,
 }) => {
-  const validationClass = isEmailValid ? "" : s.invalid;
+  const invalidClass = isEmailValid ? "" : s.invalid;
 
   function handleEmailOnChange(event) {
     const value = event.target.value;
     const isValid = regexPatterns.email.test(value);
 
-    console.log(value);
     setEmail(value);
     setIsEmailValid(isValid);
   }
@@ -22,7 +21,7 @@ const SubscribeEmail = ({
   return (
     <div className={s.input}>
       <input
-        className={validationClass}
+        className={invalidClass}
         type="email"
         value={email}
         onChange={handleEmailOnChange}
