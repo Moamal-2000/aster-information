@@ -3,6 +3,11 @@
 .whyUsSection {
   padding: var(--why-us-section-padding) 0;
   position: relative;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 }
 
 @media (max-width: 1600px) {
