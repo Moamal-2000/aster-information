@@ -7,7 +7,7 @@ import s from "./AnimatedLine.module.scss";
 const AnimatedLine = ({
   lineHeight,
   animatedLineHeight,
-  yAxis,
+  initialY,
   animateTo,
   delay,
   lineColors,
@@ -20,7 +20,7 @@ const AnimatedLine = ({
 
   const { lineStyles, animatedLineStyles } = useLineStyles({
     lineHeight,
-    yAxis,
+    initialY,
     animateTo,
     delay,
     lineColors,

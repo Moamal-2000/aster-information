@@ -3,7 +3,7 @@ import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/Animate
 import s from "./ServicesIntro.module.scss";
 
 const ServicesIntro = () => {
-  const { lineHeight, yAxis, animateTo, animatedLineHeight } =
+  const { lineHeight, initialY, animateTo, animatedLineHeight } =
     useSmallLineProperties();
 
   return (
@@ -12,7 +12,7 @@ const ServicesIntro = () => {
         <AnimatedLine
           lineHeight={lineHeight}
           animatedLineHeight={animatedLineHeight}
-          yAxis={yAxis}
+          initialY={initialY}
           animateTo={animateTo}
           lineColors={{
             lineColor: "#707070",

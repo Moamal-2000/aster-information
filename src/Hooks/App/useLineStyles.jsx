@@ -2,7 +2,7 @@ import { useMemo } from "react";
 
 const useLineStyles = ({
   lineHeight,
-  yAxis,
+  initialY,
   animateTo,
   delay,
   lineColors,
@@ -20,11 +20,11 @@ const useLineStyles = ({
   const animatedLineStyles = useMemo(
     () => ({
       transitionDelay: delay || ".3s",
-      top: hasAnimated ? animateTo : yAxis,
+      top: hasAnimated ? animateTo : initialY,
       height: animatedLineHeight,
       backgroundColor: lineColors?.animatedLineColor,
     }),
-    [hasAnimated, animateTo, yAxis, lineColors?.animatedLineColor]
+    [hasAnimated, animateTo, initialY, lineColors?.animatedLineColor]
   );
 
   return { lineStyles, animatedLineStyles };

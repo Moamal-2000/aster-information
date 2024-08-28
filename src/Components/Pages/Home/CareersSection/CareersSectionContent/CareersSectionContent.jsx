@@ -4,7 +4,7 @@ import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/Animate
 import s from "./CareersSectionContent.module.scss";
 
 const CareersSectionContent = () => {
-  const { lineHeight, yAxis, animateTo, animatedLineHeight } =
+  const { lineHeight, initialY, animateTo, animatedLineHeight } =
     useMidLineProperties();
 
   return (
@@ -13,7 +13,7 @@ const CareersSectionContent = () => {
         <AnimatedLine
           lineHeight={lineHeight}
           animatedLineHeight={animatedLineHeight}
-          yAxis={yAxis}
+          initialY={initialY}
           animateTo={animateTo}
         />
       </div>

@@ -8,7 +8,7 @@ const useSmallLineProperties = () => {
     if (windowWidth >= SCREEN_SIZES.tablet) {
       return {
         lineHeight: "194px",
-        yAxis: "130px",
+        initialY: "130px",
         animateTo: "65px",
         animatedLineHeight: "129px",
       };
@@ -16,7 +16,7 @@ const useSmallLineProperties = () => {
 
     return {
       lineHeight: "160px",
-      yAxis: "110px",
+      initialY: "110px",
       animateTo: "58px",
       animatedLineHeight: "102px",
     };

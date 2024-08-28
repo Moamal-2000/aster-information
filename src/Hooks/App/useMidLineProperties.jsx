@@ -8,7 +8,7 @@ const useMidLineProperties = () => {
     if (windowWidth >= SCREEN_SIZES.tablet) {
       return {
         lineHeight: "360px",
-        yAxis: "140px",
+        initialY: "140px",
         animateTo: "55px",
         animatedLineHeight: "180px",
       };
@@ -16,7 +16,7 @@ const useMidLineProperties = () => {
 
     return {
       lineHeight: "274px",
-      yAxis: "120px",
+      initialY: "120px",
       animateTo: "46px",
       animatedLineHeight: "150px",
     };

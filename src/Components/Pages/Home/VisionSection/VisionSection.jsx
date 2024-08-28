@@ -5,7 +5,7 @@ import s from "./VisionSection.module.scss";
 import VisionSectionContent from "./VisionSectionContent/VisionSectionContent";
 
 const VisionSection = () => {
-  const { lineHeight, yAxis, animateTo } = useLongLineProperties();
+  const { lineHeight, initialY, animateTo } = useLongLineProperties();
 
   return (
     <section className={s.visionSection}>
@@ -14,7 +14,7 @@ const VisionSection = () => {
           <div className={s.animatedLine}>
             <AnimatedLine
               lineHeight={lineHeight}
-              yAxis={yAxis}
+              initialY={initialY}
               animateTo={animateTo}
             />
           </div>

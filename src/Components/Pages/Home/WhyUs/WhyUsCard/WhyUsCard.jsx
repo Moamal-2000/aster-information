@@ -8,7 +8,7 @@ import s from "./WhyUsCard.module.scss";
 const WhyUsCard = () => {
   const cardRef = useRef();
   const [rootMargin, setRootMargin] = useState("0px");
-  const { lineHeight, yAxis, animateTo } = useLongLineProperties();
+  const { lineHeight, initialY, animateTo } = useLongLineProperties();
 
   const activeClass = useClassOnFirstView({
     elementRef: cardRef,
@@ -28,7 +28,7 @@ const WhyUsCard = () => {
       <div className={s.animatedLine}>
         <AnimatedLine
           lineHeight={lineHeight}
-          yAxis={yAxis}
+          initialY={initialY}
           animateTo={animateTo}
           delay=".9s"
           lineColors={{

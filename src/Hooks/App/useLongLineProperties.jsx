@@ -8,7 +8,7 @@ const useLongLineProperties = () => {
     if (windowWidth >= SCREEN_SIZES.tablet) {
       return {
         lineHeight: "470px",
-        yAxis: "150px",
+        initialY: "150px",
         animateTo: "70px",
         animatedLineHeight: "129px",
       };
@@ -16,7 +16,7 @@ const useLongLineProperties = () => {
 
     return {
       lineHeight: "380px",
-      yAxis: "120px",
+      initialY: "120px",
       animateTo: "46px",
       animatedLineHeight: "102px",
     };

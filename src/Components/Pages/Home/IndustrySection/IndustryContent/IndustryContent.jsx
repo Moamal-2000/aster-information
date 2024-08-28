@@ -3,7 +3,7 @@ import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/Animate
 import s from "./IndustryContent.module.scss";
 
 const IndustryContent = () => {
-  const { lineHeight, yAxis, animateTo, animatedLineHeight } =
+  const { lineHeight, initialY, animateTo, animatedLineHeight } =
     useLongLineProperties();
 
   return (
@@ -12,7 +12,7 @@ const IndustryContent = () => {
         <AnimatedLine
           lineHeight={lineHeight}
           animatedLineHeight={animatedLineHeight}
-          yAxis={yAxis}
+          initialY={initialY}
           animateTo={animateTo}
         />
       </div>
