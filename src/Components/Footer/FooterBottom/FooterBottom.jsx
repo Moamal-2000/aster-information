@@ -1,14 +1,12 @@
-import { useMemo } from "react";
+import { CURRENT_YEAR } from "src/Data/variables";
 import SocialMedia from "../../Shared/MiniComponents/SocialMedia/SocialMedia";
 import s from "./FooterBottom.module.scss";
 
 const FooterBottom = () => {
-  const currentYear = useMemo(() => new Date().getFullYear(), []);
-
   return (
     <section className={s.footerBottom}>
       <p className={s.copyright}>
-        © {currentYear} by Aster Information Limited
+        © {CURRENT_YEAR} by Aster Information Limited
       </p>
       <SocialMedia />
     </section>
