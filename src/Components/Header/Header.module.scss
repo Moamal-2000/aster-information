@@ -8,10 +8,10 @@
   top: 0;
   left: 0;
   z-index: 10000;
-  transition: .2s;
+  transition: top .4s ease;
 
   &.active {
-    height: 185px;
+    top: -101%;
   }
 }
 
