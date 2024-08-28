@@ -19,6 +19,7 @@ const NavIcon = () => {
       onClick={toggleMobileNav}
       role="button"
       aria-pressed={isMobileNavActive}
+      aria-label="Toggle mobile navigation"
     />
   );
 };
