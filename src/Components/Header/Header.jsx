@@ -27,7 +27,7 @@ const Header = () => {
 
   function handleTouchMove(event) {
     const touchCurrentY = event.touches[0].clientY;
-    const isScrollingDown = touchCurrentY > touchStartY.current;
+    const isScrollingDown = touchCurrentY < touchStartY.current;
 
     const syntheticEvent = {
       deltaY: isScrollingDown ? 1 : -1,
