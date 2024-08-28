@@ -30,7 +30,7 @@ const FooterSubscribeSection = () => {
       <p>Sign up to receive Auto no news and updates.</p>
 
       <form className={s.subEmailForm} onSubmit={handleSubmitEmail}>
-        <label htmlFor="sub-email">Email *</label>
+        <label htmlFor="subEmail">Email *</label>
 
         <SubscribeEmail
           {...{ email, setEmail, isEmailValid, setIsEmailValid, loadingSubmit }}
