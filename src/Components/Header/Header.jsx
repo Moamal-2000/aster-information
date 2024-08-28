@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { SCROLL_TRIGGER_POINT, WEBSITE_NAME } from "src/Data/variables";
 import useEventListener from "src/Hooks/Helper/useEventListener";
@@ -12,14 +12,17 @@ const Header = () => {
   const scrollDebounceTimer = useRef();
   const headerRef = useRef();
 
-  useEventListener(window, "wheel", (event) => {
+  function handleScroll(event) {
     clearTimeout(scrollDebounceTimer.current);
 
     scrollDebounceTimer.current = setTimeout(
       () => updateHeaderActiveClass(event, setActiveClass),
       100
     );
-  });
+  }
+
+  useEventListener(window, "wheel", handleScroll);
+  useEventListener(window, "touchmove", handleScroll);
 
   return (
     <header className={`${s.header} ${activeClass}`} ref={headerRef}>
