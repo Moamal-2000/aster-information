@@ -11,18 +11,34 @@ const Header = () => {
   const [activeClass, setActiveClass] = useState("");
   const scrollDebounceTimer = useRef();
   const headerRef = useRef();
+  const touchStartY = useRef(0);
 
   function handleScroll(event) {
     clearTimeout(scrollDebounceTimer.current);
 
-    scrollDebounceTimer.current = setTimeout(
-      () => updateHeaderActiveClass(event, setActiveClass),
-      100
-    );
+    scrollDebounceTimer.current = setTimeout(() => {
+      updateHeaderActiveClass(event, setActiveClass);
+    }, 100);
+  }
+
+  function handleTouchStart(event) {
+    touchStartY.current = event.touches[0].clientY;
+  }
+
+  function handleTouchMove(event) {
+    const touchCurrentY = event.touches[0].clientY;
+    const isScrollingDown = touchCurrentY > touchStartY.current;
+
+    const syntheticEvent = {
+      deltaY: isScrollingDown ? 1 : -1,
+    };
+
+    handleScroll(syntheticEvent);
   }
 
   useEventListener(window, "wheel", handleScroll);
-  useEventListener(window, "touchmove", handleScroll);
+  useEventListener(window, "touchstart", handleTouchStart);
+  useEventListener(window, "touchmove", handleTouchMove);
 
   return (
     <header className={`${s.header} ${activeClass}`} ref={headerRef}>
@@ -38,6 +54,7 @@ const Header = () => {
     </header>
   );
 };
+
 export default Header;
 
 function updateHeaderActiveClass(event, setActiveClass) {

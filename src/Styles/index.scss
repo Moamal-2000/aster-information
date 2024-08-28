@@ -21,7 +21,6 @@ body {
   width: var(--website-width);
   margin: 0 auto;
   overflow-x: hidden;
-  // overscroll-behavior-y: none;
 }
 
 img {
@@ -88,7 +87,6 @@ main::before{
   width: 100%;
   height: 200px;
   background-color: var(--website-bg);
-  background-color: red;
 }
 
 .container {
