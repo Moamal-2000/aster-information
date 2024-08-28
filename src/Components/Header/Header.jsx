@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { SCROLL_TRIGGER_POINT, WEBSITE_NAME } from "src/Data/variables";
 import useEventListener from "src/Hooks/Helper/useEventListener";
@@ -8,9 +8,9 @@ import MobileNav from "./MobileNav/MobileNav";
 import NavIcon from "./NavIcon/NavIcon";
 
 const Header = () => {
-  const headerRef = useRef();
-  const scrollDebounceTimer = useRef();
   const [activeClass, setActiveClass] = useState("");
+  const scrollDebounceTimer = useRef();
+  const headerRef = useRef();
 
   useEventListener(window, "wheel", (event) => {
     clearTimeout(scrollDebounceTimer.current);
