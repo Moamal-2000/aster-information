@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { whyUsSectionBg } from "src/Assets/Images/Images";
-import useEventListener from "../../../Hooks/Helper/useEventListener";
+import useEventListener from "src/Hooks/Helper/useEventListener";
 import WhyUsCard from "./WhyUsCard/WhyUsCard";
 import s from "./WhyUsSection.module.scss";
 

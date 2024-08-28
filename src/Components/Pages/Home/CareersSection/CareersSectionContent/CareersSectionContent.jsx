@@ -1,6 +1,6 @@
 import useMidLineProperties from "src/Hooks/App/useMidLineProperties";
-import Button from "../../../Shared/Buttons/Button/Button";
-import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import Button from "../../../../Shared/Buttons/Button/Button";
+import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./CareersSectionContent.module.scss";
 
 const CareersSectionContent = () => {

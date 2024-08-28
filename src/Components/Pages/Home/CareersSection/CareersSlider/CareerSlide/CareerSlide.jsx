@@ -1,4 +1,4 @@
-import Button from "../../../../Shared/Buttons/Button/Button";
+import Button from "../../../../../Shared/Buttons/Button/Button";
 import s from "./CareerSlide.module.scss";
 
 const CareerSlide = ({ title, location, description, activeSlider }) => {

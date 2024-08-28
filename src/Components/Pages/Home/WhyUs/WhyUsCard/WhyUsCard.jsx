@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
 import useLongLineProperties from "src/Hooks/App/useLongLineProperties";
-import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import WhyUsContent from "../WhyUsContent/WhyUsContent";
 import s from "./WhyUsCard.module.scss";
 

@@ -1,5 +1,5 @@
 import { WEBSITE_NAME } from "src/Data/variables";
-import Button from "../../../Shared/Buttons/Button/Button";
+import Button from "../../../../Shared/Buttons/Button/Button";
 import s from "./WhyUsContent.module.scss";
 
 const WhyUsContent = () => {

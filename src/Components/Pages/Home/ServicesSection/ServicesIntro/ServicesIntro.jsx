@@ -1,5 +1,5 @@
 import useSmallLineProperties from "src/Hooks/App/useSmallLineProperties";
-import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./ServicesIntro.module.scss";
 
 const ServicesIntro = () => {

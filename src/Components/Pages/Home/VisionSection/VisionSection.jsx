@@ -1,5 +1,5 @@
 import useLongLineProperties from "src/Hooks/App/useLongLineProperties";
-import AnimatedLine from "../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import AnimatedImage from "./AnimatedImage/AnimatedImage";
 import s from "./VisionSection.module.scss";
 import VisionSectionContent from "./VisionSectionContent/VisionSectionContent";

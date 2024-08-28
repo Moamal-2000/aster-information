@@ -1,5 +1,5 @@
 import useLongLineProperties from "src/Hooks/App/useLongLineProperties";
-import AnimatedLine from "../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
 import s from "./IndustryContent.module.scss";
 
 const IndustryContent = () => {

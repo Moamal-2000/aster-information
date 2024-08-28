@@ -1,6 +1,6 @@
 import { useMemo, useRef } from "react";
 import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
-import HorizontalAnimatedLine from "../../../../Shared/MiniComponents/HorizontalAnimatedLine/HorizontalAnimatedLine";
+import HorizontalAnimatedLine from "../../../../../Shared/MiniComponents/HorizontalAnimatedLine/HorizontalAnimatedLine";
 import s from "./InfoSectionStat.module.scss";
 
 const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {

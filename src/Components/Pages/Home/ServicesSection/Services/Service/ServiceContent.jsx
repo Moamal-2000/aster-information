@@ -1,4 +1,4 @@
-import Button from "../../../../Shared/Buttons/Button/Button";
+import Button from "../../../../../Shared/Buttons/Button/Button";
 import s from "./ServiceContent.module.scss";
 
 const ServiceContent = ({ title, description, buttonText, buttonPath }) => {
