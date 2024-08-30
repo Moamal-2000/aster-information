@@ -1,6 +1,8 @@
-import { useRef, useState } from "react";
+import { useRef } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { SCROLL_TRIGGER_POINT, WEBSITE_NAME } from "src/Data/variables";
+import { updateGlobalState } from "src/Features/globalSlice";
 import useEventListener from "src/Hooks/Helper/useEventListener";
 import SvgIcon from "../Shared/MiniComponents/SvgIcon";
 import s from "./Header.module.scss";
@@ -8,16 +10,18 @@ import MobileNav from "./MobileNav/MobileNav";
 import NavIcon from "./NavIcon/NavIcon";
 
 const Header = () => {
-  const [activeClass, setActiveClass] = useState("");
+  const { isHeaderActive } = useSelector((state) => state.global);
+  const dispatch = useDispatch();
   const scrollDebounceTimer = useRef();
   const headerRef = useRef();
   const touchStartY = useRef(0);
+  const activeClass = isHeaderActive ? s.active : "";
 
   function handleScroll(event) {
     clearTimeout(scrollDebounceTimer.current);
 
     scrollDebounceTimer.current = setTimeout(() => {
-      updateHeaderActiveClass(event, setActiveClass);
+      updateHeaderActiveClass(event, dispatch);
     }, 50);
   }
 
@@ -57,9 +61,14 @@ const Header = () => {
 
 export default Header;
 
-function updateHeaderActiveClass(event, setActiveClass) {
+function updateHeaderActiveClass(event, dispatch) {
   const hasScrolledBeyondTrigger = window.scrollY >= SCROLL_TRIGGER_POINT;
   const isScrollingDown = event.deltaY >= 0;
 
-  setActiveClass(isScrollingDown && hasScrolledBeyondTrigger ? s.active : "");
+  dispatch(
+    updateGlobalState({
+      key: "isHeaderActive",
+      value: isScrollingDown && hasScrolledBeyondTrigger,
+    })
+  );
 }

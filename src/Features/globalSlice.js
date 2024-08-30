@@ -2,6 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   isMobileNavActive: false,
+  isHeaderActive: false,
 };
 
 export const globalSlice = createSlice({
