@@ -9,15 +9,15 @@
 
 @media (max-width: 1300px) {
   .visionSection {
-    padding-top: 150px;
-    padding-bottom: 150px;
-    height: auto;
+    // padding-top: 150px;
+    // padding-bottom: 150px;
+    // height: auto;
   }
 }
 
 @include large {
   .visionSection {
-    padding-bottom: 0;
+    height: auto;
   }
 }
 

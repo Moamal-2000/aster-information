@@ -19,16 +19,17 @@
 
 @media (max-width: 1300px) {
   .imgHolder {
-    overflow: visible;
-    top: 222px;
-    width: 50vw;
+    right: -100px;
   }
 }
 
 @include large {
   .imgHolder {
-    position: static;
-    width: 700px;
+    top: 222px;
+    width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
   }
 }
 
