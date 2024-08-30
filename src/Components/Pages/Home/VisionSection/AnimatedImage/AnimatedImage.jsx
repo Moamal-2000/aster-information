@@ -1,22 +1,14 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { visionSectionBg } from "src/Assets/Images/Images";
 import useEventListener from "src/Hooks/Helper/useEventListener";
-import useGetResizeWindow from "src/Hooks/Helper/useGetResizeWindow";
 import s from "./AnimatedImage.module.scss";
 
 const AnimatedImage = () => {
   const visionImageRef = useRef();
-  const { windowWidth } = useGetResizeWindow();
 
   useEventListener(window, "scroll", () => {
-    if (windowWidth > 1300 && windowWidth < 1550)
-      moveImageOnScroll(90, 0, 1000);
+    moveImageOnScroll(50, 0, 1300);
   });
-
-  useEffect(() => {
-    if (windowWidth < 1300 || windowWidth > 1550)
-      visionImageRef.current.style.objectPosition = "center";
-  }, [windowWidth]);
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {
     const distanceFromTop = visionImageRef.current.offsetTop - window.scrollY;
