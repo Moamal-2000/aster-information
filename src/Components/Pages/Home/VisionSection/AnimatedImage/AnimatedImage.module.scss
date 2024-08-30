@@ -43,13 +43,21 @@
   .imgHolder {
     width: 100%;
     scale: 1.142;
-    top: -36px;
+    top: -32px;
+  }
+}
+
+@media (max-width: 420px) {
+  .imgHolder {
+    width: 100%;
+    scale: 1.142;
+    top: -25px;
   }
 }
 
 @include very-small {
   .imgHolder {
-    scale: 1.065;
+    scale: 1.064;
     top: 1px;
   }
 }
@@ -102,7 +110,7 @@
 @media (max-width: 420px) {
   .imgHolder .img {
     right: -50px;
-    scale: 1.4;
+    scale: 1.39;
   }
 }
 
