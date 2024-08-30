@@ -47,6 +47,13 @@
   }
 }
 
+@include very-small {
+  .imgHolder {
+    scale: 1.065;
+    top: 1px;
+  }
+}
+
 .imgHolder .img {
   width: 100%;
   min-height: 700px;
@@ -88,11 +95,20 @@
 @media (max-width: 520px) {
   .imgHolder .img {
     right: -56px;
+    scale: 1.3;
+  }
+}
+
+@media (max-width: 420px) {
+  .imgHolder .img {
+    right: -50px;
+    scale: 1.4;
   }
 }
 
 @include very-small {
   .imgHolder .img {
-    scale: 1.064;
+    scale: 1;
+    right: 0;
   }
 }

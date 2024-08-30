@@ -10,13 +10,13 @@ const AnimatedImage = () => {
   const { windowWidth } = useGetResizeWindow();
 
   useEventListener(window, "scroll", () => {
-    const isMobileScreen = windowWidth < SCREEN_SIZES.smaller;
+    const isMobileScreen = windowWidth <= SCREEN_SIZES.smaller;
     if (isMobileScreen) visionImageRef.current.style.objectPosition = "center";
     else moveImageOnScroll(90, 0, 1000);
   });
 
   useEffect(() => {
-    const isMobileScreen = windowWidth < SCREEN_SIZES.smaller;
+    const isMobileScreen = windowWidth <= SCREEN_SIZES.smaller;
     if (isMobileScreen) visionImageRef.current.style.objectPosition = "center";
   });
 
@@ -34,10 +34,10 @@ const AnimatedImage = () => {
     <div className={s.imgHolder}>
       <img
         src={visionSectionBg}
-        alt="Vision section background image"
-        loading="lazy"
         className={s.img}
         ref={visionImageRef}
+        alt="Vision section background image"
+        loading="lazy"
       />
     </div>
   );
