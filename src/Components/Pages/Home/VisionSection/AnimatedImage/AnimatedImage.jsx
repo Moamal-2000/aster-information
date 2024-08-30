@@ -1,13 +1,23 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { visionSectionBg } from "src/Assets/Images/Images";
+import { SCREEN_SIZES } from "src/Data/variables";
 import useEventListener from "src/Hooks/Helper/useEventListener";
+import useGetResizeWindow from "src/Hooks/Helper/useGetResizeWindow";
 import s from "./AnimatedImage.module.scss";
 
 const AnimatedImage = () => {
   const visionImageRef = useRef();
+  const { windowWidth } = useGetResizeWindow();
 
   useEventListener(window, "scroll", () => {
-    moveImageOnScroll(50, 0, 1000);
+    const isMobileScreen = windowWidth < SCREEN_SIZES.smaller;
+    if (isMobileScreen) visionImageRef.current.style.objectPosition = "center";
+    else moveImageOnScroll(90, 0, 1000);
+  });
+
+  useEffect(() => {
+    const isMobileScreen = windowWidth < SCREEN_SIZES.smaller;
+    if (isMobileScreen) visionImageRef.current.style.objectPosition = "center";
   });
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {

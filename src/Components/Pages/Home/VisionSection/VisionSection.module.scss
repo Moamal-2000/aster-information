@@ -9,9 +9,7 @@
 
 @media (max-width: 1300px) {
   .visionSection {
-    // padding-top: 150px;
-    // padding-bottom: 150px;
-    // height: auto;
+    padding-top: 150px;
   }
 }
 
@@ -50,6 +48,12 @@
   gap: 50px;
   position: relative;
   margin-top: 70px;
+}
+
+@media (max-width: 1300px) {
+  .wrapper {
+    margin-top: 190px;
+  }
 }
 
 @include small {

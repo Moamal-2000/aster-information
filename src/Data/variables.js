@@ -8,7 +8,7 @@ export const SCREEN_SIZES = {
   laptop: 992,
   tablet: 768,
   mobile: 428,
-  smaller: 376,
+  smaller: 388,
 };
 export const regexPatterns = {
   email: /^[0-9a-zA-Z._]+@[a-z]+\.[a-z]+$/,
