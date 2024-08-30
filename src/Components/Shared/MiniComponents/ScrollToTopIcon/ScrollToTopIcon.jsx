@@ -1,5 +1,7 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { useDispatch } from "react-redux";
 import { HIDE_SCROLL_TOP_MS } from "src/Data/variables";
+import { updateGlobalState } from "src/Features/globalSlice";
 import { scrollToTop } from "src/Functions/componentsFunctions";
 import useEventListener from "src/Hooks/Helper/useEventListener";
 import s from "./ScrollToTopIcon.module.scss";
@@ -7,12 +9,21 @@ import s from "./ScrollToTopIcon.module.scss";
 const ScrollToTopIcon = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const activeClass = isScrolling ? s.active : "";
-  let timerId;
+  const scrollDebounceTimer = useRef();
+  const dispatch = useDispatch();
 
   function handleScrollBtnAppearance() {
-    clearTimeout(timerId);
+    clearTimeout(scrollDebounceTimer.current);
     setIsScrolling(true);
-    timerId = setTimeout(() => setIsScrolling(false), HIDE_SCROLL_TOP_MS);
+
+    scrollDebounceTimer.current = setTimeout(() => {
+      setIsScrolling(false);
+    }, HIDE_SCROLL_TOP_MS);
+  }
+
+  function handleClickScrollBtn() {
+    dispatch(updateGlobalState({ key: "isHeaderActive", value: false }));
+    scrollToTop();
   }
 
   useEventListener(window, "scroll", handleScrollBtnAppearance);
@@ -21,7 +32,7 @@ const ScrollToTopIcon = () => {
     <button
       type="button"
       className={`${s.button} ${activeClass}`}
-      onClick={scrollToTop}
+      onClick={handleClickScrollBtn}
       aria-label="Scroll to top"
     ></button>
   );
