@@ -3,14 +3,16 @@
 .imgHolder {
   overflow: hidden;
   position: absolute;
-  right: -59px;
-  top: -54px;
+  right: 2px;
+  top: -75px;
   width: 768px;
+  scale: 1.16;
 }
 
 @media (max-width: 1600px) {
   .imgHolder {
-    top: 227px;
+    top: 262px;
+    right: 0;
     scale: 1;
   }
 }

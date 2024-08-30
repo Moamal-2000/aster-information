@@ -7,7 +7,7 @@ const AnimatedImage = () => {
   const visionImageRef = useRef();
 
   useEventListener(window, "scroll", () => {
-    moveImageOnScroll(50, 0, 1300);
+    moveImageOnScroll(50, 0, 1000);
   });
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {
