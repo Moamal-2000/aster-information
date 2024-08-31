@@ -23,12 +23,7 @@ const WhyUsSection = () => {
 
   return (
     <section className={`${s.whyUsSection} ${activeClass}`}>
-      <img
-        src={whyUsSectionBg}
-        alt="Why-us section background image"
-        loading="lazy"
-        className={s.backgroundImg}
-      />
+
 
       <div className="container">
         <WhyUsCard />

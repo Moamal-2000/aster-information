@@ -2,7 +2,6 @@
 
 .infoSection {
   background-color: var(--website-bg);
-  position: relative;
   padding: 170px 0;
   height: 760px;
   display: flex;
@@ -26,6 +25,7 @@
 .infoSection [data-container] {
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 @include large {

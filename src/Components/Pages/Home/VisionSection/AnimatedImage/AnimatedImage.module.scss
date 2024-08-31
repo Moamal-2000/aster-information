@@ -3,11 +3,17 @@
 .imgHolder {
   overflow: hidden;
   position: absolute;
-  right: 2px;
-  top: -75px;
-  width: 768px;
-  scale: 1.16;
+  right: -200px;
+  top: -50px;
+  width: 800px;
+  scale: 1;
 }
+
+// @media (max-width: 2400px) {
+//   .imgHolder {
+//     width: 768px;
+//   }
+// }
 
 @media (max-width: 1600px) {
   .imgHolder {
@@ -66,8 +72,15 @@
   width: 100%;
   min-height: 700px;
   object-position: 0;
-  scale: 1.2;
+  scale: 1.23;
   position: relative;
+}
+
+@media (max-width: 3100px) {
+  .imgHolder .img {
+    // opacity: .1;
+    // scale: 1.2;
+  }
 }
 
 @media (max-width: 1300px) {
