@@ -24,7 +24,13 @@
 
 .backgroundImage>img {
   object-fit: contain;
-  height: 50%;
+  height: 100%;
+}
+
+@media (max-width: 1800px) {
+  .backgroundImage>img {
+    height: 70%;
+  }
 }
 
 .backgroundImage .top {
@@ -32,6 +38,19 @@
   right: 0;
   top: 0;
   object-position: 100% 0;
+}
+
+@media (max-width: 2500px) {
+  .backgroundImage .top {
+    right: -600px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .backgroundImage .top {
+    right: -500px;
+    object-position: 0;
+  }
 }
 
 @include small {
@@ -50,9 +69,21 @@
 .backgroundImage .bottom {
   position: absolute;
   left: 0;
-  bottom: 60px;
+  bottom: -150px;
   object-position: 0 0;
   scale: 1 1.05;
+}
+
+@media (max-width: 2500px) {
+  .backgroundImage .bottom {
+    bottom: -210px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .backgroundImage .bottom {
+    bottom: -10px;
+  }
 }
 
 @include small {

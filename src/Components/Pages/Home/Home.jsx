@@ -25,11 +25,11 @@ const Home = () => {
         </div>
 
         <VisionSection />
-        <ServicesSection />
+        {/* <ServicesSection />
         <WhyUsSection />
         <IntoStatsSection />
         <IndustrySection />
-        <CareersSection />
+        <CareersSection /> */}
       </main>
     </>
   );
