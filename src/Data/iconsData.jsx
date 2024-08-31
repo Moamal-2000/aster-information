@@ -5,8 +5,6 @@ export const iconsData = [
       <svg
         width="866.46"
         height="342"
-        data-bbox="-1114.062 -1428 865.457 341"
-        data-type="ugc"
         role="presentation"
         viewBox="-1114.6 -1428.5 866.46 342"
       >
@@ -18,8 +16,8 @@ export const iconsData = [
           d="m-961.31-1428h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
           fill="none"
           stroke="#000"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="m-961.31-1187h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
@@ -29,8 +27,8 @@ export const iconsData = [
           d="m-961.31-1187h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
           fill="none"
           stroke="#000"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="m-1110.1-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
@@ -40,8 +38,8 @@ export const iconsData = [
           d="m-1110.1-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
           fill="none"
           stroke="#000"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="m-527.06-1307.5h274.46a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.46a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
@@ -51,8 +49,8 @@ export const iconsData = [
           d="m-527.06-1307.5h274.46a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.46a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z"
           fill="none"
           stroke="#000"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </svg>
     ),
