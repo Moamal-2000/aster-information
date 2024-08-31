@@ -1,59 +1,10 @@
-<svg
-        preserveAspectRatio="xMidYMid meet"
-        data-bbox="-1114.062 -1428 865.457 341"
-        height="342"
-        width="866.457"
-        viewBox="-1114.562 -1428.5 866.457 342"
-        xmlns="http://www.w3.org/2000/svg"
-        data-type="ugc"
-        role="presentation"
-        aria-hidden="true"
-        aria-label=""
-      >
-        <g>
-          <path
-            fill="#333333"
-            d="M-961.313-1428h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-          ></path>
-          <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
-            stroke="#000000"
-            d="M-961.313-1428h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-            fill="none"
-          ></path>
-          <path
-            fill="#333333"
-            d="M-961.313-1187h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-          ></path>
-          <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
-            stroke="#000000"
-            d="M-961.313-1187h571.834a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.833a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-            fill="none"
-          ></path>
-          <path
-            fill="#333333"
-            d="M-1110.062-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-          ></path>
-          <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
-            stroke="#000000"
-            d="M-1110.062-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-            fill="none"
-          ></path>
-          <path
-            fill="#9566f1"
-            d="M-527.062-1307.5h274.457a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.457a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-          ></path>
-          <path
-            stroke-linejoin="round"
-            stroke-linecap="round"
-            stroke="#000000"
-            d="M-527.062-1307.5h274.457a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.457a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4Z"
-            fill="none"
-          ></path>
-        </g>
-      </svg>
+<svg width="866.46" height="342" data-bbox="-1114.062 -1428 865.457 341" data-type="ugc" role="presentation" viewBox="-1114.6 -1428.5 866.46 342">
+<path d="m-961.31-1428h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="#333"/>
+<path d="m-961.31-1428h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m-961.31-1187h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="#333"/>
+<path d="m-961.31-1187h571.83a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-571.83a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m-1110.1-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="#333"/>
+<path d="m-1110.1-1307.5h557a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-557a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m-527.06-1307.5h274.46a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.46a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="#9566f1"/>
+<path d="m-527.06-1307.5h274.46a4 4 0 0 1 4 4v92a4 4 0 0 1-4 4h-274.46a4 4 0 0 1-4-4v-92a4 4 0 0 1 4-4z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
