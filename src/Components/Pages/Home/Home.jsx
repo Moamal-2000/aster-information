@@ -9,7 +9,6 @@ import IntoStatsSection from "./InfoStatsSection/InfoStatsSection";
 import ServicesSection from "./ServicesSection/ServicesSection";
 import VisionSection from "./VisionSection/VisionSection";
 import WhyUsSection from "./WhyUs/WhyUsSection";
-import { whyUsSectionBg } from "src/Assets/Images/Images";
 
 const Home = () => {
   return (
@@ -20,12 +19,6 @@ const Home = () => {
       </Helmet>
 
       <main className={s.homePage} id="homePage">
-      <img
-        src={whyUsSectionBg}
-        alt="Why-us section background image"
-        loading="lazy"
-        className={s.backgroundImg}
-      />
         <HomeBackground />
         <div className="container">
           <HomeHeroSection />

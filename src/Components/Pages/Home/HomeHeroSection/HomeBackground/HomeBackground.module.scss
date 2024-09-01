@@ -2,7 +2,7 @@
 
 .backgroundImage {
   width: 100%;
-  height: 830px;
+  height: 970px;
   position: absolute;
   left: 0;
   top: -107px;
@@ -24,13 +24,7 @@
 
 .backgroundImage>img {
   object-fit: contain;
-  height: 100%;
-}
-
-@media (max-width: 1800px) {
-  .backgroundImage>img {
-    height: 70%;
-  }
+  height: 50%;
 }
 
 .backgroundImage .top {
@@ -38,19 +32,6 @@
   right: 0;
   top: 0;
   object-position: 100% 0;
-}
-
-@media (max-width: 2500px) {
-  .backgroundImage .top {
-    right: -600px;
-  }
-}
-
-@media (max-width: 1800px) {
-  .backgroundImage .top {
-    right: -500px;
-    object-position: 0;
-  }
 }
 
 @include small {
@@ -69,21 +50,9 @@
 .backgroundImage .bottom {
   position: absolute;
   left: 0;
-  bottom: -150px;
+  bottom: 60px;
   object-position: 0 0;
   scale: 1 1.05;
-}
-
-@media (max-width: 2500px) {
-  .backgroundImage .bottom {
-    bottom: -210px;
-  }
-}
-
-@media (max-width: 1800px) {
-  .backgroundImage .bottom {
-    bottom: -10px;
-  }
 }
 
 @include small {
@@ -120,14 +89,7 @@
 
 @include medium {
   .backgroundImage::before {
-    --shadow-height: 300px;
-  }
-}
-
-@include small {
-  .backgroundImage::before {
-    bottom: 10px;
-    --shadow-height: 250px;
+    --shadow-height: 240px;
   }
 }
 
@@ -135,7 +97,7 @@
   .backgroundImage::after {
     content: '';
     position: absolute;
-    bottom: -380px;
+    bottom: -370px;
     left: 0;
     width: 100%;
     height: var(--shadow-height);

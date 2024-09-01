@@ -46,7 +46,7 @@ const Header = () => {
 
   return (
     <header className={`${s.header} ${activeClass}`} ref={headerRef}>
-      <div className={s.container}>
+      <div className="container">
         <Link to="/" aria-label="Home page">
           <SvgIcon name="mainIcon" />
           <span>{WEBSITE_NAME}</span>

@@ -14,17 +14,17 @@ import {
 
 export const navLinksData = [
   {
-    id: 1,
-    path: "/technology",
-    text: "Technology",
-  },
-  {
     id: 2,
     path: "/about",
     text: "About",
   },
   {
     id: 3,
+    path: "/technology",
+    text: "Technology",
+  },
+  {
+    id: 4,
     path: "/careers",
     text: "Careers",
   },

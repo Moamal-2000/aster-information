@@ -4,32 +4,32 @@
   width: 980px;
   margin: 0 auto;
   text-align: center;
-  margin-bottom: calc(920px - var(--shadow-height));
+  margin-bottom: calc(1040px - var(--shadow-height));
 }
 
 @include large {
   .heroSection {
     width: 840px;
-    margin-bottom: calc(970px - var(--shadow-height));
+    margin-bottom: calc(1087px - var(--shadow-height));
   }
 }
 
 @include medium {
   .heroSection {
     width: 100%;
-    margin-bottom: calc(866px - var(--shadow-height));
+    margin-bottom: calc(843px - var(--shadow-height));
   }
 }
 
 @include small {
   .heroSection {
-    margin-bottom: calc(880px - var(--shadow-height));
+    margin-bottom: calc(872px - var(--shadow-height));
   }
 }
 
 @include very-small {
   .heroSection {
-    margin-bottom: calc(810px - var(--shadow-height));
+    margin-bottom: calc(780px - var(--shadow-height));
   }
 }
 

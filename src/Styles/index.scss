@@ -69,7 +69,7 @@ a:focus-visible {
 
 main {
   min-height: 100vh;
-  margin-top: 220px;
+  margin-top: 190px;
   position: relative;
 }
 
@@ -79,7 +79,7 @@ main {
   }
 }
 
-main::before {
+main::before{
   content: "";
   position: absolute;
   top: -301px;
@@ -92,5 +92,4 @@ main::before {
 .container {
   width: var(--container-width);
   margin: 0 auto;
-  border: solid red;
 }

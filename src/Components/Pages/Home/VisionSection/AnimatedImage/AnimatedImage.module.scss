@@ -3,23 +3,10 @@
 .imgHolder {
   overflow: hidden;
   position: absolute;
-  right: 0;
-  top: -14px;
-  width: 1000px;
-  scale: 1;
-}
-
-@media (max-width: 2200px) {
-  .imgHolder {
-    right: -320px;
-    // width: 768px;
-  }
-}
-
-@media (max-width: 1950px) {
-  .imgHolder {
-    width: 900px;
-  }
+  right: 2px;
+  top: -75px;
+  width: 768px;
+  scale: 1.16;
 }
 
 @media (max-width: 1600px) {
@@ -79,15 +66,8 @@
   width: 100%;
   min-height: 700px;
   object-position: 0;
-  scale: 1.23;
+  scale: 1.2;
   position: relative;
-}
-
-@media (max-width: 3100px) {
-  .imgHolder .img {
-    // opacity: .1;
-    // scale: 1.2;
-  }
 }
 
 @media (max-width: 1300px) {

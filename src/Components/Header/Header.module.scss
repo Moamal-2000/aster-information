@@ -15,34 +15,32 @@
   }
 }
 
-.header .container {
+.header>div {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 93%;
-  margin: 0 auto;
 }
 
-.header .container>a {
+.header>div>a {
   -webkit-tap-highlight-color: transparent;
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.header .container>a>svg {
+.header>div>a>svg {
   width: 70px;
   height: 28px;
 }
 
 @include small {
-  .header .container>a>svg {
+  .header>div>a>svg {
     width: 40px;
     height: 16px;
   }
 }
 
-.header .container>a>span {
+.header>div>a>span {
   display: block;
   letter-spacing: .35em;
   color: var(--black);
@@ -52,14 +50,14 @@
 }
 
 @include medium {
-  .header .container>a>span {
+  .header>div>a>span {
     font-size: 1rem;
     letter-spacing: .3em;
   }
 }
 
 @include small {
-  .header .container>a>span {
+  .header>div>a>span {
     font-size: .8rem;
   }
 }
