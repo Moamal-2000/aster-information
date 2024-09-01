@@ -3,9 +3,14 @@
 .visionSection {
   background-color: var(--black);
   padding-top: 280px;
-  // padding-top: 300px;
   position: relative;
   height: 1200px;
+}
+
+@media (max-width: 1950px) {
+  .visionSection {
+    height: 1103px;
+  }
 }
 
 @media (max-width: 1300px) {
