@@ -2,6 +2,55 @@
 
 .technology {
   position: relative;
+  height: 1000px;
+}
+
+@media (max-width: 1300px) {
+  .technology {
+    height: 800px;
+  }
+}
+
+@include large {
+  .technology {
+    height: 720px;
+  }
+}
+
+@include medium {
+  .technology {
+    height: 580px;
+  }
+}
+
+@include small {
+  .technology {
+    height: 650px;
+  }
+}
+
+@media (max-width: 620px) {
+  .technology {
+    height: 540px;
+  }
+}
+
+@media (max-width: 520px) {
+  .technology {
+    height: 440px;
+  }
+}
+
+@media (max-width: 420px) {
+  .technology {
+    height: 340px;
+  }
+}
+
+@include very-small {
+  .technology {
+    height: 300px;
+  }
 }
 
 .technology .technologyBg {
