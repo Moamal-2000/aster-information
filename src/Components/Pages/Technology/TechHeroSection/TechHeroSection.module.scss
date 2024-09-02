@@ -1,12 +1,25 @@
 @import "src/Styles/mixins.scss";
 
 .technology {
+  position: relative;
+}
 
+.technology .technologyBg {
+  position: absolute;
+  left: 0;
+  top: -100px;
+  width: 100vw;
+  height: auto;
+  z-index: -1;
 }
 
 .technology>h1 {
   letter-spacing: .08em;
   line-height: 1.5em;
   text-align: center;
-  font-size: 64px;
+  font-size: 4rem;
+  font-weight: 400;
+  width: 922px;
+  margin: 0 auto;
+  padding: 30px 0;
 }
