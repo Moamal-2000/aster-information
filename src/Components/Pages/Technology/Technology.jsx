@@ -13,6 +13,7 @@ const Technology = () => {
 
       <main className={s.technology} id="technologyPage">
         <TechHeroSection />
+        {/* <ValueSection /> */}
       </main>
     </>
   );
