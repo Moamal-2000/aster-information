@@ -8,9 +8,17 @@
   position: absolute;
   left: 0;
   top: -100px;
-  width: 100vw;
+  width: 100%;
   height: auto;
   z-index: -1;
+}
+
+@include small {
+  .technology .technologyBg {
+    scale: 1.5;
+    top: 0;
+    object-position: -50px 0;
+  }
 }
 
 .technology>h1 {
@@ -22,4 +30,25 @@
   width: 922px;
   margin: 0 auto;
   padding: 30px 0;
+}
+
+@include medium {
+  .technology>h1 {
+    font-size: 3rem;
+    width: 700px;
+  }
+}
+
+@include small {
+  .technology>h1 {
+    font-size: 1.8rem;
+    width: 340px;
+  }
+}
+
+@include very-small {
+  .technology>h1 {
+    font-size: 1.5rem;
+    width: 100%;
+  }
 }
