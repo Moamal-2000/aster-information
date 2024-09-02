@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./Technology.module.scss";
+import TechHeroSection from "./TechHeroSection/TechHeroSection";
 
 const Technology = () => {
   return (
@@ -11,7 +12,7 @@ const Technology = () => {
       </Helmet>
 
       <main className={s.technology} id="technologyPage">
-        Technology page
+        <TechHeroSection />
       </main>
     </>
   );

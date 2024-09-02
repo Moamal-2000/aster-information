@@ -47,7 +47,7 @@ const CareersSlider = () => {
   }, [activeSlide]);
 
   useEffect(() => {
-    setRootMargin(sliderRef?.current?.scrollHeight + "px");
+    setRootMargin(sliderRef.current.scrollHeight + "px");
   }, []);
 
   return (

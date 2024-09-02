@@ -1,0 +1,12 @@
+@import "src/Styles/mixins.scss";
+
+.technology {
+
+}
+
+.technology>h1 {
+  letter-spacing: .08em;
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 64px;
+}
