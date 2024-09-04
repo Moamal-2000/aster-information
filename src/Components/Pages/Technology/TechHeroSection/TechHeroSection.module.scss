@@ -5,6 +5,12 @@
   height: 1000px;
 }
 
+@media (max-width: 1400px) {
+  .technology {
+    height: 860px;
+  }
+}
+
 @media (max-width: 1300px) {
   .technology {
     height: 800px;
@@ -17,6 +23,12 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .technology {
+    height: 670px;
+  }
+}
+
 @include medium {
   .technology {
     height: 580px;
@@ -25,7 +37,7 @@
 
 @include small {
   .technology {
-    height: 650px;
+    height: 660px;
   }
 }
 
