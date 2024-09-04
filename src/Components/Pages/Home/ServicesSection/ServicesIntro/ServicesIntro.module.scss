@@ -19,29 +19,6 @@
   }
 }
 
-.servicesIntro .animatedLine {
-  position: absolute;
-  left: -30px;
-}
-
-@media (max-width: 1600px) {
-  .servicesIntro .animatedLine {
-    left: -57px;
-  }
-}
-
-@media (max-width: 1300px) and (min-width: 1200px) {
-  .servicesIntro .animatedLine {
-    left: -25px;
-  }
-}
-
-@include small {
-  .servicesIntro .animatedLine {
-    left: 0;
-  }
-}
-
 @include small {
   .content {
     margin-left: var(--left-margin-content);

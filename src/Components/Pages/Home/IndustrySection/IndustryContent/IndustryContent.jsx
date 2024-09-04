@@ -8,14 +8,12 @@ const IndustryContent = () => {
 
   return (
     <div className={s.content}>
-      <div className={s.animatedLine}>
-        <AnimatedLine
-          lineHeight={lineHeight}
-          animatedLineHeight={animatedLineHeight}
-          initialY={initialY}
-          animateTo={animateTo}
-        />
-      </div>
+      <AnimatedLine
+        lineHeight={lineHeight}
+        animatedLineHeight={animatedLineHeight}
+        initialY={initialY}
+        animateTo={animateTo}
+      />
 
       <h2 className={s.title}>INDUSTRY</h2>
       <p className={s.subTitle}>Our Partners</p>

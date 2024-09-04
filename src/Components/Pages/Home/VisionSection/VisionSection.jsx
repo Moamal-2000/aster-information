@@ -11,13 +11,11 @@ const VisionSection = () => {
     <section className={s.visionSection}>
       <div className="container" data-container>
         <div className={s.wrapper}>
-          <div className={s.animatedLine}>
-            <AnimatedLine
-              lineHeight={lineHeight}
-              initialY={initialY}
-              animateTo={animateTo}
-            />
-          </div>
+          <AnimatedLine
+            lineHeight={lineHeight}
+            initialY={initialY}
+            animateTo={animateTo}
+          />
           <VisionSectionContent />
         </div>
 

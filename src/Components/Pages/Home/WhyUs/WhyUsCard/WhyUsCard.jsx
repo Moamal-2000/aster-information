@@ -25,18 +25,17 @@ const WhyUsCard = () => {
 
   return (
     <div className={`${s.card} ${activeClass}`} ref={cardRef}>
-      <div className={s.animatedLine}>
-        <AnimatedLine
-          lineHeight={lineHeight}
-          initialY={initialY}
-          animateTo={animateTo}
-          delay=".9s"
-          lineColors={{
-            lineColor: "#b4b4b4",
-            animatedLineColor: "#fff",
-          }}
-        />
-      </div>
+      <AnimatedLine
+        lineHeight={lineHeight}
+        initialY={initialY}
+        animateTo={animateTo}
+        delay=".9s"
+        isPositioned={false}
+        lineColors={{
+          lineColor: "#b4b4b4",
+          animatedLineColor: "#fff",
+        }}
+      />
 
       <WhyUsContent />
     </div>

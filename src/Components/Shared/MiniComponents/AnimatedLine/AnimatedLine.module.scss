@@ -1,5 +1,28 @@
 @import "src/Styles/mixins.scss";
 
+.lineContainer {
+  position: absolute;
+  left: -30px;
+}
+
+@media (max-width: 1600px) {
+  .lineContainer {
+    left: -57px;
+  }
+}
+
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .lineContainer {
+    left: -25px;
+  }
+}
+
+@include small {
+  .lineContainer {
+    left: 0;
+  }
+}
+
 .line {
   background-color: var(--light-gray);
   width: 1px;

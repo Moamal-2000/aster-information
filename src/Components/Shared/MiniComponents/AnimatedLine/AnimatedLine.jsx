@@ -11,6 +11,7 @@ const AnimatedLine = ({
   animateTo,
   delay,
   lineColors,
+  isPositioned = true,
 }) => {
   const lineRef = useRef();
   const [lineHeightValue, lineHeightUnit] = lineHeight.match(/\d+|.+/g);
@@ -29,9 +30,21 @@ const AnimatedLine = ({
   });
 
   return (
-    <div className={s.line} ref={lineRef} style={lineStyles}>
-      <div className={s.animatedLine} style={animatedLineStyles} />
-    </div>
+    <>
+      {isPositioned && (
+        <div className={s.lineContainer}>
+          <div className={s.line} ref={lineRef} style={lineStyles}>
+            <div className={s.animatedLine} style={animatedLineStyles} />
+          </div>
+        </div>
+      )}
+
+      {!isPositioned && (
+        <div className={s.line} ref={lineRef} style={lineStyles}>
+          <div className={s.animatedLine} style={animatedLineStyles} />
+        </div>
+      )}
+    </>
   );
 };
 export default memo(AnimatedLine);
