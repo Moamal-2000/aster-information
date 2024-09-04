@@ -18,6 +18,12 @@
   }
 }
 
+@include small {
+  .coreExpertise {
+    gap: 60px;
+  }
+}
+
 @include large {
   .coreExpertise [data-container] {
     display: flex;
@@ -45,5 +51,6 @@
   .coreExpertise .coreExpertiseBg {
     position: static;
     width: 100%;
+    height: auto;
   }
 }

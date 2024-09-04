@@ -6,8 +6,17 @@
   position: relative;
 }
 
-.content {}
+@include small {
+  .wrapper {
+    width: 100%;
+  }
+}
 
+@include small {
+  .content {
+    margin-left: var(--left-margin-content);
+  }
+}
 
 .content .title {
   text-transform: uppercase;
