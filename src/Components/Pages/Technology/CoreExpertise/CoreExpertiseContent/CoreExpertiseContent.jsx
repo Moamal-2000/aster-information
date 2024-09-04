@@ -1,7 +1,7 @@
 import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
-import s from "./FeatureOverviewContent.module.scss";
+import s from "./CoreExpertiseContent.module.scss";
 
-const FeatureOverviewContent = () => {
+const CoreExpertiseContent = () => {
   return (
     <div className={s.wrapper}>
       <AnimatedLine
@@ -24,4 +24,4 @@ const FeatureOverviewContent = () => {
     </div>
   );
 };
-export default FeatureOverviewContent;
+export default CoreExpertiseContent;

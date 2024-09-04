@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet-async";
 import { WEBSITE_NAME } from "src/Data/variables";
-import FeatureOverview from "./FeatureOverview/FeatureOverview";
 import TechHeroSection from "./TechHeroSection/TechHeroSection";
 import s from "./Technology.module.scss";
 import ValueSection from "./ValueSection/ValueSection";
+import CoreExpertise from "./CoreExpertise/CoreExpertise";
 
 const Technology = () => {
   return (
@@ -16,7 +16,7 @@ const Technology = () => {
       <main className={s.technology} id="technologyPage">
         <TechHeroSection />
         <ValueSection />
-        <FeatureOverview />
+        <CoreExpertise />
       </main>
     </>
   );

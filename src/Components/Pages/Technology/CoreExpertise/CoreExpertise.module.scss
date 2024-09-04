@@ -1,6 +1,6 @@
 @import "src/Styles/mixins.scss";
 
-.featureOverview {
+.coreExpertise {
   background-color: var(--black);
   margin: 20px 0;
   height: 1000px;
@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.featureOverview .coreExpertiseBg {
+.coreExpertise .coreExpertiseBg {
   position: absolute;
   right: 0;
   top: 0;
@@ -20,7 +20,7 @@
 }
 
 @media (max-width: 1500px) {
-  .featureOverview .coreExpertiseBg {
+  .coreExpertise .coreExpertiseBg {
     width: 593px;
     height: 894px;
   }
