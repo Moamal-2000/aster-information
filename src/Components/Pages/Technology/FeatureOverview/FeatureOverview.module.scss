@@ -3,4 +3,25 @@
 .featureOverview {
   background-color: var(--black);
   margin: 20px 0;
+  height: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.featureOverview .coreExpertiseBg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 734px;
+  height: 894px;
+  object-fit: cover;
+  margin-top: 80px;
+}
+
+@media (max-width: 1500px) {
+  .featureOverview .coreExpertiseBg {
+    width: 593px;
+    height: 894px;
+  }
 }

@@ -1,5 +1,45 @@
 @import "src/Styles/mixins.scss";
 
-.content {
-  
+.wrapper {
+  color: var(--white);
+  width: 430px;
+  position: relative;
+}
+
+.content {}
+
+
+.content .title {
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  letter-spacing: .16em;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+@include small {
+  .content .title {
+    margin-bottom: 30px;
+    font-size: .7rem;
+  }
+}
+
+.content .description {
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  margin-bottom: 90px;
+}
+
+@include small {
+  .content .description {
+    margin-bottom: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@include very-small {
+  .content .description {
+    font-size: 1rem;
+  }
 }
