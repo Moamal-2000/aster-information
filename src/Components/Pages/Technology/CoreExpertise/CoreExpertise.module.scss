@@ -9,6 +9,22 @@
   align-items: center;
 }
 
+@include large {
+  .coreExpertise {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    height: auto;
+  }
+}
+
+@include large {
+  .coreExpertise [data-container] {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .coreExpertise .coreExpertiseBg {
   position: absolute;
   right: 0;
@@ -16,12 +32,18 @@
   width: 734px;
   height: 894px;
   object-fit: cover;
-  margin-top: 80px;
 }
 
 @media (max-width: 1500px) {
   .coreExpertise .coreExpertiseBg {
     width: 593px;
     height: 894px;
+  }
+}
+
+@include large {
+  .coreExpertise .coreExpertiseBg {
+    position: static;
+    width: 100%;
   }
 }
