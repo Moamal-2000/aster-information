@@ -5,3 +5,11 @@
     margin-top: 80px;
   }
 }
+
+.technology.hidePseudo {
+  margin-top: 100px;
+}
+
+.technology.hidePseudo::before {
+  display: none;
+}

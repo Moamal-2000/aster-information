@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialState = {
   isMobileNavActive: false,
   isHeaderActive: false,
+  currentPage: "/home",
 };
 
 export const globalSlice = createSlice({
