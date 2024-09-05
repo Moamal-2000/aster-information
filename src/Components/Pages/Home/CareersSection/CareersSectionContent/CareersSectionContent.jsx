@@ -8,7 +8,7 @@ const CareersSectionContent = () => {
     useMidLineProperties();
 
   return (
-    <div className={s.content}>
+    <div className={s.wrapper}>
       <AnimatedLine
         lineHeight={lineHeight}
         animatedLineHeight={animatedLineHeight}
@@ -16,14 +16,16 @@ const CareersSectionContent = () => {
         animateTo={animateTo}
       />
 
-      <h2 className={s.title}>Careers</h2>
+      <div className={s.content}>
+        <h2 className={s.title}>Careers</h2>
 
-      <p className={s.subTitle}>
-        We’re looking for innovative talent to join our team. See all positions
-        and submit your CV.
-      </p>
+        <p className={s.subTitle}>
+          We’re looking for innovative talent to join our team. See all
+          positions and submit your CV.
+        </p>
 
-      <Button path="/careers" text="Openings" invertColors={true} />
+        <Button path="/careers" text="Openings" invertColors={true} />
+      </div>
     </div>
   );
 };
