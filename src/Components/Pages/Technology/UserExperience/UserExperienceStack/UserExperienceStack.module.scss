@@ -1,5 +1,17 @@
 @import "src/Styles/mixins.scss";
 
-.stackContent {
-  
+.stackContent>h2 {
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.stackContent>p {
+  letter-spacing: .04em;
+  line-height: 1.8em;
+  font-size: 1rem;
+  width: 340px;
+  height: auto;
 }
