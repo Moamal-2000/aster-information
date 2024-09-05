@@ -189,3 +189,23 @@ export const socialMedia = [
     media: "Instagram",
   },
 ];
+
+export const userExperienceData = [
+  {
+    id: 1,
+    title: "Enhanced User Experience",
+    description: `our focus is on creating user-friendly, intuitive software solutions
+    that enhance productivity and streamline operations. We are committed
+    to improving the user experience by designing systems that simplify
+    complex tasks, making them more manageable and efficient.`,
+  },
+  {
+    id: 2,
+    title: "PERFORMANCE AND SCALABILITY",
+    description: `
+    Performance and scalability are at the core of our software development approach.
+    We design solutions that not only meet the immediate needs of businesses but also
+    grow with them over time. Our emphasis is on creating efficient, high-performing
+    systems that can adapt to increasing demands and ensure sustainable growth.`,
+  },
+];
