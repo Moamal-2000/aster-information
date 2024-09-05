@@ -16,6 +16,9 @@ const useClassOnFirstView = ({
     [hasAnimated, cssModule.active]
   );
 
+  // console.log(cssModule);
+  // console.log(cssModule.active);
+
   return activeClass;
 };
 

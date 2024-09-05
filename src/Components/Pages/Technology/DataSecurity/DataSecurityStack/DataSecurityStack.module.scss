@@ -27,6 +27,13 @@
   font-weight: 400;
   margin-bottom: 40px;
   text-wrap: balance;
+  position: relative;
+  top: 100px;
+  transition: top .6s ease-in-out;
+
+  &.active {
+    top: 0;
+  }
 }
 
 @include large {
@@ -52,6 +59,13 @@
   line-height: 1.8em;
   font-size: 1rem;
   text-wrap: balance;
+  position: relative;
+  top: 100px;
+  transition: top .6s .1s ease-in-out;
+
+  &.active {
+    top: 0;
+  }
 }
 
 @include small {
