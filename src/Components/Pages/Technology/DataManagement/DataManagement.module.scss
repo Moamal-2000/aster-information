@@ -3,4 +3,69 @@
 .dataManagement {
   padding: 200px 0 60px;
   border-bottom: solid 1px var(--black);
+  height: 1000px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+@include large {
+  .dataManagement {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+    height: auto;
+  }
+}
+
+@include small {
+  .dataManagement {
+    gap: 60px;
+  }
+}
+
+@include very-small {
+  .dataManagement {
+    gap: 0;
+  }
+}
+
+@include large {
+  .dataManagement [data-container] {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.dataManagement .dataManagementBg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 734px;
+  height: 894px;
+  object-fit: cover;
+  opacity: .6;
+}
+
+@media (max-width: 1500px) {
+  .dataManagement .dataManagementBg {
+    width: 593px;
+    height: 894px;
+  }
+}
+
+@include large {
+  .dataManagement .dataManagementBg {
+    display: none;
+  }
+}
+
+@include small {
+  .dataManagement .dataManagementBg {
+    display: block;
+    position: static;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
 }

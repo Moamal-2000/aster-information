@@ -20,6 +20,7 @@ import pngaaaLogo from "./pngaaa-logo.webp";
 import serviceSectionBg1 from "./services-bg1.webp";
 import serviceSectionBg2 from "./services-bg2.webp";
 import serviceSectionBg3 from "./services-bg3.webp";
+import smallDataManagementBg from "./small-data-management-section-bg.webp";
 import teamCollaborationImg from "./team-collaboration.webp";
 import techPageBg from "./tech-bg.webp";
 import triNexLogo from "./tri-nex .webp";
@@ -50,6 +51,7 @@ export {
   serviceSectionBg1,
   serviceSectionBg2,
   serviceSectionBg3,
+  smallDataManagementBg,
   teamCollaborationImg,
   techPageBg,
   triNexLogo,
