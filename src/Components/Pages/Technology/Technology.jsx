@@ -1,9 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import { WEBSITE_NAME } from "src/Data/variables";
+import CoreExpertise from "./CoreExpertise/CoreExpertise";
 import TechHeroSection from "./TechHeroSection/TechHeroSection";
 import s from "./Technology.module.scss";
+import UserExperience from "./UserExperience/UserExperience";
 import ValueSection from "./ValueSection/ValueSection";
-import CoreExpertise from "./CoreExpertise/CoreExpertise";
 
 const Technology = () => {
   return (
@@ -17,6 +18,7 @@ const Technology = () => {
         <TechHeroSection />
         <ValueSection />
         <CoreExpertise />
+        <UserExperience />
       </main>
     </>
   );

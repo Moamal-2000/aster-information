@@ -1,0 +1,13 @@
+@import "src/Styles/mixins.scss";
+
+.userExperience {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.userExperience [data-container] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
