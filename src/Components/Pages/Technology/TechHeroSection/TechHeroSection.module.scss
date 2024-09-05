@@ -37,31 +37,13 @@
 
 @include small {
   .technology {
-    height: 680px;
-  }
-}
-
-@media (max-width: 620px) {
-  .technology {
-    height: 560px;
-  }
-}
-
-@media (max-width: 520px) {
-  .technology {
-    height: 460px;
-  }
-}
-
-@media (max-width: 420px) {
-  .technology {
-    height: 340px;
+    height: 620px;
   }
 }
 
 @include very-small {
   .technology {
-    height: 300px;
+    height: 430px;
   }
 }
 
@@ -76,9 +58,22 @@
 
 @include small {
   .technology .technologyBg {
-    scale: 1.5;
-    top: 0;
-    object-position: -50px 0;
+    height: 695px;
+    object-fit: cover;
+    object-position: -250px 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .technology .technologyBg {
+    object-position: -390px 0;
+  }
+}
+
+@include very-small {
+  .technology .technologyBg {
+    height: 500px;
+    object-position: -240px 0;
   }
 }
 

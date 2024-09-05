@@ -72,3 +72,9 @@
     visibility: visible;
   }
 }
+
+@include small {
+  .submitMessage {
+    width: 100%;
+  }
+}
