@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { WEBSITE_NAME } from "src/Data/variables";
 import CoreExpertise from "./CoreExpertise/CoreExpertise";
 import DataManagement from "./DataManagement/DataManagement";
+import DataSecurity from "./DataSecurity/DataSecurity";
 import TechHeroSection from "./TechHeroSection/TechHeroSection";
 import s from "./Technology.module.scss";
 import UserExperience from "./UserExperience/UserExperience";
@@ -21,6 +22,7 @@ const Technology = () => {
         <CoreExpertise />
         <UserExperience />
         <DataManagement />
+        <DataSecurity />
       </main>
     </>
   );

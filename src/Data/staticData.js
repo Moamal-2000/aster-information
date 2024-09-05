@@ -209,3 +209,20 @@ export const userExperienceData = [
     systems that can adapt to increasing demands and ensure sustainable growth.`,
   },
 ];
+
+export const dataSecurityData = [
+  {
+    id: 1,
+    title: "STRATEGIC DATA MANAGEMENT",
+    description: `We provide strategic data management solutions, designed to improve
+    data quality, ensure compliance, and enable businesses to make data-driven decisions.`,
+  },
+  {
+    id: 2,
+    title: "ADVANCED CYBER SECURITY",
+    description: `Our commitment to advanced cybersecurity ensures the integrity and
+    safety of your data. We implement robust security measures to protect
+    against threats and maintain the confidentiality, integrity,
+    and availability of your business-critical information.`,
+  },
+];

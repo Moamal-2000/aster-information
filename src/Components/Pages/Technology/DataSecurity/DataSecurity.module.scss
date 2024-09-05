@@ -1,0 +1,27 @@
+@import "src/Styles/mixins.scss";
+
+.dataSecurity {
+  padding-bottom: 80px;
+  border-bottom: solid 1px var(--black);
+}
+
+.dataSecurity [data-container] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+@include large {
+  .dataSecurity [data-container] {
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+  }
+}
+
+@include small {
+  .dataSecurity [data-container] {
+    gap: 60px;
+  }
+}
