@@ -1,33 +1,28 @@
 @import "src/Styles/mixins.scss";
 
-.valueSection {
-
-}
-
 .valueSection>p {
   line-height: 1.8em;
   text-align: center;
   font-size: 1.5rem;
-  width: 740px;
+  max-width: 740px;
   margin: 0 auto;
+  text-wrap: balance;
 }
 
 @include medium {
   .valueSection>p {
     font-size: 1.3rem;
-    width: 650px;
   }
 }
 
 @include small {
   .valueSection>p {
     font-size: 1rem;
-    width: 90%;
   }
 }
 
 @include very-small {
   .valueSection>p {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }

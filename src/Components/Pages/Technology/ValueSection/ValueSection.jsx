@@ -3,7 +3,7 @@ import s from "./ValueSection.module.scss";
 const ValueSection = () => {
   return (
     <section className={s.valueSection}>
-      <p>
+      <p className="container">
         We harness the power of cutting-edge AI technology to develop
         innovative, data-driven solutions. Our technology is designed to
         streamline information management, enhance business efficiency, and

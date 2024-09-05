@@ -1,11 +1,31 @@
 @import "src/Styles/mixins.scss";
 
+.stackContent {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 380px;
+}
+
+@include small {
+  .stackContent {
+    width: 300px;
+  }
+}
+
+@include very-small {
+  .stackContent {
+    width: 100%;
+  }
+}
+
 .stackContent>h2 {
   letter-spacing: .08em;
   line-height: 1.8em;
   font-size: 1.125rem;
   font-weight: 400;
   margin-bottom: 40px;
+  text-wrap: balance;
 }
 
 @include large {
@@ -16,7 +36,7 @@
 
 @include small {
   .stackContent>h2 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -30,19 +50,11 @@
   letter-spacing: .04em;
   line-height: 1.8em;
   font-size: 1rem;
-  width: 340px;
-  height: auto;
+  text-wrap: balance;
 }
 
 @include small {
   .stackContent>p {
-    font-size: .8rem;
-    width: 280px;
-  }
-}
-
-@include very-small {
-  .stackContent>p {
-    width: 100%;
+    font-size: .9rem;
   }
 }
