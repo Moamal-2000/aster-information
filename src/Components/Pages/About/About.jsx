@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./About.module.scss";
+import AboutBackgroundImage from "./AboutBackgroundImage.jsx/AboutBackgroundImage";
 import AboutHeroSection from "./AboutHeroSection/AboutHeroSection";
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
 
       <main className={s.about} id="aboutPage">
         <AboutHeroSection />
+        <AboutBackgroundImage />
       </main>
     </>
   );
