@@ -1,15 +1,89 @@
 @import "src/Styles/mixins.scss";
 
 .aboutHeroSection {
-  padding-top: 60px;
+  padding-top: 55px;
   margin: 0 auto;
   width: 710px;
   text-align: center;
 }
 
-.aboutHeroSection>h1 {
+@include small {
+  .aboutHeroSection {
+    width: 370px;
+  }
+}
 
+@media (max-width: 620px) {
+  .aboutHeroSection {
+    width: var(--container-width);
+  }
+}
+
+@include very-small {
+  .aboutHeroSection {
+    padding-top: 0;
+  }
+}
+
+.aboutHeroSection>h1 {
+  margin-bottom: 52px;
+  letter-spacing: .08em;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+@include medium {
+  .aboutHeroSection>h1 {
+    font-size: 3rem;
+  }
+}
+
+@include small {
+  .aboutHeroSection>h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutHeroSection>h1 {
+    margin-bottom: 30px;
+  }
+}
+
+@include very-small {
+  .aboutHeroSection>h1 {
+    font-size: 1.8rem;
+  }
 }
 
 .aboutHeroSection>p {
+  letter-spacing: .04em;
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  text-wrap: balance;
+}
+
+@include medium {
+  .aboutHeroSection>p {
+    font-size: 1.2rem;
+  }
+}
+
+@include small {
+  .aboutHeroSection>p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutHeroSection>p {
+    font-size: .9rem;
+  }
+}
+
+@include very-small {
+  .aboutHeroSection>p {
+    font-size: .8rem;
+  }
 }
