@@ -1,5 +1,9 @@
 @import "src/Styles/mixins.scss";
 
 .ourMissionSection {
-  
+  padding: 127px 0 77px;
+  background-color: var(--website-bg);
+  border: solid 1px var(--gray);
+  border-right: none;
+  border-left: none;
 }
