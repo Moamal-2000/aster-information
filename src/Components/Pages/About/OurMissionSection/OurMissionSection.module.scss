@@ -7,3 +7,15 @@
   border-right: none;
   border-left: none;
 }
+
+.ourMissionSection [data-container] {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ourMissionBg {
+  width: 400px;
+  height: 616px;
+  object-fit: cover;
+  border-radius: 20px;
+}
