@@ -3,6 +3,7 @@ import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./About.module.scss";
 import AboutBackgroundImage from "./AboutBackgroundImage.jsx/AboutBackgroundImage";
 import AboutHeroSection from "./AboutHeroSection/AboutHeroSection";
+import JourneySection from "./JourneySection/JourneySection";
 import OurMissionSection from "./OurMissionSection/OurMissionSection";
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
       <main className={s.about} id="aboutPage">
         <AboutHeroSection />
         <OurMissionSection />
+        <JourneySection />
         <AboutBackgroundImage />
       </main>
     </>
