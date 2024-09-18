@@ -1,4 +1,5 @@
 import s from "./JourneySection.module.scss";
+import JourneySlider from "./JourneySlider/JourneySlider";
 
 const JourneySection = () => {
   return (
@@ -6,6 +7,8 @@ const JourneySection = () => {
       <div className="container" data-container>
         <h2>Our Journey So Far</h2>
       </div>
+
+      <JourneySlider />
     </section>
   );
 };
