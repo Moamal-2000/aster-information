@@ -3,6 +3,7 @@ import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./About.module.scss";
 import AboutBackgroundImage from "./AboutBackgroundImage.jsx/AboutBackgroundImage";
 import AboutHeroSection from "./AboutHeroSection/AboutHeroSection";
+import OurMissionSection from "./OurMissionSection/OurMissionSection";
 
 const About = () => {
   return (
@@ -14,6 +15,7 @@ const About = () => {
 
       <main className={s.about} id="aboutPage">
         <AboutHeroSection />
+        <OurMissionSection />
         <AboutBackgroundImage />
       </main>
     </>
