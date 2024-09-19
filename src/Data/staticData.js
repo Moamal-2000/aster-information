@@ -226,3 +226,73 @@ export const dataSecurityData = [
     and availability of your business-critical information.`,
   },
 ];
+
+export const journeySliderData = [
+  [
+    {
+      year: "2016",
+      title: "SAN FRANCISCO HQ OPENS",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+    {
+      year: "2017",
+      title: "FIRST PROTOTYPE IS TEST-DRIVEN",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+  ],
+
+  [
+    {
+      year: "2018",
+      title: "PARTNERSHIP WITH TRI-NEX & GENERAL TRANSPORT INITIATED",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+    {
+      year: "2019",
+      title: "TESTING EXPANDS TO ARIZONA & NEW MEXICO",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+  ],
+
+  [
+    {
+      year: "2020",
+      title: "PRODUCTION BEGINS!",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+    {
+      year: "2021",
+      title: "FIRST 1,000 CARS SOLD",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+  ],
+
+  [
+    {
+      year: "2022",
+      title: "ASTER IS FOUNDED",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+    {
+      year: "2023",
+      title: "Future Prospects",
+      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
+      Just click “Edit Text” or double click me to add your own content and
+      make changes to the font.`,
+    },
+  ],
+];
