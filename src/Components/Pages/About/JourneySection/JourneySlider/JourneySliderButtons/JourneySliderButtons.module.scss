@@ -1,0 +1,29 @@
+@import "src/Styles/mixins.scss";
+
+.sliderButtons {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sliderButtons button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: fit-content;
+}
+
+.sliderButtons .nextButton {
+  rotate: 180deg;
+}
+
+.sliderButtons button svg {
+  width: 100px;
+  height: 100px;
+}
+
+.sliderButtons .line {
+  flex: 1;
+  height: 1px;
+  background-color: var(--black);
+}

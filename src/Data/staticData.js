@@ -232,16 +232,14 @@ export const journeySliderData = [
     {
       year: "2016",
       title: "SAN FRANCISCO HQ OPENS",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `Aster Information Limited was founded with a vision to revolutionize
+      Information Management and IT solutions, initiating our data-empowered journey.`,
     },
     {
       year: "2017",
       title: "FIRST PROTOTYPE IS TEST-DRIVEN",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+      in data-driven decision making across various industries.`,
     },
   ],
 
@@ -249,16 +247,14 @@ export const journeySliderData = [
     {
       year: "2018",
       title: "PARTNERSHIP WITH TRI-NEX & GENERAL TRANSPORT INITIATED",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `Aster Information Limited was founded with a vision to revolutionize
+      Information Management and IT solutions, initiating our data-empowered journey.`,
     },
     {
       year: "2019",
       title: "TESTING EXPANDS TO ARIZONA & NEW MEXICO",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+      in data-driven decision making across various industries.`,
     },
   ],
 
@@ -266,16 +262,14 @@ export const journeySliderData = [
     {
       year: "2020",
       title: "PRODUCTION BEGINS!",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `Aster Information Limited was founded with a vision to revolutionize
+      Information Management and IT solutions, initiating our data-empowered journey.`,
     },
     {
       year: "2021",
       title: "FIRST 1,000 CARS SOLD",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+      in data-driven decision making across various industries.`,
     },
   ],
 
@@ -283,16 +277,14 @@ export const journeySliderData = [
     {
       year: "2022",
       title: "ASTER IS FOUNDED",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `Aster Information Limited was founded with a vision to revolutionize
+      Information Management and IT solutions, initiating our data-empowered journey.`,
     },
     {
       year: "2023",
       title: "Future Prospects",
-      description: `I'm a paragraph. Click here to add your own text and edit me. It’s easy.
-      Just click “Edit Text” or double click me to add your own content and
-      make changes to the font.`,
+      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+      in data-driven decision making across various industries.`,
     },
   ],
 ];
