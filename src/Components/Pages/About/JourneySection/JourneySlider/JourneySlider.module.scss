@@ -17,16 +17,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
   width: 100%;
 }
 
 .wrapper .card {
+  position: relative;
   opacity: 0;
-  transition: opacity 1s ease;
+  transition: opacity .6s ease, left ease-out 1.2s .4s;
 }
 
 .wrapper.active .card {
-  transition: opacity 1s .8s ease;
+  transition: opacity .6s .6s ease, left ease-out 1.2s .4s;
   opacity: 1;
+}
+
+.wrapper .card.firstCard.goLeft {
+  left: calc(var(--journey-slider-left) * -1);
+}
+
+.wrapper .card.secondCard.goLeft {
+  left: var(--journey-slider-left);
+}
+
+.wrapper .card.firstCard.goRight {
+  left: var(--journey-slider-left);
+}
+
+.wrapper .card.secondCard.goRight {
+  left: calc(var(--journey-slider-left) * -1);
 }

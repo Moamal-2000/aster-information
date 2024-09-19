@@ -23,13 +23,17 @@ const JourneySlider = () => {
     <div className={s.journeySlider}>
       {journeySliderData.map((sliderData, index) => {
         const activeClass = index === sliderIndex ? s.active : "";
+        const isEven = sliderIndex % 2 === 0;
+        const animateDirectionClass = isEven ? s.goRight : s.goLeft;
 
         return (
           <div
             className={`${s.wrapper} ${activeClass}`}
             key={sliderData[0].year}
           >
-            <div className={s.card}>
+            <div
+              className={`${s.card} ${s.firstCard} ${animateDirectionClass}`}
+            >
               <TimelineCard data={sliderData[0]} />
             </div>
 
@@ -38,7 +42,9 @@ const JourneySlider = () => {
               handlePrevSlide={handlePrevSlide}
             />
 
-            <div className={s.card}>
+            <div
+              className={`${s.card} ${s.secondCard} ${animateDirectionClass}`}
+            >
               <TimelineCard data={sliderData[1]} />
             </div>
           </div>
