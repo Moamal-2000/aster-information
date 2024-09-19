@@ -21,6 +21,12 @@
   width: 100%;
 }
 
-.wrapper.active {
+.wrapper .card {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
 
+.wrapper.active .card {
+  transition: opacity 1s .8s ease;
+  opacity: 1;
 }

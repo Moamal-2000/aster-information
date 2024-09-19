@@ -7,6 +7,18 @@ import TimelineCard from "./TimelineCard/TimelineCard";
 const JourneySlider = () => {
   const [sliderIndex, setSliderIndex] = useState(0);
 
+  function handleNextSlide() {
+    setSliderIndex((prevIndex) =>
+      prevIndex === journeySliderData.length - 1 ? 0 : prevIndex + 1
+    );
+  }
+
+  function handlePrevSlide() {
+    setSliderIndex((prevIndex) =>
+      prevIndex === 0 ? journeySliderData.length - 1 : prevIndex - 1
+    );
+  }
+
   return (
     <div className={s.journeySlider}>
       {journeySliderData.map((sliderData, index) => {
@@ -17,11 +29,18 @@ const JourneySlider = () => {
             className={`${s.wrapper} ${activeClass}`}
             key={sliderData[0].year}
           >
-            <TimelineCard data={sliderData[0]} />
+            <div className={s.card}>
+              <TimelineCard data={sliderData[0]} />
+            </div>
 
-            <JourneySliderButtons />
+            <JourneySliderButtons
+              handleNextSlide={handleNextSlide}
+              handlePrevSlide={handlePrevSlide}
+            />
 
-            <TimelineCard data={sliderData[1]} />
+            <div className={s.card}>
+              <TimelineCard data={sliderData[1]} />
+            </div>
           </div>
         );
       })}
