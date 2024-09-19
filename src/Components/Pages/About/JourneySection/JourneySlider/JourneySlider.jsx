@@ -40,6 +40,7 @@ const JourneySlider = () => {
             <JourneySliderButtons
               handleNextSlide={handleNextSlide}
               handlePrevSlide={handlePrevSlide}
+              activeClassProp={activeClass}
             />
 
             <div
