@@ -5,6 +5,7 @@ import AboutBackgroundImage from "./AboutBackgroundImage.jsx/AboutBackgroundImag
 import AboutHeroSection from "./AboutHeroSection/AboutHeroSection";
 import JourneySection from "./JourneySection/JourneySection";
 import OurMissionSection from "./OurMissionSection/OurMissionSection";
+import PartnersSection from "./PartnersSection/PartnersSection";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
         <OurMissionSection />
         <JourneySection />
         <AboutBackgroundImage />
+        <PartnersSection />
       </main>
     </>
   );
