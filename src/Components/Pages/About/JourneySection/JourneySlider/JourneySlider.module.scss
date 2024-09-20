@@ -30,18 +30,121 @@
   opacity: 1;
 }
 
-.wrapper .card.firstCard.goLeft {
-  left: calc(var(--journey-slider-left) * -1);
+// First card
+.wrapper .card.firstCard::before {
+  content: '';
+  position: absolute;
+  left: 40px;
+  bottom: -50px;
+  width: 24px;
+  height: 3px;
+  background-color: var(--black);
 }
 
-.wrapper .card.secondCard.goLeft {
-  left: var(--journey-slider-left);
+@include medium {
+  .wrapper .card.firstCard::before {
+    bottom: -40px;
+  }
+}
+
+@include small {
+  .wrapper .card.firstCard::before {
+    display: none;
+  }
+}
+
+.wrapper .card.firstCard.goLeft::before {
+  animation: goLeft .1s .6s ease-out backwards;
+}
+
+.wrapper .card.firstCard.goRight::before {
+  animation: goRight .1s .6s ease-out forwards;
+}
+
+.wrapper .card.firstCard.goLeft {
+  left: calc(var(--journey-slider-left) * -1);
 }
 
 .wrapper .card.firstCard.goRight {
   left: var(--journey-slider-left);
 }
 
+// Second card
+.wrapper .card.secondCard::before {
+  content: '';
+  position: absolute;
+  top: -53px;
+  left: 40px;
+  width: 24px;
+  height: 3px;
+  background-color: var(--black);
+}
+
+@include medium {
+  .wrapper .card.secondCard::before {
+    top: -43px;
+  }
+}
+
+@include small {
+  .wrapper .card.secondCard::before {
+    display: none;
+  }
+}
+
+.wrapper .card.secondCard.goLeft::before {
+  animation: goRight2 .1s .6s ease-out forwards;
+}
+
+.wrapper .card.secondCard.goRight::before {
+  animation: goLeft2 .1s .6s ease-out backwards;
+}
+
+.wrapper .card.secondCard.goLeft {
+  left: var(--journey-slider-left);
+}
+
 .wrapper .card.secondCard.goRight {
   left: calc(var(--journey-slider-left) * -1);
+}
+
+// Keyframes
+@keyframes goLeft {
+  from {
+    left: calc(100% - 40px);
+  }
+
+  to {
+    left: 40px;
+  }
+}
+
+@keyframes goRight {
+  from {
+    left: 40px;
+  }
+
+  to {
+    left: calc(100% - 40px);
+  }
+}
+
+@keyframes goLeft2 {
+  from {
+    left: calc(100% - 70px);
+  }
+
+  to {
+    left: 40px;
+  }
+}
+
+@keyframes goRight2 {
+  from {
+    left: 40px;
+  }
+
+  to {
+    left: calc(100% - 70px);
+  }
 }
