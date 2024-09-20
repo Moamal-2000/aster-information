@@ -6,8 +6,30 @@
   min-height: 1000px;
 }
 
-.journeySection [data-container] {
+@include medium {
+  .journeySection {
+    min-height: 950px;
+    padding-bottom: 0;
+  }
+}
 
+@include small {
+  .journeySection {
+    padding: 100px 0 0;
+    min-height: 800px;
+  }
+}
+
+@media (max-width: 520px) {
+  .journeySection {
+    min-height: 850px;
+  }
+}
+
+@include very-small {
+  .journeySection {
+    min-height: 920px;
+  }
 }
 
 .journeySection h2 {
@@ -16,4 +38,10 @@
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 50px;
+}
+
+@include small {
+  .journeySection h2 {
+    font-size: 1.4rem;
+  }
 }

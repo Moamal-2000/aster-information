@@ -4,7 +4,7 @@ import JourneySlider from "./JourneySlider/JourneySlider";
 const JourneySection = () => {
   return (
     <section className={s.journeySection}>
-      <div className="container" data-container>
+      <div className="container">
         <h2>Our Journey So Far</h2>
       </div>
 
