@@ -31,6 +31,7 @@
 @include large {
   :root {
     --container-width: 900px;
+    --journey-slider-left: 70px;
   }
 }
 
@@ -38,6 +39,7 @@
   :root {
     --container-width: 700px;
     --why-us-section-padding: 80px;
+    --journey-slider-left: 30px;
   }
 }
 

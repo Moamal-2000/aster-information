@@ -17,6 +17,12 @@
   position: relative;
 }
 
+@include medium {
+  .year {
+    font-size: 2rem;
+  }
+}
+
 .year::before {
   content: '';
   position: absolute;
@@ -35,9 +41,25 @@
   width: 537px;
 }
 
+@include medium {
+  .title {
+    width: 440px;
+    height: 20px;
+    margin-bottom: 38px;
+    font-size: .7rem;
+  }
+}
+
 .description {
   letter-spacing: .05em;
   line-height: 1.8em;
   font-size: 1rem;
   width: 537px;
+}
+
+@include medium {
+  .description {
+    width: 440px;
+    font-size: .8rem;
+  }
 }
