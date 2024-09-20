@@ -7,6 +7,14 @@
   border-radius: 15px;
 }
 
+@include small {
+  .timelineCard {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 24px;
+  }
+}
+
 .year {
   font-weight: 400;
   letter-spacing: .08em;
@@ -23,6 +31,13 @@
   }
 }
 
+@include small {
+  .year {
+    font-size: 1.5rem;
+    margin-bottom: 35px;
+  }
+}
+
 .year::before {
   content: '';
   position: absolute;
@@ -30,6 +45,12 @@
   bottom: -18px;
   width: 100%;
   border-bottom: solid 1px var(--black);
+}
+
+@include small {
+  .year::before {
+    bottom: -13px;
+  }
 }
 
 .title {
@@ -50,6 +71,21 @@
   }
 }
 
+@include small {
+  .title {
+    width: 90%;
+    letter-spacing: .1em;
+    line-height: 1.6em;
+    margin-bottom: 33px;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    margin-bottom: 50px;
+  }
+}
+
 .description {
   letter-spacing: .05em;
   line-height: 1.8em;
@@ -61,5 +97,13 @@
   .description {
     width: 440px;
     font-size: .8rem;
+    line-height: 1.6em;
+  }
+}
+
+@include small {
+  .description {
+    width: 90%;
+    font-size: .7rem;
   }
 }
