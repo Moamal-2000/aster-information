@@ -13,6 +13,10 @@ const OurMissionContent = () => {
         animatedLineHeight={animatedLineHeight}
         initialY={initialY}
         animateTo={animateTo}
+        lineColors={{
+          lineColor: "#707070",
+          animatedLineColor: "#000",
+        }}
       />
 
       <div className={s.content}>
