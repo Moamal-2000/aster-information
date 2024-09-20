@@ -8,9 +8,23 @@
   border-left: none;
 }
 
+@include large {
+  .ourMissionSection {
+    padding: 120px 0;
+  }
+}
+
 .ourMissionSection [data-container] {
   display: flex;
   justify-content: space-between;
+}
+
+@include large {
+  .ourMissionSection [data-container] {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
 }
 
 .ourMissionBg {
@@ -18,4 +32,25 @@
   height: 616px;
   object-fit: cover;
   border-radius: 20px;
+}
+
+@include small {
+  .ourMissionBg {
+    width: 340px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 420px) {
+  .ourMissionBg {
+    width: 290px;
+    height: 420px;
+  }
+}
+
+@include very-small {
+  .ourMissionBg {
+    width: 100%;
+    height: 480px;
+  }
 }

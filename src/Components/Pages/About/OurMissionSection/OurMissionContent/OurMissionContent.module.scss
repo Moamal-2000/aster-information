@@ -8,9 +8,22 @@
   width: 340px;
 }
 
+@include large {
+  .content {
+    width: 400px;
+  }
+}
+
 @include small {
   .content {
+    width: 290px;
     margin-left: var(--left-margin-content);
+  }
+}
+
+@include very-small {
+  .content {
+    width: calc(100% - var(--left-margin-content));
   }
 }
 
@@ -38,7 +51,7 @@
 @include small {
   .content .subTitle {
     margin-bottom: 50px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -47,12 +60,13 @@
   line-height: 1.8em;
   font-size: 1rem;
   overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 @include small {
   .content .description {
     font-size: .8rem;
-    width: 230px;
+    width: 290px;
   }
 }
 

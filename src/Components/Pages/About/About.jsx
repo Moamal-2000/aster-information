@@ -17,7 +17,7 @@ const About = () => {
       <main className={s.about} id="aboutPage">
         <AboutHeroSection />
         <OurMissionSection />
-        <JourneySection />
+        {/* <JourneySection /> */}
         <AboutBackgroundImage />
       </main>
     </>
