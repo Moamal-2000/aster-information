@@ -5,9 +5,9 @@ const PartnersContent = () => {
   return (
     <div className={s.wrapper}>
       <AnimatedLine
-        lineHeight="320px"
-        animatedLineHeight="258px"
-        initialY="150px"
+        lineHeight="105px"
+        animatedLineHeight="43px"
+        initialY="100px"
         animateTo="60px"
       />
 
