@@ -5,9 +5,22 @@
   position: relative;
 }
 
+@include large {
+  .wrapper {
+    margin-left: 60px;
+  }
+}
+
 @include small {
   .wrapper {
     width: 100%;
+    margin-left: 20px;
+  }
+}
+
+@include very-small {
+  .wrapper {
+    margin-left: 0;
   }
 }
 

@@ -7,7 +7,6 @@
   width: fit-content;
   margin: 0 auto;
   margin-top: 200px;
-  border: solid;
 }
 
 @include large {
@@ -20,6 +19,13 @@
   .partners {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 462px) {
+  .partners {
+    gap: 80px;
   }
 }
 
