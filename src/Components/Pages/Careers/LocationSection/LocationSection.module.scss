@@ -32,13 +32,14 @@
   object-fit: contain;
   position: absolute;
   right: -99px;
-  top: 0;
+  top: 50px;
 }
 
 @include large {
   .locationBg {
     position: relative;
     right: auto;
+    top: auto;
     width: 700px;
     height: 550px;
     object-position: 0 -50px;
