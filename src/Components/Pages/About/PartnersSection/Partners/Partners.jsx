@@ -2,7 +2,7 @@ import s from "./Partners.module.scss"
 
 const Partners = () => {
   return (
-    <div>Partners</div>
+    <div className={s.partners}>Partners</div>
   )
 }
 export default Partners

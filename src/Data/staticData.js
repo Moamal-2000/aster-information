@@ -1,10 +1,15 @@
 import {
+  adobeLogo,
+  amazonAwsLogo,
+  docusignLogo,
   facebookLogo,
   generalTransportLogo,
   idiSoftwareLogo,
   imogenCarsLogo,
   instagramLogo,
   linkedinLogo,
+  microsoftLogo,
+  paloAltotRibunal,
   serviceSectionBg1,
   serviceSectionBg2,
   serviceSectionBg3,
@@ -287,4 +292,36 @@ export const journeySliderData = [
       in data-driven decision making across various industries.`,
     },
   ],
+];
+
+export const partnersSectionData = [
+  {
+    id: 1,
+    img: microsoftLogo,
+    partner: "Microsoft",
+  },
+
+  {
+    id: 2,
+    img: amazonAwsLogo,
+    partner: "Amazon Web Services",
+  },
+
+  {
+    id: 3,
+    img: adobeLogo,
+    partner: "Adobe",
+  },
+
+  {
+    id: 4,
+    img: docusignLogo,
+    partner: "Docusign",
+  },
+
+  {
+    id: 5,
+    img: paloAltotRibunal,
+    partner: "Palo Alto",
+  },
 ];

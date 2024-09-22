@@ -16,7 +16,7 @@ import locationSectionBg from "./location-section-bg.webp";
 import microsoftLogo from "./microsoft-logo.webp";
 import ourMissionSectionBg from "./our-mission-section-bg.webp";
 import paloAltotRibunal from "./palo-altot-ribunal.webp";
-import pngaaaLogo from "./pngaaa-logo.webp";
+import adobeLogo from "./adobe-logo.webp";
 import serviceSectionBg1 from "./services-bg1.webp";
 import serviceSectionBg2 from "./services-bg2.webp";
 import serviceSectionBg3 from "./services-bg3.webp";
@@ -47,7 +47,7 @@ export {
   microsoftLogo,
   ourMissionSectionBg,
   paloAltotRibunal,
-  pngaaaLogo,
+  adobeLogo,
   serviceSectionBg1,
   serviceSectionBg2,
   serviceSectionBg3,
