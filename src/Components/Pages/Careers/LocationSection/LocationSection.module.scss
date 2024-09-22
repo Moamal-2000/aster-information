@@ -1,16 +1,15 @@
 @import "src/Styles/mixins.scss";
 
 .locationSection {
-  padding: 127px 0 77px;
+  padding: 200px 0;
   background-color: var(--website-bg);
-  border: solid 1px var(--gray);
-  border-right: none;
-  border-left: none;
+  border-top: solid 1px var(--gray);
+  position: relative;
 }
 
 @include large {
   .locationSection {
-    padding: 120px 0;
+    padding: 120px 0 0;
   }
 }
 
@@ -28,29 +27,37 @@
 }
 
 .locationBg {
-  width: 400px;
-  height: 616px;
-  object-fit: cover;
-  border-radius: 20px;
+  width: 940px;
+  height: 750px;
+  object-fit: contain;
+  position: absolute;
+  right: -99px;
+  top: 0;
+}
+
+@include large {
+  .locationBg {
+    position: relative;
+    right: auto;
+    width: 700px;
+    height: 550px;
+    object-position: 0 -50px;
+  }
 }
 
 @include small {
   .locationBg {
-    width: 340px;
-    height: 520px;
-  }
-}
-
-@media (max-width: 420px) {
-  .locationBg {
-    width: 290px;
-    height: 420px;
+    width: 400px;
+    height: 400px;
+    object-position: -40px -50px;
   }
 }
 
 @include very-small {
   .locationBg {
     width: 100%;
-    height: 480px;
+    height: 300px;
+    object-position: center -50px;
+    margin-right: 52px;
   }
 }
