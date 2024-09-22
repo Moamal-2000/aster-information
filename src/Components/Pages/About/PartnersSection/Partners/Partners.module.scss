@@ -1,5 +1,13 @@
 @import "src/Styles/mixins.scss";
 
 .partners {
-  
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.partners>img {
+  width: 136px;
 }
