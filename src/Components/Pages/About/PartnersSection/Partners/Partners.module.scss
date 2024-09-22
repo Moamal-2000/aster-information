@@ -32,4 +32,22 @@
 .partners>img {
   max-width: 170px;
   min-width: 130px;
+  opacity: 0;
+}
+
+.partners.active>img {
+  opacity: 1;
+}
+
+$partnersImgCount: 5;
+$partnerDelay: 0;
+$partnerDelayIncrement: .35;
+
+@for $i from 1 through $partnersImgCount {
+  .partners img:nth-child(#{$i}) {
+    $calculatedDelay: (
+      $partnerDelayIncrement * ($i - 1) + s
+    );
+  transition: 1.6s $calculatedDelay ease;
+}
 }
