@@ -1,0 +1,56 @@
+@import "src/Styles/mixins.scss";
+
+.locationSection {
+  padding: 127px 0 77px;
+  background-color: var(--website-bg);
+  border: solid 1px var(--gray);
+  border-right: none;
+  border-left: none;
+}
+
+@include large {
+  .locationSection {
+    padding: 120px 0;
+  }
+}
+
+.locationSection [data-container] {
+  display: flex;
+  justify-content: space-between;
+}
+
+@include large {
+  .locationSection [data-container] {
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+}
+
+.locationBg {
+  width: 400px;
+  height: 616px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+@include small {
+  .locationBg {
+    width: 340px;
+    height: 520px;
+  }
+}
+
+@media (max-width: 420px) {
+  .locationBg {
+    width: 290px;
+    height: 420px;
+  }
+}
+
+@include very-small {
+  .locationBg {
+    width: 100%;
+    height: 480px;
+  }
+}
