@@ -5,9 +5,8 @@ import s from "./PartnersSection.module.scss";
 const PartnersSection = () => {
   return (
     <section className={s.partnersSection}>
-      <div className="container" data-container>
+      <div className="container">
         <PartnersContent />
-
         <Partners />
       </div>
     </section>

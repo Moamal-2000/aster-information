@@ -3,11 +3,27 @@
 .partners {
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 80px;
   width: fit-content;
   margin: 0 auto;
+  margin-top: 200px;
+  border: solid;
+}
+
+@include large {
+  .partners {
+    gap: 50px;
+  }
+}
+
+@include medium {
+  .partners {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .partners>img {
-  width: 136px;
+  max-width: 170px;
+  min-width: 130px;
 }

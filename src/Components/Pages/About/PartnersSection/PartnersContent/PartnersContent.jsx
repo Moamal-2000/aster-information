@@ -7,8 +7,8 @@ const PartnersContent = () => {
       <AnimatedLine
         lineHeight="105px"
         animatedLineHeight="43px"
-        initialY="100px"
-        animateTo="60px"
+        initialY="90px"
+        animateTo="62px"
       />
 
       <div className={s.content}>
