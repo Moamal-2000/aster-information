@@ -29,13 +29,13 @@
   }
 }
 
-.partners>img {
+.partners>a>img {
   max-width: 170px;
   min-width: 130px;
   opacity: 0;
 }
 
-.partners.active>img {
+.partners.active>a>img {
   opacity: 1;
 }
 
@@ -44,7 +44,7 @@ $partnerDelay: 0;
 $partnerDelayIncrement: .35;
 
 @for $i from 1 through $partnersImgCount {
-  .partners img:nth-child(#{$i}) {
+  .partners>a:nth-child(#{$i})>img {
     $calculatedDelay: (
       $partnerDelayIncrement * ($i - 1) + s
     );

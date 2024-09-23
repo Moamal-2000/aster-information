@@ -12,8 +12,16 @@ const Partners = () => {
 
   return (
     <div className={`${s.partners} ${activeClass}`} ref={partnerRef}>
-      {partnersSectionData.map(({ id, img, partner }) => (
-        <img key={id} src={img} alt={partner} loading="lazy" />
+      {partnersSectionData.map(({ id, img, partner, website }) => (
+        <a href={website} key={id} target="_blank" rel="noreferrer">
+          <img
+            src={img}
+            alt={partner}
+            loading="lazy"
+            width="130px"
+            height="60px"
+          />
+        </a>
       ))}
     </div>
   );
