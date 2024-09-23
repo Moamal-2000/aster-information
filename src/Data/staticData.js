@@ -299,34 +299,68 @@ export const partnersSectionData = [
     id: 1,
     img: microsoftLogo,
     partner: "Microsoft",
-    website: "https://www.microsoft.com"
+    website: "https://www.microsoft.com",
   },
 
   {
     id: 2,
     img: amazonAwsLogo,
     partner: "Amazon Web Services",
-    website: "https://aws.amazon.com"
+    website: "https://aws.amazon.com",
   },
 
   {
     id: 3,
     img: adobeLogo,
     partner: "Adobe",
-    website: "https://www.adobe.com"
+    website: "https://www.adobe.com",
   },
 
   {
     id: 4,
     img: docusignLogo,
     partner: "Docusign",
-    website: "https://www.docusign.com"
+    website: "https://www.docusign.com",
   },
 
   {
     id: 5,
     img: paloAltotRibunal,
     partner: "Palo Alto",
-    website: "https://www.paloaltonetworks.com"
+    website: "https://www.paloaltonetworks.com",
+  },
+];
+
+export const jobsCardsData = [
+  {
+    id: 1,
+    title: "INTEGRATION ENGINEER",
+    location: "Remote",
+    description: `Seeking a detail-oriented Integration Engineer skilled in system
+    architecture, proficient in multiple languages, and passionate about data-driven solutions.`,
+  },
+
+  {
+    id: 2,
+    title: "DATA SCIENTIST",
+    location: "Remote",
+    description: `In search of a Data Scientist with a strong statistical background, deep
+    understanding of machine learning algorithms, and passion for turning data into actionable insights.`,
+  },
+
+  {
+    id: 3,
+    title: "ARTIFICIAL INTELLIGENCE RESEARCHER",
+    location: "Remote",
+    description: `We're on the lookout for an Artificial Intelligence Researcher with
+    expertise in AI, machine learning, and a drive to push the boundaries of technology.`,
+  },
+
+  {
+    id: 4,
+    title: "​DEEP LEARNING ENGINEER",
+    location: "Remote",
+    description: `A Deep Learning Engineer with a strong foundation in neural networks,
+    experience with large datasets, and a passion for AI-driven solutions is sought.`,
   },
 ];

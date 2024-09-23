@@ -16,6 +16,7 @@
 .jobsSection [data-container] {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 120px;
 }
 
 @include large {

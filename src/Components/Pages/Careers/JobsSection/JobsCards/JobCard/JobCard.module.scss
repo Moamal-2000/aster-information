@@ -1,0 +1,58 @@
+@import "src/Styles/mixins.scss";
+
+.card {
+  width: 420px;
+  border: solid 2px var(--white);
+  border-radius: 16px;
+  padding: 50px 40px 32px;
+}
+
+.title {
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin-bottom: 50px;
+  height: 70px;
+}
+
+@include small {
+  .title {
+    margin-bottom: 40px;
+    font-size: .9rem;
+    height: 50px;
+  }
+}
+
+.location {
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: .875rem;
+  margin-bottom: 20px;
+  color: var(--light-gray);
+}
+
+@include small {
+  .location {
+    font-size: .7rem;
+  }
+}
+
+.location>strong {
+  font-weight: 400;
+}
+
+.description {
+  letter-spacing: .04em;
+  line-height: 1.8em;
+  font-size: 1rem;
+  margin-bottom: 33px;
+  height: 150px;
+}
+
+@include small {
+  .description {
+    font-size: .8rem;
+    height: 130px;
+  }
+}

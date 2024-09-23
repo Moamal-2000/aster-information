@@ -1,4 +1,5 @@
 import { joinOurTeamBg } from "src/Assets/Images/Images";
+import JobsCards from "./JobsCards/JobsCards";
 import s from "./JobsSection.module.scss";
 import JobsSectionContent from "./JobsSectionContent/JobsSectionContent";
 
@@ -14,6 +15,10 @@ const JobsSection = () => {
           loading="lazy"
           className={s.jobsSectionBg}
         />
+      </div>
+
+      <div className="container" data-container2>
+        <JobsCards />
       </div>
     </section>
   );
