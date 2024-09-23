@@ -17,7 +17,7 @@ const JobsSection = () => {
         />
       </div>
 
-      <div className="container" data-container2>
+      <div className="container">
         <JobsCards />
       </div>
     </section>

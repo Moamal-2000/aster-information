@@ -1,10 +1,15 @@
 @import "src/Styles/mixins.scss";
 
 .card {
-  width: 420px;
   border: solid 2px var(--white);
   border-radius: 16px;
   padding: 50px 40px 32px;
+}
+
+@include small {
+  .card {
+    padding: 30px 20px 20px;
+  }
 }
 
 .title {
