@@ -1,4 +1,5 @@
 import { joinOurTeamBg } from "src/Assets/Images/Images";
+import CVSubmissionCard from "./CVSubmissionCard/CVSubmissionCard";
 import JobsCards from "./JobsCards/JobsCards";
 import s from "./JobsSection.module.scss";
 import JobsSectionContent from "./JobsSectionContent/JobsSectionContent";
@@ -19,6 +20,7 @@ const JobsSection = () => {
 
       <div className="container">
         <JobsCards />
+        <CVSubmissionCard />
       </div>
     </section>
   );
