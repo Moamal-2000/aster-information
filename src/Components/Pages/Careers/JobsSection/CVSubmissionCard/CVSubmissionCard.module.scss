@@ -9,10 +9,44 @@
   margin-top: 100px;
 }
 
+@include medium {
+  .card {
+    margin: 100px auto 0;
+  }
+}
+
+@include small {
+  .card {
+    width: 320px;
+    padding: 30px 20px;
+  }
+}
+
+@include very-small {
+  .card {
+    width: 100%;
+  }
+}
+
 .card>p {
   letter-spacing: .08em;
   line-height: 1.8em;
   font-size: 1.5rem;
   margin-bottom: 60px;
   width: 330px;
+}
+
+@include small {
+  .card>p {
+    width: 260px;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+  }
+}
+
+@include very-small {
+  .card>p {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
