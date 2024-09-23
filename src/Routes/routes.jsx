@@ -14,5 +14,5 @@ export const ROUTES_CONFIG = [
   { path: "/about", element: <About /> },
   { path: "/careers", element: <Careers /> },
   { path: "/electrical-engineer", element: <JobDetails /> },
-  { path: "/submit-your-application", element: <JoinUs /> },
+  { path: "/submit-application", element: <JoinUs /> },
 ];

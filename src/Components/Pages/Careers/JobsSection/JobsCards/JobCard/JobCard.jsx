@@ -14,7 +14,7 @@ const JobCard = ({ title, location, description }) => {
 
       <Button
         text="Apply Now"
-        path="/electrical-engineer"
+        path="/submit-application"
         invertColors={true}
       />
     </div>
