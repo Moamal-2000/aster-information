@@ -247,7 +247,6 @@ export const journeySliderData = [
       in data-driven decision making across various industries.`,
     },
   ],
-
   [
     {
       year: "2018",
@@ -262,7 +261,6 @@ export const journeySliderData = [
       in data-driven decision making across various industries.`,
     },
   ],
-
   [
     {
       year: "2020",
@@ -277,7 +275,6 @@ export const journeySliderData = [
       in data-driven decision making across various industries.`,
     },
   ],
-
   [
     {
       year: "2022",
@@ -301,28 +298,24 @@ export const partnersSectionData = [
     partner: "Microsoft",
     website: "https://www.microsoft.com",
   },
-
   {
     id: 2,
     img: amazonAwsLogo,
     partner: "Amazon Web Services",
     website: "https://aws.amazon.com",
   },
-
   {
     id: 3,
     img: adobeLogo,
     partner: "Adobe",
     website: "https://www.adobe.com",
   },
-
   {
     id: 4,
     img: docusignLogo,
     partner: "Docusign",
     website: "https://www.docusign.com",
   },
-
   {
     id: 5,
     img: paloAltotRibunal,
@@ -339,7 +332,6 @@ export const jobsCardsData = [
     description: `Seeking a detail-oriented Integration Engineer skilled in system
     architecture, proficient in multiple languages, and passionate about data-driven solutions.`,
   },
-
   {
     id: 2,
     title: "DATA SCIENTIST",
@@ -347,7 +339,6 @@ export const jobsCardsData = [
     description: `In search of a Data Scientist with a strong statistical background, deep
     understanding of machine learning algorithms, and passion for turning data into actionable insights.`,
   },
-
   {
     id: 3,
     title: "ARTIFICIAL INTELLIGENCE RESEARCHER",
@@ -355,7 +346,6 @@ export const jobsCardsData = [
     description: `We're on the lookout for an Artificial Intelligence Researcher with
     expertise in AI, machine learning, and a drive to push the boundaries of technology.`,
   },
-
   {
     id: 4,
     title: "​DEEP LEARNING ENGINEER",
