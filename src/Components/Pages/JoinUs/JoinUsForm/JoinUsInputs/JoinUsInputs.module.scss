@@ -1,0 +1,7 @@
+@import "src/Styles/mixins.scss";
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
