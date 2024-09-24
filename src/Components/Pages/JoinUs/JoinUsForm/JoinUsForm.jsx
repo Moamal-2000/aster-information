@@ -1,8 +1,12 @@
-import s from "./JoinUsForm.module.scss"
+import s from "./JoinUsForm.module.scss";
 
 const JoinUsForm = () => {
   return (
-    <form className={s.joinUsForm}>JoinUsForm</form>
-  )
-}
-export default JoinUsForm
+    <div className={s.joinUsWrapper}>
+      <form className={s.joinUsForm}>
+        <h2>Submit Your Application</h2>
+      </form>
+    </div>
+  );
+};
+export default JoinUsForm;

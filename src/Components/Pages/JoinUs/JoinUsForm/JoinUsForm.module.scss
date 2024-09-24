@@ -1,5 +1,21 @@
 @import "src/Styles/mixins.scss";
 
+.joinUsWrapper {
+  border: solid 1px var(--black);
+  border-right: none;
+  border-left: none;
+  padding: 140px 0 180px;
+}
+
 .joinUsForm {
-  
+  margin: 0 auto;
+  width: 700px;
+}
+
+.joinUsForm>h2 {
+  letter-spacing: .08em;
+  line-height: 1.8em;
+  font-size: 1.5rem;
+  font-weight: 400;
+  width: fit-content;
 }
