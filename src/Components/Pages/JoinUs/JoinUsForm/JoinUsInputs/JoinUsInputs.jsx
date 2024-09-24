@@ -1,8 +1,14 @@
+import { joinUsInputsData } from "src/Data/staticData";
+import Input from "../../../../Shared/Inputs/Input/Input";
 import s from "./JoinUsInputs.module.scss";
 
 const JoinUsInputs = () => {
   return (
-    <div className={s.inputs}>JoinUsInputs</div>
-  )
-}
-export default JoinUsInputs
+    <div className={s.inputs}>
+      {joinUsInputsData.map((input) => (
+        <Input key={input.id} {...input} />
+      ))}
+    </div>
+  );
+};
+export default JoinUsInputs;
