@@ -1,13 +1,28 @@
 @import "src/Styles/mixins.scss";
 
-.input {
-
-}
+.input {}
 
 .input>label {
-
+  display: block;
+  width: fit-content;
+  margin-bottom: 15px;
 }
 
 .input>input {
-  
+  font-family: montserrat, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  border: solid 1px var(--black);
+  outline: solid 1px transparent;
+  background-color: transparent;
+  color: var(--black);
+  width: 100%;
+  padding: 10px;
+  padding-left: 16px;
+  border-radius: 6px;
+
+  &:hover,
+  &:focus {
+    outline-color: var(--black);
+  }
 }
