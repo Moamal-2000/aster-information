@@ -8,9 +8,13 @@ const Input = ({
   value,
   onChange,
 }) => {
+  const requiredClass = required ? s.required : "";
+
   return (
     <div className={s.input}>
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name} className={requiredClass}>
+        {label}
+      </label>
       <input
         type={type}
         value={value}
