@@ -3,7 +3,7 @@ import s from "./JoinUs.module.scss";
 const JoinUs = () => {
   return (
     <main className={s.joinUsPage} id="joinUsPage">
-      JoinUs
+      <h1>Join Us</h1>
     </main>
   );
 };
