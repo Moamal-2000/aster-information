@@ -1,16 +1,23 @@
 import s from "./Input.module.scss";
 
-const Input = ({ label, required = true, type = "text", value, onChange }) => {
+const Input = ({
+  label,
+  name,
+  required = true,
+  type = "text",
+  value,
+  onChange,
+}) => {
   return (
     <div className={s.input}>
-      <label htmlFor={label}>{label}</label>
+      <label htmlFor={name}>{label}</label>
       <input
         type={type}
         value={value}
         onChange={onChange}
         required={required}
-        id={label}
-        name={label}
+        id={name}
+        name={name}
       />
     </div>
   );

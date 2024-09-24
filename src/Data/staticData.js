@@ -354,3 +354,48 @@ export const jobsCardsData = [
     experience with large datasets, and a passion for AI-driven solutions is sought.`,
   },
 ];
+
+export const joinUsInputsData = [
+  {
+    id: 1,
+    label: "First Name",
+    type: "text",
+    name: "first-name",
+    required: true,
+  },
+  {
+    id: 2,
+    label: "Last Name",
+    type: "text",
+    name: "last-name",
+    required: true,
+  },
+  {
+    id: 3,
+    label: "Email",
+    type: "email",
+    name: "email",
+    required: true,
+  },
+  {
+    id: 4,
+    label: "Phone",
+    type: "tel",
+    name: "phone",
+    required: false,
+  },
+  // {
+  //   id: 5,
+  //   label: "Position",
+  //   type: "text",
+  //   name: "position",
+  //   required: true,
+  // },
+  {
+    id: 6,
+    label: "CV URL",
+    type: "text",
+    name: "cv-url",
+    required: true,
+  },
+];
