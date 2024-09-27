@@ -5,3 +5,20 @@
   flex-direction: column;
   gap: 30px;
 }
+
+.submitButton {
+  border: solid 1px var(--black);
+  width: max-content;
+  text-align: center;
+  padding: 10px 35px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background-color: var(--black);
+  color: var(--white);
+  transition: background-color .4s ease, color .4s ease;
+
+  &:hover {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}

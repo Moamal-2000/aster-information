@@ -8,6 +8,10 @@ const JoinUsInputs = () => {
       {joinUsInputsData.map((input) => (
         <Input key={input.id} {...input} />
       ))}
+
+      <button type="submit" className={s.submitButton}>
+        Submit
+      </button>
     </div>
   );
 };
