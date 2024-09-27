@@ -36,7 +36,7 @@ const AnimatedImage = () => {
         src={visionSectionBg}
         className={s.img}
         ref={visionImageRef}
-        alt="Vision section background image"
+        alt="Futuristic 3D digital cube made of interconnected circuit boards and electronic components, glowing in a neon-lit grid of data blocks and network nodes, symbolizing advanced technology and data processing."
         loading="lazy"
       />
     </div>
