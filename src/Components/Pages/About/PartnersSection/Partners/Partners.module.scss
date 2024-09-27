@@ -29,6 +29,10 @@
   }
 }
 
+.partners>a:focus {
+  outline-offset: 12px;
+}
+
 .partners>a>img {
   max-width: 170px;
   min-width: 130px;

@@ -1,9 +1,18 @@
 @import "src/Styles/mixins.scss";
 
 .sliderButtons {
+  --buttonsHeight: 100px;
+  min-height: var(--buttonsHeight);
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 99%;
+}
+
+@include medium {
+  .sliderButtons {
+    --buttonsHeight: 60px;
+    padding: 10px 0;
+  }
 }
 
 .sliderButtons button {
@@ -11,6 +20,11 @@
   border: none;
   outline: none;
   width: fit-content;
+  pointer-events: none;
+}
+
+.sliderButtons.active button {
+  pointer-events: all;
 }
 
 .sliderButtons .nextButton {
@@ -18,15 +32,8 @@
 }
 
 .sliderButtons button svg {
-  width: 100px;
-  height: 100px;
-}
-
-@include medium {
-  .sliderButtons button svg {
-    width: 60px;
-    height: 80px;
-  }
+  width: var(--buttonsHeight);
+  height: var(--buttonsHeight);
 }
 
 .sliderButtons .line {
@@ -37,7 +44,7 @@
   transition: opacity .6s ease;
 }
 
-.sliderButtons .line.active {
+.sliderButtons.active .line {
   opacity: 1;
   transition: opacity .6s .6s ease;
 }
