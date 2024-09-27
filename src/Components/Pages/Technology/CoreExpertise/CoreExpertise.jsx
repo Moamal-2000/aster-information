@@ -9,7 +9,13 @@ const CoreExpertise = () => {
         <CoreExpertiseContent />
       </div>
 
-      <img className={s.coreExpertiseBg} src={coreExpertiseBg} alt="" />
+      <img
+        className={s.coreExpertiseBg}
+        src={coreExpertiseBg}
+        alt="Core Expertise Background"
+        width="734px"
+        height="894px"
+      />
     </section>
   );
 };

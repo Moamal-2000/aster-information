@@ -17,6 +17,8 @@ const DataManagement = () => {
         src={dataManagementBg}
         srcSet={`${smallDataManagementBg} 768w, ${dataManagementBg} 1200w`}
         alt="Data Management Background"
+        width="734px"
+        height="894px"
       />
     </section>
   );
