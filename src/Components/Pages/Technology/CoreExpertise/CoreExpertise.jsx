@@ -15,6 +15,7 @@ const CoreExpertise = () => {
         alt="Core Expertise Background"
         width="734px"
         height="894px"
+        loading="lazy"
       />
     </section>
   );

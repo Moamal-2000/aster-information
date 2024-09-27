@@ -13,8 +13,8 @@ const JobsSection = () => {
         <img
           src={joinOurTeamBg}
           alt="Jobs section background image"
-          loading="lazy"
           className={s.jobsSectionBg}
+          loading="lazy"
         />
       </div>
 

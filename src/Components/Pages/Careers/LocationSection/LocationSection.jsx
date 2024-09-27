@@ -11,8 +11,8 @@ const LocationSection = () => {
         <img
           src={locationSectionBg}
           alt="Location section background image"
-          loading="lazy"
           className={s.locationBg}
+          loading="lazy"
         />
       </div>
     </section>

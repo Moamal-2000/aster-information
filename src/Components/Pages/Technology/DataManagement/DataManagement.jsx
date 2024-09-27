@@ -19,6 +19,7 @@ const DataManagement = () => {
         alt="Data Management Background"
         width="734px"
         height="894px"
+        loading="lazy"
       />
     </section>
   );
