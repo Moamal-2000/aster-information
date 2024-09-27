@@ -384,13 +384,20 @@ export const joinUsInputsData = [
     name: "phone",
     required: false,
   },
-  // {
-  //   id: 5,
-  //   label: "Position",
-  //   type: "text",
-  //   name: "position",
-  //   required: true,
-  // },
+  {
+    id: 5,
+    label: "Position",
+    type: "select",
+    name: "position",
+    options: [
+      "Electrical Engineer",
+      "Data Scientist",
+      "Artificial Intelligence Researcher",
+      "Deep Learning Engineer",
+      "Other: Submit Your CV",
+    ],
+    required: true,
+  },
   {
     id: 6,
     label: "CV URL",
