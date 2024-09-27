@@ -10,8 +10,11 @@ const Input = ({
   onChange,
   options,
   selectPlaceholder = `Select ${label}`,
+  placeholder,
+  resize = false,
 }) => {
   const requiredClass = required ? s.required : "";
+  const resizeClass = resize ? s.resize : "";
 
   if (type === "select") {
     return (
@@ -27,6 +30,25 @@ const Input = ({
           ))}
         </select>
         <SvgIcon name="chevronDown" />
+      </div>
+    );
+  }
+
+  if (type === "textarea") {
+    return (
+      <div className={s.input}>
+        <label htmlFor={name} className={requiredClass}>
+          {label}
+        </label>
+        <textarea
+          className={resizeClass}
+          id={name}
+          name={name}
+          value={value}
+          onChange={onChange}
+          required={required}
+          placeholder={placeholder}
+        />
       </div>
     );
   }

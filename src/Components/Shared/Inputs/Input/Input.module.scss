@@ -36,13 +36,6 @@
   pointer-events: none;
 }
 
-
-
-
-
-
-
-
 .input>label {
   display: block;
   width: fit-content;
@@ -55,7 +48,7 @@
   content: " *";
 }
 
-.input>input {
+.input>:where(input, textarea) {
   font-family: montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -64,12 +57,25 @@
   background-color: transparent;
   color: var(--black);
   width: 100%;
-  padding: 10px;
+  padding: 11px;
   padding-left: 16px;
-  border-radius: 6px;
+  border-radius: 8px;
 
   &:hover,
   &:focus {
     outline-color: var(--black);
+  }
+}
+
+.input>textarea {
+  resize: none;
+  min-height: 152px;
+
+  &::placeholder {
+    color: var(--black);
+  }
+
+  &.resize {
+    resize: both;
   }
 }

@@ -405,4 +405,19 @@ export const joinUsInputsData = [
     name: "cv-url",
     required: true,
   },
+  {
+    id: 7,
+    label: "Linkedin URL",
+    type: "text",
+    name: "linkedin-url",
+    required: false,
+  },
+  {
+    id: 8,
+    label: "Any Comments",
+    type: "textarea",
+    name: "comments",
+    required: false,
+    placeholder: "Tell Us a Bit About Yourself",
+  },
 ];
