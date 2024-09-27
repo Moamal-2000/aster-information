@@ -22,3 +22,9 @@
     color: var(--black);
   }
 }
+
+@include small {
+  .submitButton{
+    font-size: .9rem;
+  }
+}

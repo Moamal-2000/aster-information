@@ -7,9 +7,27 @@
   padding: 140px 0 180px;
 }
 
+@include small {
+  .joinUsWrapper {
+    padding: 80px 0 120px;
+  }
+}
+
 .joinUsForm {
   margin: 0 auto;
   width: 720px;
+}
+
+@include medium {
+  .joinUsForm {
+    width: 540px;
+  }
+}
+
+@include small {
+  .joinUsForm {
+    width: 100%;
+  }
 }
 
 .joinUsForm>h2 {
@@ -19,4 +37,17 @@
   font-weight: 400;
   width: fit-content;
   margin-bottom: 50px;
+}
+
+@include small {
+  .joinUsForm>h2 {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+  }
+}
+
+@include very-small {
+  .joinUsForm>h2 {
+    font-size: 1rem;
+  }
 }

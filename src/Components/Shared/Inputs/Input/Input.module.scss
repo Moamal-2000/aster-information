@@ -36,12 +36,25 @@
   pointer-events: none;
 }
 
+@include small {
+  .input>svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
 .input>label {
   display: block;
   width: fit-content;
   cursor: pointer;
   margin-bottom: 15px;
   padding-right: 10px;
+}
+
+@include small {
+  .input>label {
+    font-size: .9rem;
+  }
 }
 
 .input>label.required::after {
@@ -64,6 +77,13 @@
   &:hover,
   &:focus {
     outline-color: var(--black);
+  }
+}
+
+@include small {
+  .input>:where(input, textarea) {
+    font-size: .9rem;
+    padding: 10px;
   }
 }
 
