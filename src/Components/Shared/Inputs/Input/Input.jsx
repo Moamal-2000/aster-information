@@ -21,7 +21,13 @@ const Input = ({
       <div className={s.input}>
         <label htmlFor={label}>{label}</label>
 
-        <select id={label} defaultValue={""} required={required}>
+        <select
+          id={label}
+          defaultValue={""}
+          required={required}
+          onChange={onChange}
+          name={name}
+        >
           <option value="" hidden>
             {selectPlaceholder}
           </option>
