@@ -19,6 +19,8 @@ const RouteLayout = () => {
     dispatch(
       updateGlobalState({ key: "currentPage", value: location.pathname })
     );
+
+    window.scrollTo(0, 0);
   }, [location.pathname]);
 
   return (
