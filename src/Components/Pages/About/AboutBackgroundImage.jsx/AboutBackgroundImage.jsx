@@ -7,7 +7,7 @@ const AboutBackgroundImage = () => {
       <div className={s.wrapper}>
         <img
           src={teamCollaborationImg}
-          alt="Team Collaboration Image"
+          alt="Three individuals in an industrial setting: a man on the left speaking and gesturing, a girl in the middle holding a tablet, and a man on the right wearing a red and grey jacket."
           loading="lazy"
           className={s.backgroundImg}
         />
