@@ -16,7 +16,7 @@ const DataManagement = () => {
         className={s.dataManagementBg}
         src={dataManagementBg}
         srcSet={`${smallDataManagementBg} 768w, ${dataManagementBg} 1200w`}
-        alt="Data Management Background"
+        alt="Network of interconnected points with lines, representing relationships or data structures."
         width="734px"
         height="894px"
         loading="lazy"
