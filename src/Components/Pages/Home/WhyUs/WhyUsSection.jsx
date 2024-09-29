@@ -25,7 +25,7 @@ const WhyUsSection = () => {
     <section className={`${s.whyUsSection} ${activeClass}`}>
       <img
         src={whyUsSectionBg}
-        alt="Why-us section background image"
+        alt="Modern data center with rows of server racks, LED indicators, and cabling, arranged symmetrically on a polished floor."
         loading="lazy"
         className={s.backgroundImg}
       />
