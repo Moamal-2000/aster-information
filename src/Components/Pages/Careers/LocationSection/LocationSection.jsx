@@ -1,6 +1,6 @@
 import { locationSectionBg } from "src/Assets/Images/Images";
-import s from "./LocationSection.module.scss";
 import LocationContent from "./LocationContent/LocationContent";
+import s from "./LocationSection.module.scss";
 
 const LocationSection = () => {
   return (
@@ -10,7 +10,7 @@ const LocationSection = () => {
 
         <img
           src={locationSectionBg}
-          alt="Location section background image"
+          alt="Line drawing of a modern architectural structure with multiple rectangular blocks of varying heights, featuring horizontal and vertical lines."
           className={s.locationBg}
           loading="lazy"
         />
