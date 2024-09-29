@@ -7,7 +7,7 @@ const InfoStatsSection = () => {
     <section className={s.infoSection}>
       <img
         src={infoSectionBg}
-        alt="Info stats section image"
+        alt="Human hand and robotic hand engaged in a handshake, symbolizing collaboration between humans and machines."
         loading="lazy"
         className={s.backgroundImg}
       />
