@@ -299,31 +299,31 @@ export const partnersSectionData = [
   {
     id: 1,
     img: microsoftLogo,
-    partner: "Microsoft",
+    partner: "Microsoft logo",
     website: "https://www.microsoft.com",
   },
   {
     id: 2,
     img: amazonAwsLogo,
-    partner: "Amazon Web Services",
+    partner: "Amazon Web Services logo",
     website: "https://aws.amazon.com",
   },
   {
     id: 3,
     img: adobeLogo,
-    partner: "Adobe",
+    partner: "Adobe logo",
     website: "https://www.adobe.com",
   },
   {
     id: 4,
     img: docusignLogo,
-    partner: "Docusign",
+    partner: "Docusign logo",
     website: "https://www.docusign.com",
   },
   {
     id: 5,
     img: paloAltotRibunal,
-    partner: "Palo Alto",
+    partner: "Palo Alto logo",
     website: "https://www.paloaltonetworks.com",
   },
 ];
