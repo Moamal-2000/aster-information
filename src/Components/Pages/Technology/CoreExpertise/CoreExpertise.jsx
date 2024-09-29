@@ -12,7 +12,7 @@ const CoreExpertise = () => {
       <img
         className={s.coreExpertiseBg}
         src={coreExpertiseBg}
-        alt="Core Expertise Background"
+        alt="Dark background with white, blurred text resembling computer code or a data dump."
         width="734px"
         height="894px"
         loading="lazy"
