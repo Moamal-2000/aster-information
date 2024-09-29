@@ -110,6 +110,7 @@ export const industryLogosData = [
     logo: generalTransportLogo,
     delay: ".2s",
     width: "150px",
+    alt: "Logo of VXV DATA, featuring a pair of angle brackets facing away from each other"
   },
   {
     id: 2,
@@ -117,6 +118,7 @@ export const industryLogosData = [
     logo: idiSoftwareLogo,
     delay: ".4s",
     width: "88px",
+    alt: "Logo of I-AI SOFTWARE, featuring a stylized, grey, curved shape resembling a wing or blade."
   },
   {
     id: 3,
@@ -124,6 +126,7 @@ export const industryLogosData = [
     logo: imogenCarsLogo,
     delay: ".6s",
     width: "88px",
+    alt: "Logo of IMAGINE CONSULTING, featuring stylized letters ‘I’ and ‘C’"
   },
   {
     id: 4,
@@ -131,6 +134,7 @@ export const industryLogosData = [
     logo: triNexLogo,
     delay: ".8s",
     width: "128px",
+    alt: "Logo of 777 INDEX, featuring stylized numbers ‘777’ in a modern design."
   },
 ];
 
