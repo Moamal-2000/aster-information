@@ -1,0 +1,77 @@
+@import "src/Styles/mixins.scss";
+
+.heroSection {
+  background-color: var(--website-bg);
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroSection>h1 {
+  margin-bottom: 40px;
+  letter-spacing: .08em;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 4rem;
+}
+
+@include medium {
+  .heroSection>h1 {
+    font-size: 3rem;
+  }
+}
+
+@include small {
+  .heroSection>h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .heroSection>h1 {
+    margin-bottom: 30px;
+  }
+}
+
+.heroSection>h1>span {
+  display: block;
+}
+
+.heroSection>p {
+  letter-spacing: .04em;
+  line-height: 1.8em;
+  font-size: 1.52rem;
+  text-wrap: balance;
+  width: 710px;
+  margin-bottom: 10px;
+}
+
+@include medium {
+  .heroSection>p {
+    font-size: 1.2rem;
+  }
+}
+
+@include small {
+  .heroSection>p {
+    width: 370px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 620px) {
+  .heroSection>p {
+    width: var(--container-width);
+    font-size: .9rem;
+  }
+}
+
+@include very-small {
+  .heroSection>p {
+    font-size: .8rem;
+  }
+}
