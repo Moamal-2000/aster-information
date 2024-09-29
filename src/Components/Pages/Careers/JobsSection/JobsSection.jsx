@@ -12,7 +12,7 @@ const JobsSection = () => {
 
         <img
           src={joinOurTeamBg}
-          alt="Jobs section background image"
+          alt="Long exposure photograph of a winding road at night with vehicle light trails creating smooth, flowing lines."
           className={s.jobsSectionBg}
           loading="lazy"
         />
