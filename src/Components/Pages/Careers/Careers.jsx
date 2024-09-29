@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { WEBSITE_NAME } from "src/Data/variables";
+import HeroSection from "../../Shared/HeroSection/HeroSection";
 import s from "./Careers.module.scss";
-import CareersHeroSection from "./CareersHeroSection/CareersHeroSection";
 import JobsSection from "./JobsSection/JobsSection";
 import LocationSection from "./LocationSection/LocationSection";
 
@@ -15,7 +15,11 @@ const Careers = () => {
 
       <main className={s.careers} id="careersPage">
         <div className="container">
-          <CareersHeroSection />
+          <HeroSection
+            titleLine1="WE MAKE"
+            titleLine2="BIG IDEAS HAPPEN"
+            description="Join Us for the Ride"
+          />
         </div>
         <LocationSection />
         <JobsSection />
