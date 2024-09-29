@@ -10,7 +10,7 @@ const OurMissionSection = () => {
 
         <img
           src={ourMissionSectionBg}
-          alt="Our mission section background image"
+          alt="A smiling and proud girl wearing a grey blazer over a red shirt, standing in front of industrial equipment."
           loading="lazy"
           className={s.ourMissionBg}
         />
