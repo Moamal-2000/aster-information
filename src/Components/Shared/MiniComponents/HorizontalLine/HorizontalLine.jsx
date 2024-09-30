@@ -1,17 +1,28 @@
 import { memo, useRef } from "react";
-import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
+import useHasAnimatedOnScroll from "src/Hooks/App/useHasAnimatedOnScroll";
+import useOnScreen from "src/Hooks/Helper/useOnScreen";
 import s from "./HorizontalLine.module.scss";
 
-const HorizontalLine = ({ delay = "0.2s" }) => {
+const HorizontalLine = ({
+  delay = "0.2s",
+  animatedLineWidth,
+  initialX,
+  animateTo,
+}) => {
   const lineRef = useRef();
-  const activeClass = useClassOnFirstView({
-    elementRef: lineRef,
-    cssModule: s,
-  });
+  const isElementVisible = useOnScreen(lineRef);
+  const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
 
   return (
-    <div className={`${s.line} ${activeClass}`} ref={lineRef}>
-      <div className={s.VerticalLine} style={{ transitionDelay: delay }} />
+    <div className={s.line} ref={lineRef}>
+      <div
+        className={s.verticalLine}
+        style={{
+          transitionDelay: delay,
+          width: animatedLineWidth,
+          right: hasAnimated ? animateTo : initialX,
+        }}
+      />
     </div>
   );
 };

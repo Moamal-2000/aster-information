@@ -4,14 +4,14 @@ import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/Vertica
 import s from "./CareersSectionContent.module.scss";
 
 const CareersSectionContent = () => {
-  const { lineHeight, initialY, animateTo, VerticalLineHeight } =
+  const { lineHeight, initialY, animateTo, animatedLineHeight } =
     useMidLineProperties();
 
   return (
     <div className={s.wrapper}>
       <VerticalLine
         lineHeight={lineHeight}
-        VerticalLineHeight={VerticalLineHeight}
+        animatedLineHeight={animatedLineHeight}
         initialY={initialY}
         animateTo={animateTo}
       />

@@ -7,7 +7,7 @@ const useLineStyles = ({
   delay,
   lineColors,
   hasAnimated,
-  VerticalLineHeight,
+  animatedLineHeight,
 }) => {
   const lineStyles = useMemo(
     () => ({
@@ -17,16 +17,16 @@ const useLineStyles = ({
     [lineHeight, lineColors?.lineColor]
   );
 
-  const VerticalLineStyles = useMemo(
+  const animatedLineStyles = useMemo(
     () => ({
       transitionDelay: delay || ".3s",
       top: hasAnimated ? animateTo : initialY,
-      height: VerticalLineHeight,
+      height: animatedLineHeight,
       backgroundColor: lineColors?.VerticalLineColor,
     }),
     [hasAnimated, animateTo, initialY, lineColors?.VerticalLineColor]
   );
 
-  return { lineStyles, VerticalLineStyles };
+  return { lineStyles, animatedLineStyles };
 };
 export default useLineStyles;

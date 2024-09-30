@@ -6,7 +6,7 @@ import s from "./VerticalLine.module.scss";
 
 const VerticalLine = ({
   lineHeight,
-  VerticalLineHeight,
+  animatedLineHeight,
   initialY,
   animateTo,
   delay,
@@ -19,14 +19,14 @@ const VerticalLine = ({
   const isElementVisible = useOnScreen(lineRef, { rootMargin, threshold: 1 });
   const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
 
-  const { lineStyles, VerticalLineStyles } = useLineStyles({
+  const { lineStyles, animatedLineStyles } = useLineStyles({
     lineHeight,
     initialY,
     animateTo,
     delay,
     lineColors,
     hasAnimated,
-    VerticalLineHeight,
+    animatedLineHeight,
   });
 
   return (
@@ -34,14 +34,14 @@ const VerticalLine = ({
       {isPositioned && (
         <div className={s.lineContainer}>
           <div className={s.line} ref={lineRef} style={lineStyles}>
-            <div className={s.VerticalLine} style={VerticalLineStyles} />
+            <div className={s.VerticalLine} style={animatedLineStyles} />
           </div>
         </div>
       )}
 
       {!isPositioned && (
         <div className={s.line} ref={lineRef} style={lineStyles}>
-          <div className={s.VerticalLine} style={VerticalLineStyles} />
+          <div className={s.VerticalLine} style={animatedLineStyles} />
         </div>
       )}
     </>

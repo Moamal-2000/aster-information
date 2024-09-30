@@ -3,14 +3,14 @@ import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/Vertica
 import s from "./OurMissionContent.module.scss";
 
 const OurMissionContent = () => {
-  const { lineHeight, initialY, animateTo, VerticalLineHeight } =
+  const { lineHeight, initialY, animateTo, animatedLineHeight } =
     useLongLineProperties();
 
   return (
     <div className={s.wrapper}>
       <VerticalLine
         lineHeight={lineHeight}
-        VerticalLineHeight={VerticalLineHeight}
+        animatedLineHeight={animatedLineHeight}
         initialY={initialY}
         animateTo={animateTo}
         lineColors={{

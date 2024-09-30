@@ -3,7 +3,7 @@ import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/Vertica
 import s from "./ServicesIntro.module.scss";
 
 const ServicesIntro = () => {
-  const { lineHeight, initialY, animateTo, VerticalLineHeight } =
+  const { lineHeight, initialY, animateTo, animatedLineHeight } =
     useSmallLineProperties();
 
   return (
@@ -11,7 +11,7 @@ const ServicesIntro = () => {
       <div className={s.VerticalLine}>
         <VerticalLine
           lineHeight={lineHeight}
-          VerticalLineHeight={VerticalLineHeight}
+          animatedLineHeight={animatedLineHeight}
           initialY={initialY}
           animateTo={animateTo}
           lineColors={{
