@@ -16,4 +16,10 @@
 .wrapper>p:last-child {
   letter-spacing: .08em;
   font-size: 1.5rem;
+  opacity: 0;
+  transition: opacity .8s ease .1s;
+
+  &.active {
+    opacity: 1;
+  }
 }
