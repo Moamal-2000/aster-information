@@ -2,19 +2,15 @@ import {
   adobeLogo,
   amazonAwsLogo,
   docusignLogo,
-  facebookLogo,
   generalTransportLogo,
   idiSoftwareLogo,
   imogenCarsLogo,
-  instagramLogo,
-  linkedinLogo,
   microsoftLogo,
   paloAltotRibunal,
   serviceSectionBg1,
   serviceSectionBg2,
   serviceSectionBg3,
   triNexLogo,
-  twitterLogo,
 } from "../Assets/Images/Images";
 
 export const navLinksData = [
@@ -110,7 +106,7 @@ export const industryLogosData = [
     logo: generalTransportLogo,
     delay: ".2s",
     width: "150px",
-    alt: "Logo of VXV DATA, featuring a pair of angle brackets facing away from each other"
+    alt: "Logo of VXV DATA, featuring a pair of angle brackets facing away from each other",
   },
   {
     id: 2,
@@ -118,7 +114,7 @@ export const industryLogosData = [
     logo: idiSoftwareLogo,
     delay: ".4s",
     width: "88px",
-    alt: "Logo of I-AI SOFTWARE, featuring a stylized, grey, curved shape resembling a wing or blade."
+    alt: "Logo of I-AI SOFTWARE, featuring a stylized, grey, curved shape resembling a wing or blade.",
   },
   {
     id: 3,
@@ -126,7 +122,7 @@ export const industryLogosData = [
     logo: imogenCarsLogo,
     delay: ".6s",
     width: "88px",
-    alt: "Logo of IMAGINE CONSULTING, featuring stylized letters ‘I’ and ‘C’"
+    alt: "Logo of IMAGINE CONSULTING, featuring stylized letters ‘I’ and ‘C’",
   },
   {
     id: 4,
@@ -134,7 +130,7 @@ export const industryLogosData = [
     logo: triNexLogo,
     delay: ".8s",
     width: "128px",
-    alt: "Logo of 777 INDEX, featuring stylized numbers ‘777’ in a modern design."
+    alt: "Logo of 777 INDEX, featuring stylized numbers ‘777’ in a modern design.",
   },
 ];
 
@@ -176,25 +172,21 @@ export const socialMedia = [
   {
     id: 1,
     link: "#",
-    icon: linkedinLogo,
     media: "LinkedIn",
   },
   {
     id: 2,
     link: "#",
-    icon: facebookLogo,
     media: "Facebook",
   },
   {
     id: 3,
     link: "#",
-    icon: twitterLogo,
     media: "Twitter",
   },
   {
     id: 4,
     link: "#",
-    icon: instagramLogo,
     media: "Instagram",
   },
 ];

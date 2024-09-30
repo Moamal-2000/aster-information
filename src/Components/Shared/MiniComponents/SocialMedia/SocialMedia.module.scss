@@ -16,4 +16,10 @@
   display: block;
   width: 24px;
   height: 24px;
+  @include center-x-y;
+}
+
+.socialMedia>li>a>svg {
+  width: 80%;
+  height: 80%;
 }
