@@ -1,4 +1,5 @@
 import HeroSection from "../../Shared/HeroSection/HeroSection";
+import StackedText from "../../Shared/MiniComponents/StackedText/StackedText";
 import s from "./JobDetails.module.scss";
 
 const JobDetails = () => {
@@ -13,6 +14,7 @@ const JobDetails = () => {
           I’m a great place for you to tell a story and let your users
           know a little more about you.`}
       />
+      <JobInfo />
     </main>
   );
 };
