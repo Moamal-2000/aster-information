@@ -10,7 +10,7 @@ const useMidLineProperties = () => {
         lineHeight: "360px",
         initialY: "140px",
         animateTo: "55px",
-        animatedLineHeight: "180px",
+        VerticalLineHeight: "180px",
       };
     }
 
@@ -18,7 +18,7 @@ const useMidLineProperties = () => {
       lineHeight: "274px",
       initialY: "120px",
       animateTo: "46px",
-      animatedLineHeight: "150px",
+      VerticalLineHeight: "150px",
     };
   }, [windowWidth]);
 

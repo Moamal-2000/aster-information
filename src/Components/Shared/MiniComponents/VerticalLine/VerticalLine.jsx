@@ -2,11 +2,11 @@ import { memo, useRef } from "react";
 import useHasAnimatedOnScroll from "src/Hooks/App/useHasAnimatedOnScroll";
 import useLineStyles from "src/Hooks/App/useLineStyles";
 import useOnScreen from "src/Hooks/Helper/useOnScreen";
-import s from "./AnimatedLine.module.scss";
+import s from "./VerticalLine.module.scss";
 
-const AnimatedLine = ({
+const VerticalLine = ({
   lineHeight,
-  animatedLineHeight,
+  VerticalLineHeight,
   initialY,
   animateTo,
   delay,
@@ -19,14 +19,14 @@ const AnimatedLine = ({
   const isElementVisible = useOnScreen(lineRef, { rootMargin, threshold: 1 });
   const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
 
-  const { lineStyles, animatedLineStyles } = useLineStyles({
+  const { lineStyles, VerticalLineStyles } = useLineStyles({
     lineHeight,
     initialY,
     animateTo,
     delay,
     lineColors,
     hasAnimated,
-    animatedLineHeight,
+    VerticalLineHeight,
   });
 
   return (
@@ -34,17 +34,17 @@ const AnimatedLine = ({
       {isPositioned && (
         <div className={s.lineContainer}>
           <div className={s.line} ref={lineRef} style={lineStyles}>
-            <div className={s.animatedLine} style={animatedLineStyles} />
+            <div className={s.VerticalLine} style={VerticalLineStyles} />
           </div>
         </div>
       )}
 
       {!isPositioned && (
         <div className={s.line} ref={lineRef} style={lineStyles}>
-          <div className={s.animatedLine} style={animatedLineStyles} />
+          <div className={s.VerticalLine} style={VerticalLineStyles} />
         </div>
       )}
     </>
   );
 };
-export default memo(AnimatedLine);
+export default memo(VerticalLine);

@@ -10,7 +10,7 @@ const useSmallLineProperties = () => {
         lineHeight: "194px",
         initialY: "130px",
         animateTo: "65px",
-        animatedLineHeight: "129px",
+        VerticalLineHeight: "129px",
       };
     }
 
@@ -18,7 +18,7 @@ const useSmallLineProperties = () => {
       lineHeight: "160px",
       initialY: "110px",
       animateTo: "58px",
-      animatedLineHeight: "102px",
+      VerticalLineHeight: "102px",
     };
   }, [windowWidth]);
 

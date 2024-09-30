@@ -19,7 +19,7 @@
   }
 }
 
-.line .animatedLine {
+.line .VerticalLine {
   background-color: var(--black);
   width: 24px;
   height: 2px;
@@ -30,6 +30,6 @@
   transition: right 1.8s;
 }
 
-.line.active .animatedLine {
+.line.active .VerticalLine {
   right: 100%;
 }

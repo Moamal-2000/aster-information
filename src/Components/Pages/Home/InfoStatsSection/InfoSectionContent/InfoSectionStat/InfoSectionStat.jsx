@@ -1,6 +1,6 @@
 import { useMemo, useRef } from "react";
 import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
-import HorizontalAnimatedLine from "../../../../../Shared/MiniComponents/HorizontalAnimatedLine/HorizontalAnimatedLine";
+import HorizontalLine from "../../../../../Shared/MiniComponents/HorizontalLine/HorizontalLine";
 import s from "./InfoSectionStat.module.scss";
 
 const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {
@@ -24,7 +24,7 @@ const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {
       >
         {value}
       </span>
-      <HorizontalAnimatedLine delay={lineDelay} />
+      <HorizontalLine delay={lineDelay} />
       <h3>{title}</h3>
     </div>
   );

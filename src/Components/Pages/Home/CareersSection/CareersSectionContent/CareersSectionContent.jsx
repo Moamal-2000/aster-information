@@ -1,17 +1,17 @@
 import useMidLineProperties from "src/Hooks/App/useMidLineProperties";
 import Button from "../../../../Shared/Buttons/Button/Button";
-import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/VerticalLine";
 import s from "./CareersSectionContent.module.scss";
 
 const CareersSectionContent = () => {
-  const { lineHeight, initialY, animateTo, animatedLineHeight } =
+  const { lineHeight, initialY, animateTo, VerticalLineHeight } =
     useMidLineProperties();
 
   return (
     <div className={s.wrapper}>
-      <AnimatedLine
+      <VerticalLine
         lineHeight={lineHeight}
-        animatedLineHeight={animatedLineHeight}
+        VerticalLineHeight={VerticalLineHeight}
         initialY={initialY}
         animateTo={animateTo}
       />

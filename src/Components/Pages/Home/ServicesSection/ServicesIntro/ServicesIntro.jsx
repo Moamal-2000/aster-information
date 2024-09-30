@@ -1,22 +1,22 @@
 import useSmallLineProperties from "src/Hooks/App/useSmallLineProperties";
-import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/VerticalLine";
 import s from "./ServicesIntro.module.scss";
 
 const ServicesIntro = () => {
-  const { lineHeight, initialY, animateTo, animatedLineHeight } =
+  const { lineHeight, initialY, animateTo, VerticalLineHeight } =
     useSmallLineProperties();
 
   return (
     <div className={s.servicesIntro}>
-      <div className={s.animatedLine}>
-        <AnimatedLine
+      <div className={s.VerticalLine}>
+        <VerticalLine
           lineHeight={lineHeight}
-          animatedLineHeight={animatedLineHeight}
+          VerticalLineHeight={VerticalLineHeight}
           initialY={initialY}
           animateTo={animateTo}
           lineColors={{
             lineColor: "#707070",
-            animatedLineColor: "#000",
+            VerticalLineColor: "#000",
           }}
         />
       </div>

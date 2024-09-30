@@ -10,7 +10,7 @@ const useLongLineProperties = () => {
         lineHeight: "470px",
         initialY: "150px",
         animateTo: "70px",
-        animatedLineHeight: "129px",
+        VerticalLineHeight: "129px",
       };
     }
 
@@ -18,7 +18,7 @@ const useLongLineProperties = () => {
       lineHeight: "380px",
       initialY: "120px",
       animateTo: "46px",
-      animatedLineHeight: "102px",
+      VerticalLineHeight: "102px",
     };
   }, [windowWidth]);
 

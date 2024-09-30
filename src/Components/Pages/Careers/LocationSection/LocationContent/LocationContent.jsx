@@ -1,21 +1,21 @@
 import useLongLineProperties from "src/Hooks/App/useLongLineProperties";
-import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/VerticalLine";
 import s from "./LocationContent.module.scss";
 
 const LocationContent = () => {
-  const { lineHeight, initialY, animateTo, animatedLineHeight } =
+  const { lineHeight, initialY, animateTo, VerticalLineHeight } =
     useLongLineProperties();
 
   return (
     <div className={s.wrapper}>
-      <AnimatedLine
+      <VerticalLine
         lineHeight={lineHeight}
-        animatedLineHeight={animatedLineHeight}
+        VerticalLineHeight={VerticalLineHeight}
         initialY={initialY}
         animateTo={animateTo}
         lineColors={{
           lineColor: "#707070",
-          animatedLineColor: "#000",
+          VerticalLineColor: "#000",
         }}
       />
 

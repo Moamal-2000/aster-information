@@ -1,12 +1,12 @@
-import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/VerticalLine";
 import s from "./PartnersContent.module.scss";
 
 const PartnersContent = () => {
   return (
     <div className={s.wrapper}>
-      <AnimatedLine
+      <VerticalLine
         lineHeight="105px"
-        animatedLineHeight="43px"
+        VerticalLineHeight="43px"
         initialY="90px"
         animateTo="62px"
       />

@@ -1,17 +1,17 @@
-import AnimatedLine from "../../../../Shared/MiniComponents/AnimatedLine/AnimatedLine";
+import VerticalLine from "../../../../Shared/MiniComponents/VerticalLine/VerticalLine";
 import s from "./DataManagementContent.module.scss";
 
 const DataManagementContent = () => {
   return (
     <div className={s.wrapper}>
-      <AnimatedLine
+      <VerticalLine
         lineHeight="320px"
-        animatedLineHeight="258px"
+        VerticalLineHeight="258px"
         initialY="150px"
         animateTo="60px"
         lineColors={{
           lineColor: "#707070",
-          animatedLineColor: "#000",
+          VerticalLineColor: "#000",
         }}
       />
 
