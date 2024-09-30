@@ -7,4 +7,5 @@ export function watchScrollState(shouldHide) {
   document.body.style.overflow = "";
 }
 
-export const scrollToTop = () => window.scrollTo(0, 0);
+export const scrollToTop = (behavior = "smooth") =>
+  window.scrollTo({ top: 0, left: 0, behavior });
