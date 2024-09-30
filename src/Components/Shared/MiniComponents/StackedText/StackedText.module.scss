@@ -7,6 +7,18 @@
   min-width: 184px;
 }
 
+@include small {
+  .wrapper {
+    scale: .9;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper {
+    scale: 1;
+  }
+}
+
 .wrapper>p:first-child {
   letter-spacing: .16em;
   font-size: .875rem;
@@ -22,5 +34,11 @@
 
   &.active {
     opacity: 1;
+  }
+}
+
+@include medium {
+  .wrapper>p:last-child {
+    font-size: 1.25rem;
   }
 }

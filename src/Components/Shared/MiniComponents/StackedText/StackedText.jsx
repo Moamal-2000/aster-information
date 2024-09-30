@@ -9,6 +9,7 @@ const StackedText = ({ title, subTitle }) => {
     elementRef: paragraphRef,
     cssModule: s,
   });
+
   const initialX = useMemo(() => "calc(96px / 2)", []);
   const animatedTo = useMemo(
     () => (activeClass ? "50%" : initialX),
@@ -18,11 +19,13 @@ const StackedText = ({ title, subTitle }) => {
   return (
     <div className={s.wrapper}>
       <p>{title}</p>
+
       <HorizontalLine
         animatedLineWidth="96px"
         initialX={initialX}
         animateTo={animatedTo}
       />
+
       <p className={activeClass} ref={paragraphRef}>
         {subTitle}
       </p>
