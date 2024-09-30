@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+@include small {
+  .heroSection {
+    min-height: calc(100dvh - 190px);
+  }
+} 
+
 .heroSection>h1 {
   margin-bottom: 40px;
   letter-spacing: .08em;
