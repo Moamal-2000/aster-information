@@ -14,7 +14,7 @@ const VerticalLine = ({
   isPositioned = true,
 }) => {
   const lineRef = useRef();
-  const [lineHeightValue, lineHeightUnit] = lineHeight.match(/\d+|.+/g);
+  const [lineHeightValue, lineHeightUnit] = lineHeight.match(/\d+|.+/g) || [];
   const rootMargin = `${+lineHeightValue - 150}${lineHeightUnit}`;
   const isElementVisible = useOnScreen(lineRef, { rootMargin, threshold: 1 });
   const hasAnimated = useHasAnimatedOnScroll(isElementVisible);
@@ -30,21 +30,11 @@ const VerticalLine = ({
   });
 
   return (
-    <>
-      {isPositioned && (
-        <div className={s.lineContainer}>
-          <div className={s.line} ref={lineRef} style={lineStyles}>
-            <div className={s.VerticalLine} style={animatedLineStyles} />
-          </div>
-        </div>
-      )}
-
-      {!isPositioned && (
-        <div className={s.line} ref={lineRef} style={lineStyles}>
-          <div className={s.VerticalLine} style={animatedLineStyles} />
-        </div>
-      )}
-    </>
+    <div className={isPositioned ? s.lineContainer : ""}>
+      <div className={s.line} ref={lineRef} style={lineStyles}>
+        <div className={s.VerticalLine} style={animatedLineStyles} />
+      </div>
+    </div>
   );
 };
 export default memo(VerticalLine);
