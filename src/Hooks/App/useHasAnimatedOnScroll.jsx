@@ -5,7 +5,7 @@ const useHasAnimatedOnScroll = (isElementVisible) => {
 
   useEffect(() => {
     if (isElementVisible && !hasAnimated) setHasAnimated(true);
-  }, [isElementVisible]);
+  }, [isElementVisible, hasAnimated]);
 
   return hasAnimated;
 };
