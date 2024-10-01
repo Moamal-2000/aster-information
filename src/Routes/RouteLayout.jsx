@@ -25,7 +25,7 @@ const RouteLayout = () => {
 
   return (
     <div className="App">
-      <SkipContentLink scrollTo="heroSection" />
+      <SkipContentLink sectionId="heroSection" />
       <Header />
       <Outlet />
 

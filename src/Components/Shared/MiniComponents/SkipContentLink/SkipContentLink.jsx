@@ -1,8 +1,8 @@
 import s from "./SkipContentLink.module.scss";
 
-const SkipContentLink = ({ scrollTo }) => {
+const SkipContentLink = ({ sectionId }) => {
   return (
-    <a href={`#${scrollTo}`} className={s.skipContent}>
+    <a href={`#${sectionId}`} className={s.skipContent}>
       Skip to main content
     </a>
   );
