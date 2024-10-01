@@ -6,14 +6,10 @@ const Button = ({ text, path, invertColors }) => {
   const invertClass = invertColors ? s.invert : "";
 
   return (
-    <Link
-      to={path}
-      className={`${s.button} ${invertClass}`}
-      aria-label={text || `Navigate to ${path}`}
-    >
+    <Link to={path} className={`${s.button} ${invertClass}`}>
       <span>{text}</span>
 
-      <div className={s.arrowHolder} title="Right arrow">
+      <div className={s.arrowHolder} aria-hidden="true">
         <SvgIcon name="arrowRight" />
       </div>
     </Link>
