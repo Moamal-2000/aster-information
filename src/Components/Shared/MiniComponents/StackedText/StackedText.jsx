@@ -1,4 +1,4 @@
-import { useMemo, useRef } from "react";
+import { useRef } from "react";
 import useClassOnFirstView from "src/Hooks/App/useClassOnFirstView";
 import HorizontalLine from "../HorizontalLine/HorizontalLine";
 import s from "./StackedText.module.scss";
@@ -10,11 +10,8 @@ const StackedText = ({ title, subTitle }) => {
     cssModule: s,
   });
 
-  const initialX = useMemo(() => "calc(96px / 2)", []);
-  const animatedTo = useMemo(
-    () => (activeClass ? "50%" : initialX),
-    [activeClass]
-  );
+  const initialX = "calc(96px / 2)";
+  const animatedTo = activeClass ? "50%" : initialX;
 
   return (
     <div className={s.wrapper}>

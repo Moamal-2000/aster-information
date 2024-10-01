@@ -13,7 +13,7 @@ const useClassOnFirstView = ({
 
   const activeClass = useMemo(
     () => (hasAnimated ? cssModule[className] : ""),
-    [hasAnimated, cssModule.active]
+    [hasAnimated, cssModule, className]
   );
 
   return activeClass;
