@@ -13,4 +13,3 @@ export const SCREEN_SIZES = {
 export const regexPatterns = {
   email: /^[0-9a-zA-Z._]+@[a-z]+\.[a-z]+$/,
 };
-export const CURRENT_YEAR = new Date().getFullYear()
