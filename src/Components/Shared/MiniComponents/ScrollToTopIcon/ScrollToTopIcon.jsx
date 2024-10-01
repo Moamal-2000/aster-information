@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useCallback, useRef, useState } from "react";
 import { useDispatch } from "react-redux";
 import { HIDE_SCROLL_TOP_MS } from "src/Data/variables";
 import { updateGlobalState } from "src/Features/globalSlice";
@@ -12,14 +12,14 @@ const ScrollToTopIcon = () => {
   const scrollDebounceTimer = useRef();
   const dispatch = useDispatch();
 
-  function handleScrollBtnAppearance() {
+  const handleScrollBtnAppearance = useCallback(() => {
     clearTimeout(scrollDebounceTimer.current);
     setIsScrolling(true);
 
     scrollDebounceTimer.current = setTimeout(() => {
       setIsScrolling(false);
     }, HIDE_SCROLL_TOP_MS);
-  }
+  }, [isScrolling]);
 
   function handleClickScrollBtn() {
     dispatch(updateGlobalState({ key: "isHeaderActive", value: false }));
