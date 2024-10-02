@@ -16,3 +16,5 @@ export const ROUTES_CONFIG = [
   { path: "/electrical-engineer", element: <JobDetails /> },
   { path: "/submit-application", element: <JoinUs /> },
 ];
+
+export const PAGES_PATHS = ROUTES_CONFIG.map((route) => route.path);
