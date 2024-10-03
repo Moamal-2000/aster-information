@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { visionSectionBg } from "src/Assets/Images/Images";
 import { WEBSITE_NAME } from "src/Data/variables";
 import CareersSection from "./CareersSection/CareersSection";
 import s from "./Home.module.scss";
@@ -18,7 +19,7 @@ const Home = () => {
         <meta name="description" content="Home page description" />
         <link
           rel="preload"
-          href="src/Assets/Images/vision-section-bg.webp"
+          href={visionSectionBg}
           as="image"
           type="image/webp"
         />

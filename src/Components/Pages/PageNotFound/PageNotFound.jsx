@@ -11,7 +11,7 @@ const PageNotFound = () => {
         <meta name="description" content="Page not found description" />
         <link
           rel="preload"
-          href="src/Assets/Images/page-not-found-bg.webp"
+          href={pageNotFoundBg}
           as="image"
           type="image/webp"
         />
