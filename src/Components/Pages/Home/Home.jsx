@@ -16,6 +16,12 @@ const Home = () => {
       <Helmet>
         <title>Home | {WEBSITE_NAME}</title>
         <meta name="description" content="Home page description" />
+        <link
+          rel="preload"
+          href="src/Assets/Images/vision-section-bg.webp"
+          as="image"
+          type="image/webp"
+        />
       </Helmet>
 
       <main className={s.homePage} id="homePage">

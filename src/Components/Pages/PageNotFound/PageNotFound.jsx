@@ -9,6 +9,12 @@ const PageNotFound = () => {
       <Helmet>
         <title>Error</title>
         <meta name="description" content="Page not found description" />
+        <link
+          rel="preload"
+          href="src/Assets/Images/page-not-found-bg.webp"
+          as="image"
+          type="image/webp"
+        />
       </Helmet>
 
       <div className="container">
