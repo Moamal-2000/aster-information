@@ -1,9 +1,34 @@
 @import "src/Styles/mixins.scss";
 
 .pageNotFound {
-  width: fit-content;
+  width: 100%;
   min-height: auto;
   margin: 48px auto 0;
+}
+
+@include small {
+  .pageNotFound {
+    margin: 40px auto;
+  }
+}
+
+.errorContent {
+  width: 620px;
+  margin: 0 auto;
+}
+
+@include small {
+  .errorContent {
+    width: 100%;
+  }
+}
+
+@include very-small {
+  .errorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .errorContent .pageNotFoundBg {
@@ -11,13 +36,55 @@
   height: 223px;
 }
 
+@include small {
+  .errorContent .pageNotFoundBg {
+    width: 52vw;
+    height: 30vh;
+    object-position: -10px 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .errorContent .pageNotFoundBg {
+    height: 140px;
+  }
+}
+
+@include very-small {
+  .errorContent .pageNotFoundBg {
+    width: 216px;
+    height: 152px;
+    object-position: 0 0;
+  }
+}
+
 .errorContent>h1 {
+  width: fit-content;
   margin-top: 56px;
   color: var(--cyan);
-  font-size: 4.125rem;
+  font-size: 4rem;
   font-weight: 400;
   letter-spacing: 1px;
   line-height: 90px;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+@include small {
+  .errorContent>h1 {
+    font-size: 8vw;
+    margin-top: 3vw;
+    line-height: 60px;
+  }
+}
+
+@include very-small {
+  .errorContent>h1 {
+    font-size: 1.8rem;
+    line-height: 40px;
+    margin-top: 62px;
+    text-wrap: wrap;
+  }
 }
 
 .errorContent>p {
@@ -25,8 +92,30 @@
   margin-top: 19px;
   letter-spacing: 1px;
   font-size: 1.25rem;
+  font-weight: 400;
   line-height: 39px;
   color: var(--blue-syzygy);
+}
+
+@include small {
+  .errorContent>p {
+    width: fit-content;
+    font-size: 2.6vw;
+    line-height: 5.2vw;
+  }
+}
+
+@include very-small {
+  .errorContent>p {
+    font-size: .8rem;
+    line-height: 30px;
+    margin-top: 19px;
+    text-align: center;
+
+    & br {
+      display: none;
+    }
+  }
 }
 
 .errorContent>a {
@@ -36,9 +125,8 @@
   outline: 0;
   height: 56px;
   letter-spacing: .8px;
-  line-height: 50px;
   font-size: 1.375rem;
-  text-align: center;
+  @include center-x-y;
   border-radius: 28px;
   cursor: pointer;
   border: 2px solid var(--cyan);
@@ -50,5 +138,26 @@
   &:hover {
     background-color: var(--cyan);
     color: var(--white);
+  }
+}
+
+@include small {
+  .errorContent>a {
+    height: 8vw;
+    font-size: 2.4vw;
+  }
+}
+
+@media (max-width: 520px) {
+  .errorContent>a {
+    height: 10vw;
+  }
+}
+
+@include very-small {
+  .errorContent>a {
+    border-radius: 22px;
+    height: 46px;
+    font-size: .9rem;
   }
 }
