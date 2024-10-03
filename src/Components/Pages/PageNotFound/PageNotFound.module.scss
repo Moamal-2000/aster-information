@@ -8,7 +8,7 @@
 
 @include small {
   .pageNotFound {
-    margin: 40px auto;
+    margin: 100px auto;
   }
 }
 
@@ -119,6 +119,7 @@
 }
 
 .errorContent>a {
+  -webkit-tap-highlight-color: transparent;
   display: block;
   width: fit-content;
   margin-top: 37px;
