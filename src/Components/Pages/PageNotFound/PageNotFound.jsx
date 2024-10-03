@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { pageNotFoundBg } from "src/Assets/Images/Images";
 import s from "./PageNotFound.module.scss";
 
@@ -24,8 +25,11 @@ const PageNotFound = () => {
             <h1>PAGE NOT FOUND</h1>
 
             <p>
-              We looked everywhere for this page. Are you sure the website URL
-              is correct? Get in touch with the site owner.
+              We looked everywhere for this page.
+              <br />
+              Are you sure the website URL is correct?
+              <br />
+              Get in touch with the site owner.
             </p>
 
             <Link to="/">Go Back Home</Link>

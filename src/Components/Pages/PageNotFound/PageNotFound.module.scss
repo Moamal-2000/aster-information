@@ -2,11 +2,8 @@
 
 .pageNotFound {
   width: fit-content;
-  margin: 88px auto;
-}
-
-.errorContent {
-
+  min-height: auto;
+  margin: 48px auto 0;
 }
 
 .errorContent .pageNotFoundBg {
@@ -15,13 +12,43 @@
 }
 
 .errorContent>h1 {
-
+  margin-top: 56px;
+  color: var(--cyan);
+  font-size: 4.125rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 90px;
 }
 
 .errorContent>p {
-
+  width: 570px;
+  margin-top: 19px;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 39px;
+  color: var(--blue-syzygy);
 }
 
 .errorContent>a {
-  
+  display: block;
+  width: fit-content;
+  margin-top: 37px;
+  outline: 0;
+  height: 56px;
+  letter-spacing: .8px;
+  line-height: 50px;
+  font-size: 1.375rem;
+  text-align: center;
+  border-radius: 28px;
+  cursor: pointer;
+  border: 2px solid var(--cyan);
+  background-color: var(--white);
+  color: var(--cyan);
+  padding: 0 20px;
+  transition: color .2s, background-color .2s;
+
+  &:hover {
+    background-color: var(--cyan);
+    color: var(--white);
+  }
 }
