@@ -13,6 +13,7 @@ import joinOurTeamBg from "./join-our-team-bg.webp";
 import locationSectionBg from "./location-section-bg.webp";
 import microsoftLogo from "./microsoft-logo.webp";
 import ourMissionSectionBg from "./our-mission-section-bg.webp";
+import pageNotFoundBg from "./page-not-found-bg.webp";
 import paloAltotRibunal from "./palo-altot-ribunal.webp";
 import serviceSectionBg1 from "./services-bg1.webp";
 import serviceSectionBg2 from "./services-bg2.webp";
@@ -40,6 +41,7 @@ export {
   locationSectionBg,
   microsoftLogo,
   ourMissionSectionBg,
+  pageNotFoundBg,
   paloAltotRibunal,
   serviceSectionBg1,
   serviceSectionBg2,

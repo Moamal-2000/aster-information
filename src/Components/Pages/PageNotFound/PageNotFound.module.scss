@@ -1,5 +1,27 @@
 @import "src/Styles/mixins.scss";
 
 .pageNotFound {
+  width: fit-content;
+  margin: 88px auto;
+}
+
+.errorContent {
+
+}
+
+.errorContent .pageNotFoundBg {
+  width: 318px;
+  height: 223px;
+}
+
+.errorContent>h1 {
+
+}
+
+.errorContent>p {
+
+}
+
+.errorContent>a {
   
 }
