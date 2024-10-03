@@ -1,7 +1,6 @@
 import { useCallback, useRef, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useGlobalContext } from "src/Context/GlobalContext";
 import { HIDE_SCROLL_TOP_MS } from "src/Data/variables";
-import { updateGlobalState } from "src/Features/globalSlice";
 import { scrollToTop } from "src/Functions/componentsFunctions";
 import useEventListener from "src/Hooks/Helper/useEventListener";
 import s from "./ScrollToTopIcon.module.scss";
@@ -10,7 +9,7 @@ const ScrollToTopIcon = () => {
   const [isScrolling, setIsScrolling] = useState(false);
   const activeClass = isScrolling ? s.active : "";
   const scrollDebounceTimer = useRef();
-  const dispatch = useDispatch();
+  const { setIsHeaderActive } = useGlobalContext();
 
   const handleScrollBtnAppearance = useCallback(() => {
     clearTimeout(scrollDebounceTimer.current);
@@ -22,7 +21,7 @@ const ScrollToTopIcon = () => {
   }, [isScrolling]);
 
   function handleClickScrollBtn() {
-    dispatch(updateGlobalState({ key: "isHeaderActive", value: false }));
+    setIsHeaderActive(false);
     scrollToTop();
   }
 

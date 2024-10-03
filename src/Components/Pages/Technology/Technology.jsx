@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useSelector } from "react-redux";
+import { useGlobalContext } from "src/Context/GlobalContext";
 import { WEBSITE_NAME } from "src/Data/variables";
 import CoreExpertise from "./CoreExpertise/CoreExpertise";
 import DataManagement from "./DataManagement/DataManagement";
@@ -10,7 +10,7 @@ import UserExperience from "./UserExperience/UserExperience";
 import ValueSection from "./ValueSection/ValueSection";
 
 const Technology = () => {
-  const { currentPage } = useSelector((state) => state.global);
+  const { currentPage } = useGlobalContext();
   const hidePseudoClass = currentPage === "/technology" ? s.hidePseudo : "";
 
   return (

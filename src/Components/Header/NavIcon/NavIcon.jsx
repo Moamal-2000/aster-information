@@ -1,16 +1,12 @@
-import { useDispatch, useSelector } from "react-redux";
-import { updateGlobalState } from "src/Features/globalSlice";
+import { useGlobalContext } from "src/Context/GlobalContext";
 import s from "./NavIcon.module.scss";
 
 const NavIcon = () => {
-  const { isMobileNavActive } = useSelector((state) => state.global);
-  const dispatch = useDispatch();
+  const { isMobileNavActive, setIsMobileNavActive } = useGlobalContext();
   const activeClass = isMobileNavActive ? s.active : "";
 
   function toggleMobileNav() {
-    dispatch(
-      updateGlobalState({ key: "isMobileNavActive", value: !isMobileNavActive })
-    );
+    setIsMobileNavActive((prev) => !prev);
   }
 
   return (
