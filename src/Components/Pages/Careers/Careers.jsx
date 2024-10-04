@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { locationSectionBg } from "src/Assets/Images/Images";
 import { WEBSITE_NAME } from "src/Data/variables";
 import HeroSection from "../../Shared/HeroSection/HeroSection";
 import s from "./Careers.module.scss";
@@ -11,6 +12,12 @@ const Careers = () => {
       <Helmet>
         <title>Careers | {WEBSITE_NAME}</title>
         <meta name="description" content="Careers page description" />
+        <link
+          rel="preload"
+          href={locationSectionBg}
+          as="image"
+          type="image/webp"
+        />
       </Helmet>
 
       <main className={s.careers} id="careersPage">
