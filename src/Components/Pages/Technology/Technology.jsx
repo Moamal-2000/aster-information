@@ -19,7 +19,13 @@ const Technology = () => {
       <Helmet>
         <title>Technology | {WEBSITE_NAME}</title>
         <meta name="description" content="Technology page description" />
-        <link rel="preload" href={techPageBg} as="image" type="image/webp" />
+        <link
+          rel="preload"
+          href={techPageBg}
+          as="image"
+          type="image/webp"
+          importance="high"
+        />
       </Helmet>
 
       <main
