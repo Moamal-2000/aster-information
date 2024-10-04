@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { techPageBg } from "src/Assets/Images/Images";
 import { useGlobalContext } from "src/Context/GlobalContext";
 import { WEBSITE_NAME } from "src/Data/variables";
 import CoreExpertise from "./CoreExpertise/CoreExpertise";
@@ -18,6 +19,7 @@ const Technology = () => {
       <Helmet>
         <title>Technology | {WEBSITE_NAME}</title>
         <meta name="description" content="Technology page description" />
+        <link rel="preload" href={techPageBg} as="image" type="image/webp" />
       </Helmet>
 
       <main
