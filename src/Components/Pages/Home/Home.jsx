@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { visionSectionBg } from "src/Assets/Images/Images";
+import { homeBgBottom, visionSectionBg } from "src/Assets/Images/Images";
 import { WEBSITE_NAME } from "src/Data/variables";
 import CareersSection from "./CareersSection/CareersSection";
 import s from "./Home.module.scss";
@@ -23,6 +23,7 @@ const Home = () => {
           as="image"
           type="image/webp"
         />
+        <link rel="preload" href={homeBgBottom} as="image" type="image/webp" />
       </Helmet>
 
       <main className={s.homePage} id="homePage">
