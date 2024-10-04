@@ -2,57 +2,11 @@
 
 .technology {
   position: relative;
-  height: 1000px;
-}
-
-@media (max-width: 1400px) {
-  .technology {
-    height: 880px;
-  }
-}
-
-@media (max-width: 1300px) {
-  .technology {
-    height: 820px;
-  }
-}
-
-@include large {
-  .technology {
-    height: 740px;
-  }
-}
-
-@media (max-width: 1100px) {
-  .technology {
-    height: 680px;
-  }
-}
-
-@include medium {
-  .technology {
-    height: 600px;
-  }
-}
-
-@include small {
-  .technology {
-    height: 620px;
-  }
-}
-
-@include very-small {
-  .technology {
-    height: 430px;
-  }
 }
 
 .technology .technologyBg {
-  position: absolute;
-  left: 0;
+  position: relative;
   top: -100px;
-  width: 100%;
-  height: auto;
   z-index: -1;
 }
 
@@ -60,7 +14,7 @@
   .technology .technologyBg {
     height: 695px;
     object-fit: cover;
-    object-position: -250px 0;
+    object-position: -240px 0;
   }
 }
 
@@ -70,10 +24,16 @@
   }
 }
 
+@media (max-width: 520px) {
+  .technology .technologyBg {
+    object-position: -480px 0;
+  }
+}
+
 @include very-small {
   .technology .technologyBg {
     height: 500px;
-    object-position: -240px 0;
+    object-position: -300px 0;
   }
 }
 
@@ -86,6 +46,10 @@
   width: 922px;
   margin: 0 auto;
   padding: 30px 0;
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+  top: 100px;
 }
 
 @include medium {
@@ -106,5 +70,34 @@
   .technology>h1 {
     font-size: 1.5rem;
     width: 100%;
+  }
+}
+
+.technology>p {
+  line-height: 1.8em;
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 740px;
+  margin: 0 auto;
+  text-wrap: balance;
+  position: relative;
+  top: -50px;
+}
+
+@include medium {
+  .technology>p {
+    font-size: 1.3rem;
+  }
+}
+
+@include small {
+  .technology>p {
+    font-size: 1rem;
+  }
+}
+
+@include very-small {
+  .technology>p {
+    font-size: .9rem;
   }
 }

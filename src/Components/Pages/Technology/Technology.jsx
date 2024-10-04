@@ -8,7 +8,6 @@ import DataSecurity from "./DataSecurity/DataSecurity";
 import TechHeroSection from "./TechHeroSection/TechHeroSection";
 import s from "./Technology.module.scss";
 import UserExperience from "./UserExperience/UserExperience";
-import ValueSection from "./ValueSection/ValueSection";
 
 const Technology = () => {
   const { currentPage } = useGlobalContext();
@@ -33,7 +32,6 @@ const Technology = () => {
         id="technologyPage"
       >
         <TechHeroSection />
-        <ValueSection />
         <CoreExpertise />
         <UserExperience />
         <DataManagement />
