@@ -24,7 +24,11 @@ const InfoSectionStat = ({ stat: { title, value, lineDelay } }) => {
       >
         {value}
       </span>
-      <HorizontalLine delay={lineDelay} />
+      <HorizontalLine
+        delay={lineDelay}
+        animatedLineWidth="24px"
+        animateTo="calc(100% - 24px / 2)"
+      />
       <h3>{title}</h3>
     </div>
   );
