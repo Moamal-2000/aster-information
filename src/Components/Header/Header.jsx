@@ -10,12 +10,17 @@ import NavIcon from "./NavIcon/NavIcon";
 
 const Header = () => {
   const { isHeaderActive, setIsHeaderActive } = useGlobalContext();
+  const scrollDebounceTimer = useRef();
   const headerRef = useRef();
   const touchStartY = useRef(0);
   const activeClass = isHeaderActive ? s.active : "";
 
   function handleScroll(event) {
-    updateHeaderActiveClass(event);
+    clearTimeout(scrollDebounceTimer.current);
+
+    scrollDebounceTimer.current = setTimeout(() => {
+      updateHeaderActiveClass(event);
+    }, 50);
   }
 
   function handleTouchStart(event) {
