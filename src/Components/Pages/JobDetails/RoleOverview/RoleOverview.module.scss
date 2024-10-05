@@ -10,9 +10,7 @@
   color: var(--white);
 }
 
-.roleOverview [data-container] {
-
-}
+.roleOverview [data-container] {}
 
 .roleOverview h2 {
   letter-spacing: .08em;
@@ -21,9 +19,27 @@
   margin-bottom: 17px;
 }
 
+@include small {
+  .roleOverview h2 {
+    font-size: 1.3rem;
+  }
+}
+
 .lineWrapper {
   width: 400px;
   margin-bottom: 40px;
+}
+
+@include small {
+  .lineWrapper {
+    width: 300px;
+  }
+}
+
+@include very-small {
+  .lineWrapper {
+    width: 100%;
+  }
 }
 
 .roleOverview ul {
@@ -33,10 +49,35 @@
   gap: 30px;
 }
 
+@include medium {
+  .roleOverview ul {
+    grid-template-columns: repeat(1, 400px);
+  }
+}
+
+@media (max-width: 520px) {
+  .roleOverview ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 .roleOverview ul li {
   list-style: disc;
-  width: 400px;
   letter-spacing: .04em;
   line-height: 1.8em;
   font-size: 1rem;
+}
+
+@include small {
+  .roleOverview ul li {
+    font-size: .9rem;
+    line-height: 1.6em;
+  }
+}
+
+@include very-small {
+  .roleOverview ul li {
+    font-size: .8rem;
+    list-style-position: inside;
+  }
 }
