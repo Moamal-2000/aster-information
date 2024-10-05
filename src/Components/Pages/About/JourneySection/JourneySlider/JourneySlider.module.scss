@@ -18,6 +18,10 @@
   align-items: center;
   width: 100%;
   pointer-events: none;
+
+  &.active {
+    pointer-events: all;
+  }
 }
 
 .wrapper .card {
