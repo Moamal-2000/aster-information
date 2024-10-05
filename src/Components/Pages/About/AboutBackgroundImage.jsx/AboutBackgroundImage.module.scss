@@ -3,6 +3,11 @@
 .wrapper {
   max-height: 700px;
   min-height: 1600px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
 }
 
 @media (max-width: 1600px) {
