@@ -15,13 +15,28 @@
 }
 
 .roleOverview h2 {
-
+  letter-spacing: .08em;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 17px;
 }
 
 .lineWrapper {
   width: 400px;
+  margin-bottom: 40px;
 }
 
-.roleOverview li {
+.roleOverview ul {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.roleOverview ul li {
   list-style: disc;
+  width: 400px;
+  letter-spacing: .04em;
+  line-height: 1.8em;
+  font-size: 1rem;
 }
