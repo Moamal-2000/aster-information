@@ -2,6 +2,8 @@
 
 .input {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .input>select {
@@ -63,6 +65,7 @@
 
 .input>:where(input, textarea) {
   all: initial;
+  display: block;
   font-family: montserrat, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -70,10 +73,10 @@
   outline: solid 1px transparent;
   background-color: transparent;
   color: var(--black);
-  width: 100%;
   padding: 11px;
   padding-left: 16px;
   border-radius: 8px;
+  flex: 1;
 
   &:hover,
   &:focus {
