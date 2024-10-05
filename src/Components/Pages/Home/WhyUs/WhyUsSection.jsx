@@ -1,25 +1,10 @@
-import { useState } from "react";
 import { whyUsSectionBg } from "src/Assets/Images/Images";
-import useEventListener from "src/Hooks/Helper/useEventListener";
+import useScrollActiveClass from "src/Hooks/App/useScrollActiveClass";
 import WhyUsCard from "./WhyUsCard/WhyUsCard";
 import s from "./WhyUsSection.module.scss";
 
 const WhyUsSection = () => {
-  const [shouldShowImg, setShouldShowImg] = useState(false);
-  const activeClass = shouldShowImg ? s.active : "";
-
-  useEventListener(
-    window,
-    "scroll",
-    () => {
-      const pageHeight = document.documentElement.offsetHeight;
-      const isAtVeryBottom =
-        window.scrollY + window.innerHeight + 100 >= pageHeight;
-
-      setShouldShowImg(!(isAtVeryBottom || window.scrollY <= 0));
-    },
-    []
-  );
+  const activeClass = useScrollActiveClass(s);
 
   return (
     <section className={`${s.whyUsSection} ${activeClass}`}>

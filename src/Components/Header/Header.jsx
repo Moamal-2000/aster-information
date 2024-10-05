@@ -20,7 +20,7 @@ const Header = () => {
 
     scrollDebounceTimer.current = setTimeout(() => {
       updateHeaderActiveClass(event);
-    }, 50);
+    }, 20);
   }
 
   function handleTouchStart(event) {
