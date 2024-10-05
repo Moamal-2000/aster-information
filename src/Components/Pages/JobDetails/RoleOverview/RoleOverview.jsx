@@ -1,8 +1,9 @@
+import Button from "../../../Shared/Buttons/Button/Button";
 import HorizontalLine from "../../../Shared/MiniComponents/HorizontalLine/HorizontalLine";
 import s from "./RoleOverview.module.scss";
 
-const RoleOverview = ({ title, list, invertColor }) => {
-  const invertClass = invertColor ? s.invert : "";
+const RoleOverview = ({ title, list, invertColors, showApplyButton }) => {
+  const invertClass = invertColors ? s.invert : "";
 
   return (
     <section className={`${s.roleOverview} ${invertClass}`}>
@@ -16,8 +17,8 @@ const RoleOverview = ({ title, list, invertColor }) => {
             initialX="200px"
             animateTo="calc(100% - 72px / 2)"
             lineColors={{
-              lineColor: invertColor ? "var(--white)" : "var(--black)",
-              VerticalLineColor: invertColor ? "var(--black)" : "var(--white)",
+              lineColor: invertColors ? "var(--white)" : "var(--black)",
+              VerticalLineColor: invertColors ? "var(--black)" : "var(--white)",
             }}
           />
         </div>
@@ -27,6 +28,14 @@ const RoleOverview = ({ title, list, invertColor }) => {
             <li key={id}>{text}</li>
           ))}
         </ul>
+
+        {showApplyButton && (
+          <Button
+            text="Submit Application"
+            path="/submit-application"
+            invertColors={invertColors}
+          />
+        )}
       </div>
     </section>
   );

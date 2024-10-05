@@ -20,12 +20,13 @@ const JobDetails = () => {
       <div className="container">
         <JobInfo />
       </div>
-        <RoleOverview title="What You’ll Do" list={jobResponsibilities} />
-        <RoleOverview
-          title="Who You are"
-          list={whoYouAreData}
-          invertColor={true}
-        />
+      <RoleOverview title="What You’ll Do" list={jobResponsibilities} />
+      <RoleOverview
+        title="Who You are"
+        list={whoYouAreData}
+        invertColors={true}
+        showApplyButton={true}
+      />
     </main>
   );
 };

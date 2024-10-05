@@ -10,8 +10,6 @@
   color: var(--white);
 }
 
-.roleOverview [data-container] {}
-
 .roleOverview h2 {
   letter-spacing: .08em;
   font-size: 1.5rem;
@@ -80,4 +78,8 @@
     font-size: .8rem;
     list-style-position: inside;
   }
+}
+
+.roleOverview ul + * {
+  margin-top: 30px;
 }
