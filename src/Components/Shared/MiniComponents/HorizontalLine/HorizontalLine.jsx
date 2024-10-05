@@ -5,9 +5,11 @@ import s from "./HorizontalLine.module.scss";
 
 const HorizontalLine = ({
   delay = "0.2s",
+  transitionDuration = "1.2s",
   animatedLineWidth,
   initialX,
   animateTo,
+  lineColors,
 }) => {
   const lineRef = useRef();
   const isElementVisible = useOnScreen(lineRef);
@@ -19,8 +21,10 @@ const HorizontalLine = ({
         className={s.verticalLine}
         style={{
           transitionDelay: delay,
+          transitionDuration,
           width: animatedLineWidth,
           right: hasAnimated ? animateTo : initialX,
+          backgroundColor: lineColors?.lineColor,
         }}
       />
     </div>

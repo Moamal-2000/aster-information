@@ -1,15 +1,27 @@
 @import "src/Styles/mixins.scss";
 
 .roleOverview {
+  padding: 120px 0;
+  border-top: solid 1px var(--gray);
+}
+
+.roleOverview.invert {
   background-color: var(--black);
   color: var(--white);
-  padding: 120px 0;
 }
 
-.roleOverview>h2 {
+.roleOverview [data-container] {
 
 }
 
-.roleOverview>li {
-  
+.roleOverview h2 {
+
+}
+
+.lineWrapper {
+  width: 400px;
+}
+
+.roleOverview li {
+  list-style: disc;
 }

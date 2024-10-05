@@ -417,3 +417,62 @@ export const joinUsInputsData = [
     placeholder: "Tell Us a Bit About Yourself",
   },
 ];
+
+export const jobResponsibilities = [
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 1,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 2,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 3,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 4,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 5,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 6,
+  },
+];
+
+export const whoYouAreData = [
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 1,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 2,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 3,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 4,
+  },
+
+  {
+    text: "I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.",
+    id: 5,
+  },
+];

@@ -6,21 +6,28 @@ const RoleOverview = ({ title, list, invertColor }) => {
 
   return (
     <section className={`${s.roleOverview} ${invertClass}`}>
-      <h2>{title}</h2>
-      <HorizontalLine
-        delay="0.2s"
-        animatedLineWidth="100%"
-        initialX="0"
-        animateTo="100%"
-        lineColors={{
-          lineColor: invertColor ? "var(--white)" : "var(--black)",
-        }}
-      />
-      <ul>
-        {list.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))}
-      </ul>
+      <div className="container" data-container>
+        <h2>{title}</h2>
+        <div className={s.lineWrapper}>
+          <HorizontalLine
+            delay="0.2s"
+            transitionDuration="1.8s"
+            animatedLineWidth="72px"
+            initialX="200px"
+            animateTo="calc(100% - 72px / 2)"
+            lineColors={{
+              lineColor: invertColor ? "var(--white)" : "var(--black)",
+              VerticalLineColor: invertColor ? "var(--black)" : "var(--white)",
+            }}
+          />
+        </div>
+
+        <ul>
+          {list.map(({ text, id }) => (
+            <li key={id}>{text}</li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

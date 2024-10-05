@@ -1,6 +1,8 @@
+import { jobResponsibilities, whoYouAreData } from "src/Data/staticData";
 import HeroSection from "../../Shared/HeroSection/HeroSection";
 import s from "./JobDetails.module.scss";
 import JobInfo from "./JobInfo/JobInfo";
+import RoleOverview from "./RoleOverview/RoleOverview";
 
 const JobDetails = () => {
   return (
@@ -18,6 +20,12 @@ const JobDetails = () => {
       <div className="container">
         <JobInfo />
       </div>
+        <RoleOverview title="What You’ll Do" list={jobResponsibilities} />
+        <RoleOverview
+          title="Who You are"
+          list={whoYouAreData}
+          invertColor={true}
+        />
     </main>
   );
 };
