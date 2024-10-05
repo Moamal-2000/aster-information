@@ -27,7 +27,7 @@ const RouteLayout = () => {
   return (
     <div className="App">
       <SkipContentLink sectionId="heroSection" />
-      {/* <Header /> */}
+      <Header />
       <Outlet />
 
       <div className={s.footerLayer}>
