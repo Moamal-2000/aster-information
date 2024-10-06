@@ -15,18 +15,19 @@ const Input = ({
 }) => {
   const requiredClass = required ? s.required : "";
   const resizeClass = resize ? s.resize : "";
+  const invalidClass = "";
 
   if (type === "select") {
     return (
-      <div className={s.input}>
+      <div className={`${s.input} ${invalidClass}`}>
         <label htmlFor={label}>{label}</label>
 
         <select
           id={label}
-          defaultValue={""}
           required={required}
           onChange={onChange}
           name={name}
+          value={value}
         >
           <option value="" hidden>
             {selectPlaceholder}
@@ -42,7 +43,7 @@ const Input = ({
 
   if (type === "textarea") {
     return (
-      <div className={s.input}>
+      <div className={`${s.input} ${invalidClass}`}>
         <label htmlFor={name} className={requiredClass}>
           {label}
         </label>
@@ -60,7 +61,7 @@ const Input = ({
   }
 
   return (
-    <div className={s.input}>
+    <div className={`${s.input} ${invalidClass}`}>
       <label htmlFor={name} className={requiredClass}>
         {label}
       </label>

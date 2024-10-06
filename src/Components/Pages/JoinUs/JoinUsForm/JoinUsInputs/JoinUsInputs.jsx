@@ -5,14 +5,16 @@ import s from "./JoinUsInputs.module.scss";
 const JoinUsInputs = ({ values, handleChange }) => {
   return (
     <div className={s.inputs}>
-      {joinUsInputsData.map((input, index) => (
-        <Input
-          key={input.id}
-          {...input}
-          value={values[index]}
-          onChange={handleChange}
-        />
-      ))}
+      {joinUsInputsData.map((input) => {
+        return (
+          <Input
+            key={input.id}
+            {...input}
+            value={values[input.name]}
+            onChange={handleChange}
+          />
+        );
+      })}
 
       <button type="submit" className={s.submitButton}>
         Submit

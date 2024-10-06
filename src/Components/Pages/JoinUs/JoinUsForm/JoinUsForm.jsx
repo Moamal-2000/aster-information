@@ -1,4 +1,4 @@
-import useFormData from "../../../../Hooks/Helper/useFormData";
+import useFormData from "src/Hooks/Helper/useFormData";
 import s from "./JoinUsForm.module.scss";
 import JoinUsInputs from "./JoinUsInputs/JoinUsInputs";
 
@@ -9,6 +9,7 @@ const JoinUsForm = () => {
       lastName: "",
       email: "",
       phone: "",
+      position: "",
       cvUrl: "",
       linkedinUrl: "",
       comment: "",
