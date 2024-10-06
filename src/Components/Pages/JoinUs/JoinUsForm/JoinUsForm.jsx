@@ -7,7 +7,9 @@ import JoinUsInputs from "./JoinUsInputs/JoinUsInputs";
 const JoinUsForm = () => {
   const [joinUsInputsState, setJoinUsInputsState] = useState(joinUsInputsData);
   const [isTryingSubmit, setIsTryingSubmit] = useState(false);
-  const { values, handleChange, handleSubmit } = useFormData({
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const { values, handleChange, handleSubmit, emptyInputs } = useFormData({
     initialValues: {
       firstName: "",
       lastName: "",
@@ -23,7 +25,22 @@ const JoinUsForm = () => {
   });
 
   function checkSubmission() {
+    if (submitting || submitted) return;
+
+    const allFieldsValid = joinUsInputsState.every((input) => input.isValid);
     setIsTryingSubmit(true);
+
+    if (allFieldsValid) {
+      setSubmitting(true);
+
+      setTimeout(() => {
+        setSubmitting(false);
+        setSubmitted(true);
+        emptyInputs();
+
+        setTimeout(() => setSubmitted(false), 4000);
+      }, 2000);
+    }
   }
 
   return (
@@ -39,6 +56,8 @@ const JoinUsForm = () => {
             isTryingSubmit={isTryingSubmit}
             joinUsInputsState={joinUsInputsState}
             setJoinUsInputsState={setJoinUsInputsState}
+            submitting={submitting}
+            submitted={submitted}
           />
         </form>
       </div>

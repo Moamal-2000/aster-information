@@ -4,12 +4,12 @@
   border: solid 1px var(--black);
   border-right: none;
   border-left: none;
-  padding: 140px 0 180px;
+  padding: 140px 0 150px;
 }
 
 @include small {
   .joinUsWrapper {
-    padding: 80px 0 120px;
+    padding: 80px 0 90px;
   }
 }
 

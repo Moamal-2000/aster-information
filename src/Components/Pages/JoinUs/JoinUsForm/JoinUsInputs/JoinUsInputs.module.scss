@@ -17,14 +17,46 @@
   color: var(--white);
   transition: background-color .4s ease, color .4s ease;
 
-  &:hover {
+  &:not(:disabled):hover {
     background-color: var(--white);
     color: var(--black);
+  }
+
+  &.submitting {
+    background-color: var(--gray);
+    cursor: wait;
+  }
+
+  &.show {
+    background-color: var(--gray);
+    cursor: not-allowed;
   }
 }
 
 @include small {
-  .submitButton{
+  .submitButton {
+    font-size: .9rem;
+  }
+}
+
+.submitMessage {
+  line-height: 1.8em;
+  letter-spacing: .05em;
+  margin-bottom: 30px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .4s ease;
+
+  &.show {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@include small {
+  .submitMessage {
+    margin-bottom: 24px;
+    line-height: 1.5em;
     font-size: .9rem;
   }
 }

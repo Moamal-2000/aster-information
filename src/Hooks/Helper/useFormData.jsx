@@ -25,12 +25,16 @@ const useFormData = ({
     });
   }
 
+  function emptyInputs() {
+    setValues(initialValues);
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     onSubmit(values);
   };
 
-  return { values, handleChange, handleSubmit };
+  return { values, handleChange, handleSubmit, emptyInputs };
 };
 
 export default useFormData;

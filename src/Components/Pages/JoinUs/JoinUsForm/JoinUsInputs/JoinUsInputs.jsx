@@ -8,7 +8,12 @@ const JoinUsInputs = ({
   isTryingSubmit,
   joinUsInputsState,
   setJoinUsInputsState,
+  submitting,
+  submitted,
 }) => {
+  const submittingClass = submitting ? s.submitting : "";
+  const showClass = submitted ? s.show : "";
+
   function onChange(event) {
     const { name, value } = event.target;
     const inputData = joinUsInputsState.find((input) => input.name === name);
@@ -18,6 +23,8 @@ const JoinUsInputs = ({
     const isSelectElement = inputData.type === "select";
 
     handleChange(event);
+
+    if (inputData?.ignoreValidation) return;
 
     if (isSelectElement) inputData.isValid = true;
     else if (isEmpty && !isRequired) inputData.isValid = true;
@@ -42,9 +49,18 @@ const JoinUsInputs = ({
         );
       })}
 
-      <button type="submit" className={s.submitButton}>
+      <button
+        type="submit"
+        disabled={submitting || submitted}
+        aria-disabled={submitting || submitted}
+        className={`${s.submitButton} ${submittingClass} ${showClass}`}
+      >
         Submit
       </button>
+
+      <p className={`${s.submitMessage} ${showClass}`} aria-hidden={submitted}>
+        Thank you for your Application!
+      </p>
     </div>
   );
 };

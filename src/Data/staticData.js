@@ -428,6 +428,7 @@ export const joinUsInputsData = [
     name: "comment",
     required: false,
     isValid: true,
+    ignoreValidation: true,
     placeholder: "Tell Us a Bit About Yourself",
   },
 ];
