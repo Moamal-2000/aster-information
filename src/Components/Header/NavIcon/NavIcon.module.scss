@@ -1,10 +1,10 @@
 @import "src/Styles/mixins.scss";
 
 .navIcon {
+  -webkit-tap-highlight-color: transparent;
   position: relative;
   display: none;
   z-index: 2;
-  -webkit-tap-highlight-color: transparent;
 }
 
 @include small {
@@ -12,7 +12,6 @@
     width: 22px;
     height: 12px;
     display: block;
-    margin-right: 10px;
   }
 }
 

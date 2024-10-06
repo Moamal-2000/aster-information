@@ -57,7 +57,7 @@
   transition: color .4s ease;
 
   &:hover {
-    color: var(--dark-orange);
+    color: var(--orange);
   }
 
   &[class=active] {
@@ -70,11 +70,11 @@
     font-size: 1.1rem;
 
     &:hover {
-      color: var(--black);
+      color: var(--dark-orange);
     }
 
     &[class=active] {
-      color: var(--dark-orange);
+      color: var(--orange);
     }
   }
 }
