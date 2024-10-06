@@ -4,7 +4,7 @@ import AnimatedImage from "./AnimatedImage/AnimatedImage";
 import s from "./VisionSection.module.scss";
 import VisionSectionContent from "./VisionSectionContent/VisionSectionContent";
 
-const  VisionSection = () => {
+const VisionSection = () => {
   const { lineHeight, initialY, animateTo } = useLongLineProperties();
 
   return (

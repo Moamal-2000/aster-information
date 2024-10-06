@@ -48,7 +48,6 @@
   gap: 50px;
   position: relative;
   margin-top: 70px;
-  margin-left: var(--left-margin-content);
 }
 
 @media (max-width: 1300px) {
@@ -60,6 +59,5 @@
 @include small {
   .wrapper {
     gap: 30px;
-    margin-left: 0;
   }
 }
