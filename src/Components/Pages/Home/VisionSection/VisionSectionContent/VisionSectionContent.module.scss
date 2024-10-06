@@ -7,13 +7,13 @@
   gap: 50px;
   max-width: 320px;
   flex-shrink: 0;
+  margin-left: var(--left-margin-content);
 }
 
 @include small {
   .content {
     max-width: 290px;
     gap: 30px;
-    margin-left: var(--left-margin-content);
   }
 }
 
