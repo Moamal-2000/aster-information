@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.invalid :where(select, input, textarea) {
+  background-color: var(--light-orange) !important;
+}
+
 .input>select {
   font-family: montserrat, sans-serif;
   font-size: 1rem;

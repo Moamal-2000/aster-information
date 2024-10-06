@@ -12,15 +12,19 @@ const Input = ({
   selectPlaceholder = `Select ${label}`,
   placeholder,
   resize = false,
+  valid,
+  isTryingSubmit,
 }) => {
   const requiredClass = required ? s.required : "";
   const resizeClass = resize ? s.resize : "";
-  const invalidClass = "";
+  const invalidClass = !valid && isTryingSubmit ? s.invalid : "";
 
   if (type === "select") {
     return (
       <div className={`${s.input} ${invalidClass}`}>
-        <label htmlFor={label}>{label}</label>
+        <label htmlFor={label} className={requiredClass}>
+          {label}
+        </label>
 
         <select
           id={label}

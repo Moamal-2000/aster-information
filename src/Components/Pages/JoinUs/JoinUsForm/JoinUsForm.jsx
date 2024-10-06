@@ -1,8 +1,12 @@
+import { useState } from "react";
+import { joinUsInputsData } from "src/Data/staticData";
 import useFormData from "src/Hooks/Helper/useFormData";
 import s from "./JoinUsForm.module.scss";
 import JoinUsInputs from "./JoinUsInputs/JoinUsInputs";
 
 const JoinUsForm = () => {
+  const [joinUsInputsState, setJoinUsInputsState] = useState(joinUsInputsData);
+  const [isTryingSubmit, setIsTryingSubmit] = useState(false);
   const { values, handleChange, handleSubmit } = useFormData({
     initialValues: {
       firstName: "",
@@ -18,8 +22,8 @@ const JoinUsForm = () => {
     onSubmit: checkSubmission,
   });
 
-  function checkSubmission(val) {
-    console.log(val);
+  function checkSubmission() {
+    setIsTryingSubmit(true);
   }
 
   return (
@@ -28,7 +32,14 @@ const JoinUsForm = () => {
         <form className={s.joinUsForm} onSubmit={handleSubmit}>
           <h2>Submit Your Application</h2>
 
-          <JoinUsInputs values={values} handleChange={handleChange} />
+          <JoinUsInputs
+            values={values}
+            handleChange={handleChange}
+            inputsState={joinUsInputsData}
+            isTryingSubmit={isTryingSubmit}
+            joinUsInputsState={joinUsInputsState}
+            setJoinUsInputsState={setJoinUsInputsState}
+          />
         </form>
       </div>
     </div>

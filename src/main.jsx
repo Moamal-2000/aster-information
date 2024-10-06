@@ -6,11 +6,11 @@ import GlobalContextProvider from "./Context/GlobalContext.jsx";
 import "./Styles/index.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  // <StrictMode>
-  //   </StrictMode>
+  <StrictMode>
     <GlobalContextProvider>
       <HelmetProvider>
         <App />
       </HelmetProvider>
     </GlobalContextProvider>
+  </StrictMode>
 );

@@ -358,6 +358,8 @@ export const joinUsInputsData = [
     type: "text",
     name: "firstName",
     required: true,
+    isValid: false,
+    regex: /^[a-z]+$/i,
   },
   {
     id: 2,
@@ -365,6 +367,8 @@ export const joinUsInputsData = [
     type: "text",
     name: "lastName",
     required: true,
+    isValid: false,
+    regex: /^[a-z]+$/i,
   },
   {
     id: 3,
@@ -372,6 +376,8 @@ export const joinUsInputsData = [
     type: "email",
     name: "email",
     required: true,
+    isValid: false,
+    regex: /^\w+@\w+\.\w+$/,
   },
   {
     id: 4,
@@ -379,6 +385,8 @@ export const joinUsInputsData = [
     type: "tel",
     name: "phone",
     required: false,
+    isValid: true,
+    regex: /^\d{9,11}$/,
   },
   {
     id: 5,
@@ -393,6 +401,7 @@ export const joinUsInputsData = [
       "Other: Submit Your CV",
     ],
     required: true,
+    isValid: false,
   },
   {
     id: 6,
@@ -400,6 +409,8 @@ export const joinUsInputsData = [
     type: "text",
     name: "cvUrl",
     required: true,
+    isValid: false,
+    regex: /^((https?:\/\/)www\.)?([a-z0-9-]+\.)[a-z]+$/,
   },
   {
     id: 7,
@@ -407,6 +418,8 @@ export const joinUsInputsData = [
     type: "text",
     name: "linkedinUrl",
     required: false,
+    isValid: true,
+    regex: /^((https?:\/\/)www\.)?([a-z0-9-]+\.)[a-z]+$/,
   },
   {
     id: 8,
@@ -414,6 +427,7 @@ export const joinUsInputsData = [
     type: "textarea",
     name: "comment",
     required: false,
+    isValid: true,
     placeholder: "Tell Us a Bit About Yourself",
   },
 ];
