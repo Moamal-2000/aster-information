@@ -1,16 +1,11 @@
 @import "src/Styles/mixins.scss";
 
 .wrapper {
-  max-height: 700px;
-  min-height: 1600px;
-  display: none;
-
-  &.active {
-    display: block;
-  }
+  min-height: 1148px;
+  position: relative;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1540px) {
   .wrapper {
     min-height: 100dvh;
   }
@@ -34,7 +29,7 @@
   z-index: -1000;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1540px) {
   .backgroundImg {
     position: fixed;
     object-fit: cover;
