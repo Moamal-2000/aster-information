@@ -229,62 +229,54 @@ export const dataSecurityData = [
 ];
 
 export const journeySliderData = [
-  [
-    {
-      year: "2016",
-      title: "SAN FRANCISCO HQ OPENS",
-      description: `Aster Information Limited was founded with a vision to revolutionize
+  {
+    year: "2016",
+    title: "SAN FRANCISCO HQ OPENS",
+    description: `Aster Information Limited was founded with a vision to revolutionize
+    Information Management and IT solutions, initiating our data-empowered journey.`,
+  },
+  {
+    year: "2017",
+    title: "FIRST PROTOTYPE IS TEST-DRIVEN",
+    description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+    in data-driven decision making across various industries.`,
+  },
+  {
+    year: "2018",
+    title: "PARTNERSHIP WITH TRI-NEX & GENERAL TRANSPORT INITIATED",
+    description: `Aster Information Limited was founded with a vision to revolutionize
       Information Management and IT solutions, initiating our data-empowered journey.`,
-    },
-    {
-      year: "2017",
-      title: "FIRST PROTOTYPE IS TEST-DRIVEN",
-      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+  },
+  {
+    year: "2019",
+    title: "TESTING EXPANDS TO ARIZONA & NEW MEXICO",
+    description: `We aim to expand our AI-infused solutions, becoming a trusted partner
       in data-driven decision making across various industries.`,
-    },
-  ],
-  [
-    {
-      year: "2018",
-      title: "PARTNERSHIP WITH TRI-NEX & GENERAL TRANSPORT INITIATED",
-      description: `Aster Information Limited was founded with a vision to revolutionize
+  },
+  {
+    year: "2020",
+    title: "PRODUCTION BEGINS!",
+    description: `Aster Information Limited was founded with a vision to revolutionize
       Information Management and IT solutions, initiating our data-empowered journey.`,
-    },
-    {
-      year: "2019",
-      title: "TESTING EXPANDS TO ARIZONA & NEW MEXICO",
-      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+  },
+  {
+    year: "2021",
+    title: "FIRST 1,000 CARS SOLD",
+    description: `We aim to expand our AI-infused solutions, becoming a trusted partner
       in data-driven decision making across various industries.`,
-    },
-  ],
-  [
-    {
-      year: "2020",
-      title: "PRODUCTION BEGINS!",
-      description: `Aster Information Limited was founded with a vision to revolutionize
+  },
+  {
+    year: "2022",
+    title: "ASTER IS FOUNDED",
+    description: `Aster Information Limited was founded with a vision to revolutionize
       Information Management and IT solutions, initiating our data-empowered journey.`,
-    },
-    {
-      year: "2021",
-      title: "FIRST 1,000 CARS SOLD",
-      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
-      in data-driven decision making across various industries.`,
-    },
-  ],
-  [
-    {
-      year: "2022",
-      title: "ASTER IS FOUNDED",
-      description: `Aster Information Limited was founded with a vision to revolutionize
-      Information Management and IT solutions, initiating our data-empowered journey.`,
-    },
-    {
-      year: "2023",
-      title: "Future Prospects",
-      description: `We aim to expand our AI-infused solutions, becoming a trusted partner
-      in data-driven decision making across various industries.`,
-    },
-  ],
+  },
+  // {
+  //   year: "2023",
+  //   title: "Future Prospects",
+  //   description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+  //     in data-driven decision making across various industries.`,
+  // },
 ];
 
 export const partnersSectionData = [

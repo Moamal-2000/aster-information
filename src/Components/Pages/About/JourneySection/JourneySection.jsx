@@ -1,3 +1,4 @@
+import { journeySliderData } from "src/Data/staticData";
 import s from "./JourneySection.module.scss";
 import JourneySlider from "./JourneySlider/JourneySlider";
 
@@ -8,7 +9,7 @@ const JourneySection = () => {
         <h2>Our Journey So Far</h2>
       </div>
 
-      <JourneySlider />
+      <JourneySlider data={journeySliderData} />
     </section>
   );
 };

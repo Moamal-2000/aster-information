@@ -1,27 +1,28 @@
 import { useState } from "react";
-import { journeySliderData } from "src/Data/staticData";
+import { changeArrToPairs } from "src/Functions/helper";
 import s from "./JourneySlider.module.scss";
 import JourneySliderButtons from "./JourneySliderButtons/JourneySliderButtons";
 import TimelineCard from "./TimelineCard/TimelineCard";
 
-const JourneySlider = () => {
+const JourneySlider = ({data}) => {
   const [sliderIndex, setSliderIndex] = useState(0);
+  const sliderData = changeArrToPairs(data);
 
   function handleNextSlide() {
     setSliderIndex((prevIndex) =>
-      prevIndex === journeySliderData.length - 1 ? 0 : prevIndex + 1
+      prevIndex === sliderData.length - 1 ? 0 : prevIndex + 1
     );
   }
 
   function handlePrevSlide() {
     setSliderIndex((prevIndex) =>
-      prevIndex === 0 ? journeySliderData.length - 1 : prevIndex - 1
+      prevIndex === 0 ? sliderData.length - 1 : prevIndex - 1
     );
   }
 
   return (
     <div className={s.journeySlider}>
-      {journeySliderData.map((sliderData, index) => {
+      {sliderData.map((sliderData, index) => {
         const activeClass = index === sliderIndex ? s.active : "";
         const isEven = sliderIndex % 2 === 0;
         const animateDirectionClass = isEven ? s.goRight : s.goLeft;
