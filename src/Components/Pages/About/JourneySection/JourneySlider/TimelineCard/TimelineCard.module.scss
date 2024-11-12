@@ -3,8 +3,9 @@
 .timelineCard {
   border: solid 1px var(--black);
   padding: 30px 40px;
-  width: fit-content;
   border-radius: 15px;
+  width: fit-content;
+  min-height: 278px;
 }
 
 @include small {
@@ -12,6 +13,7 @@
     width: 90%;
     margin: 0 auto;
     padding: 20px 24px;
+    min-height: 213px;
   }
 }
 

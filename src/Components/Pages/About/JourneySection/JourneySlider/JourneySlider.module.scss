@@ -30,6 +30,12 @@
   transition: opacity .6s ease, left ease-out 1.2s .4s;
 }
 
+@include small {
+  .wrapper .card {
+    width: 100%;
+  }
+}
+
 .wrapper.active .card {
   transition: opacity .6s .6s ease, left ease-out 1.2s .4s;
   opacity: 1;

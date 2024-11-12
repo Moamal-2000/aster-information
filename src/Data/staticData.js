@@ -271,12 +271,12 @@ export const journeySliderData = [
     description: `Aster Information Limited was founded with a vision to revolutionize
       Information Management and IT solutions, initiating our data-empowered journey.`,
   },
-  // {
-  //   year: "2023",
-  //   title: "Future Prospects",
-  //   description: `We aim to expand our AI-infused solutions, becoming a trusted partner
-  //     in data-driven decision making across various industries.`,
-  // },
+  {
+    year: "2023",
+    title: "Future Prospects",
+    description: `We aim to expand our AI-infused solutions, becoming a trusted partner
+      in data-driven decision making across various industries.`,
+  },
 ];
 
 export const partnersSectionData = [
