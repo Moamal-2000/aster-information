@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .timelineCard {
   border: solid 1px var(--black);
@@ -8,7 +8,7 @@
   min-height: 278px;
 }
 
-@include small {
+@include m.small {
   .timelineCard {
     width: 90%;
     margin: 0 auto;
@@ -27,13 +27,13 @@
   position: relative;
 }
 
-@include medium {
+@include m.medium {
   .year {
     font-size: 2rem;
   }
 }
 
-@include small {
+@include m.small {
   .year {
     font-size: 1.5rem;
     margin-bottom: 35px;
@@ -49,7 +49,7 @@
   border-bottom: solid 1px var(--black);
 }
 
-@include small {
+@include m.small {
   .year::before {
     bottom: -13px;
   }
@@ -64,7 +64,7 @@
   width: 537px;
 }
 
-@include medium {
+@include m.medium {
   .title {
     width: 440px;
     height: 20px;
@@ -73,7 +73,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .title {
     width: 90%;
     letter-spacing: .1em;
@@ -95,7 +95,7 @@
   width: 537px;
 }
 
-@include medium {
+@include m.medium {
   .description {
     width: 440px;
     font-size: .8rem;
@@ -103,7 +103,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .description {
     width: 90%;
     font-size: .7rem;

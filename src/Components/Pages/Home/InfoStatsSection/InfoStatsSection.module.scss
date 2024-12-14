@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .infoSection {
   background-color: var(--website-bg);
@@ -10,14 +10,14 @@
   align-items: center;
 }
 
-@include large {
+@include m.large {
   .infoSection {
     height: auto;
     padding-bottom: 0;
   }
 }
 
-@include small {
+@include m.small {
   .infoSection {
     padding-top: 100px;
   }
@@ -28,7 +28,7 @@
   justify-content: flex-end;
 }
 
-@include large {
+@include m.large {
   .infoSection [data-container] {
     flex-direction: column;
     justify-content: center;
@@ -52,7 +52,7 @@
   }
 }
 
-@include large {
+@include m.large {
   .backgroundImg {
     position: static;
     inset: auto;
@@ -62,13 +62,13 @@
   }
 }
 
-@include small {
+@include m.small {
   .backgroundImg {
     height: 500px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .backgroundImg {
     height: 350px;
   }

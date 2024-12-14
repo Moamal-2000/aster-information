@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .pageNotFound {
   width: 100%;
@@ -6,7 +6,7 @@
   margin: 48px auto 0;
 }
 
-@include small {
+@include m.small {
   .pageNotFound {
     margin: 100px auto;
   }
@@ -17,13 +17,13 @@
   margin: 0 auto;
 }
 
-@include small {
+@include m.small {
   .errorContent {
     width: 100%;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .errorContent {
     display: flex;
     flex-direction: column;
@@ -36,7 +36,7 @@
   height: 223px;
 }
 
-@include small {
+@include m.small {
   .errorContent .pageNotFoundBg {
     width: 52vw;
     height: 30vh;
@@ -50,7 +50,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .errorContent .pageNotFoundBg {
     width: 216px;
     height: 152px;
@@ -70,7 +70,7 @@
   text-align: center;
 }
 
-@include small {
+@include m.small {
   .errorContent>h1 {
     font-size: 8vw;
     margin-top: 3vw;
@@ -78,7 +78,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .errorContent>h1 {
     font-size: 1.8rem;
     line-height: 40px;
@@ -97,7 +97,7 @@
   color: var(--blue-syzygy);
 }
 
-@include small {
+@include m.small {
   .errorContent>p {
     width: fit-content;
     font-size: 2.6vw;
@@ -105,7 +105,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .errorContent>p {
     font-size: .8rem;
     line-height: 30px;
@@ -127,7 +127,7 @@
   height: 56px;
   letter-spacing: .8px;
   font-size: 1.375rem;
-  @include center-x-y;
+  @include m.center-x-y;
   border-radius: 28px;
   cursor: pointer;
   border: 2px solid var(--cyan);
@@ -142,7 +142,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .errorContent>a {
     height: 8vw;
     font-size: 2.4vw;
@@ -155,7 +155,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .errorContent>a {
     border-radius: 22px;
     height: 46px;

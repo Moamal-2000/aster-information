@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .dataManagement {
   padding: 200px 0 60px;
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-@include large {
+@include m.large {
   .dataManagement {
     flex-direction: column;
     align-items: center;
@@ -17,19 +17,19 @@
   }
 }
 
-@include small {
+@include m.small {
   .dataManagement {
     gap: 60px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .dataManagement {
     gap: 0;
   }
 }
 
-@include large {
+@include m.large {
   .dataManagement [data-container] {
     display: flex;
     justify-content: center;
@@ -53,13 +53,13 @@
   }
 }
 
-@include large {
+@include m.large {
   .dataManagement .dataManagementBg {
     display: none;
   }
 }
 
-@include small {
+@include m.small {
   .dataManagement .dataManagementBg {
     display: block;
     position: static;

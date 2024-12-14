@@ -1,6 +1,6 @@
-@import "./mixins.scss";
-@import "./colors.scss";
-@import "./variables.scss";
+@use "./mixins" as m;
+@use "./colors" as c;
+@use "./variables" as v;
 @import "./fonts.css";
 
 * {
@@ -72,7 +72,7 @@ main {
   position: relative;
 }
 
-@include small {
+@include m.small {
   main {
     margin-top: 140px;
   }

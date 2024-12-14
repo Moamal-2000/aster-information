@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .services {
   display: flex;
@@ -11,7 +11,7 @@
   }
 }
 
-@include large {
+@include m.large {
   .services {
     align-items: center;
     width: 374px;
@@ -20,7 +20,7 @@
   }
 }
 
-@include medium {
+@include m.medium {
   .services {
     width: fit-content;
     display: flex;
@@ -30,7 +30,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .services {
     gap: 20px;
   }
@@ -42,7 +42,7 @@
   }
 }
 
-@include medium {
+@include m.medium {
   .services [data-container] {
     display: flex;
     flex-direction: column;
@@ -58,13 +58,13 @@
   width: 50%;
 }
 
-@include large {
+@include m.large {
   .serviceImgHolder {
     display: none;
   }
 }
 
-@include medium {
+@include m.medium {
   .serviceImgHolder {
     display: block;
     position: static;
@@ -74,7 +74,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .serviceImgHolder {
     scale: 1.066;
   }

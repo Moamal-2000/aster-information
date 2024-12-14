@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .careersSection {
   background-color: var(--black);
@@ -13,14 +13,14 @@
   gap: 40px;
 }
 
-@include large {
+@include m.large {
   .careersSection [data-container] {
     flex-direction: column;
     gap: 90px;
   }
 }
 
-@include small {
+@include m.small {
   .careersSection [data-container] {
     gap: 120px;
   }

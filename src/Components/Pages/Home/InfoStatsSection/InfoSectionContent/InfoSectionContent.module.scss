@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .content {}
 
@@ -10,19 +10,19 @@
   margin-bottom: 74px;
 }
 
-@include large {
+@include m.large {
   .content>h2 {
     text-align: center;
   }
 }
 
-@include small {
+@include m.small {
   .content>h2 {
     font-size: 1.4rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content>h2 {
     font-size: 1.2rem;
   }
@@ -35,14 +35,14 @@
   gap: 88px 97px;
 }
 
-@include large {
+@include m.large {
   .stats {
     width: fit-content;
     margin: 0 auto;
   }
 }
 
-@include small {
+@include m.small {
   .stats {
     gap: 60px 50px;
   }

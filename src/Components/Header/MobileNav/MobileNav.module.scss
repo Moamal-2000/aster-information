@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .nav {
   margin-right: 170px;
@@ -11,13 +11,13 @@
   }
 }
 
-@include large {
+@include m.large {
   .nav {
     margin-right: 0;
   }
 }
 
-@include small {
+@include m.small {
   .nav {
     position: fixed;
     left: 0;
@@ -42,7 +42,7 @@
   display: flex;
 }
 
-@include small {
+@include m.small {
   .nav>ul {
     flex-direction: column;
     align-items: center;
@@ -65,7 +65,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .nav>ul>li>a {
     font-size: 1.1rem;
 

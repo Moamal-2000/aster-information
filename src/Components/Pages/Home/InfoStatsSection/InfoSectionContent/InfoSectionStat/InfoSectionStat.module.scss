@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .stat {
   display: flex;
@@ -18,7 +18,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .stat>span {
     font-size: 2rem;
   }
@@ -32,7 +32,7 @@
   width: fit-content;
 }
 
-@include small {
+@include m.small {
   .stat>h3 {
     font-size: .7rem;
   }

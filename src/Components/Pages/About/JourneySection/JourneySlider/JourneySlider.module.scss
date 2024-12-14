@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .journeySlider {
   margin: 0 auto;
@@ -30,7 +30,7 @@
   transition: opacity .6s ease, left ease-out 1.2s .4s;
 }
 
-@include small {
+@include m.small {
   .wrapper .card {
     width: 100%;
   }
@@ -52,13 +52,13 @@
   background-color: var(--black);
 }
 
-@include medium {
+@include m.medium {
   .wrapper .card.firstCard::before {
     bottom: -40px;
   }
 }
 
-@include small {
+@include m.small {
   .wrapper .card.firstCard::before {
     display: none;
   }
@@ -91,13 +91,13 @@
   background-color: var(--black);
 }
 
-@include medium {
+@include m.medium {
   .wrapper .card.secondCard::before {
     top: -43px;
   }
 }
 
-@include small {
+@include m.small {
   .wrapper .card.secondCard::before {
     display: none;
   }

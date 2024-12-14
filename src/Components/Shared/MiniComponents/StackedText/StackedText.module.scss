@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .wrapper {
   display: flex;
@@ -7,7 +7,7 @@
   min-width: 184px;
 }
 
-@include small {
+@include m.small {
   .wrapper {
     scale: .9;
   }
@@ -37,7 +37,7 @@
   }
 }
 
-@include medium {
+@include m.medium {
   .wrapper>p:last-child {
     font-size: 1.25rem;
   }

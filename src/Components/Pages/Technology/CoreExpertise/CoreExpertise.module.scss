@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .coreExpertise {
   background-color: var(--black);
@@ -8,7 +8,7 @@
   align-items: center;
 }
 
-@include large {
+@include m.large {
   .coreExpertise {
     flex-direction: column;
     align-items: center;
@@ -17,13 +17,13 @@
   }
 }
 
-@include small {
+@include m.small {
   .coreExpertise {
     gap: 60px;
   }
 }
 
-@include large {
+@include m.large {
   .coreExpertise [data-container] {
     display: flex;
     justify-content: center;
@@ -46,7 +46,7 @@
   }
 }
 
-@include large {
+@include m.large {
   .coreExpertise .coreExpertiseBg {
     position: static;
     width: 100%;

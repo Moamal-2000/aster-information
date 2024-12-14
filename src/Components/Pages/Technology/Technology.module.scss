@@ -1,6 +1,6 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
-@include small {
+@include m.small {
   .technology {
     margin-top: 80px;
   }

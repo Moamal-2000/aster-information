@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .partners {
   display: flex;
@@ -9,13 +9,13 @@
   margin-top: 200px;
 }
 
-@include large {
+@include m.large {
   .partners {
     gap: 50px;
   }
 }
 
-@include medium {
+@include m.medium {
   .partners {
     flex-wrap: wrap;
     justify-content: center;

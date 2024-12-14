@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .slider {
   padding: 10px;
@@ -15,14 +15,14 @@
   }
 }
 
-@include small {
+@include m.small {
   .slider {
     width: 320px;
     padding: 50px 20px 32px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .slider {
     width: 100%;
   }
@@ -32,7 +32,7 @@
   height: 370px;
 }
 
-@include small {
+@include m.small {
   .slideSpace {
     height: 320px;
   }

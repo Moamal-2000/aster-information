@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .joinUsWrapper {
   border: solid 1px var(--black);
@@ -7,7 +7,7 @@
   padding: 140px 0 150px;
 }
 
-@include small {
+@include m.small {
   .joinUsWrapper {
     padding: 80px 0 90px;
   }
@@ -18,13 +18,13 @@
   width: 720px;
 }
 
-@include medium {
+@include m.medium {
   .joinUsForm {
     width: 540px;
   }
 }
 
-@include small {
+@include m.small {
   .joinUsForm {
     width: 100%;
   }
@@ -39,14 +39,14 @@
   margin-bottom: 50px;
 }
 
-@include small {
+@include m.small {
   .joinUsForm>h2 {
     margin-bottom: 30px;
     font-size: 1.2rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .joinUsForm>h2 {
     font-size: 1rem;
   }

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .jobInfo {
   display: flex;
@@ -8,13 +8,13 @@
   margin: 0 auto 150px;
 }
 
-@include medium {
+@include m.medium {
   .jobInfo {
     gap: 120px;
   }
 }
 
-@include small {
+@include m.small {
   .jobInfo {
     gap: 60px;
   }

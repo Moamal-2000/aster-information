@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .stackContent {
   display: flex;
@@ -8,13 +8,13 @@
   min-height: 310px;
 }
 
-@include small {
+@include m.small {
   .stackContent {
     width: 300px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .stackContent {
     width: 100%;
   }
@@ -36,19 +36,19 @@
   }
 }
 
-@include large {
+@include m.large {
   .stackContent>h2 {
     margin-bottom: 20px;
   }
 }
 
-@include small {
+@include m.small {
   .stackContent>h2 {
     font-size: 1.1rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .stackContent>h2 {
     font-size: .9rem;
   }
@@ -68,7 +68,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .stackContent>p {
     font-size: .9rem;
   }

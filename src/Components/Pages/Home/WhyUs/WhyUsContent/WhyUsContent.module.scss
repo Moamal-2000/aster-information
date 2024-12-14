@@ -1,8 +1,6 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
-.content {
-
-}
+.content {}
 
 .content .title {
   text-transform: uppercase;
@@ -12,7 +10,7 @@
   font-weight: 400;
 }
 
-@include small {
+@include m.small {
   .content .title {
     margin-bottom: 30px;
     font-size: .7rem;
@@ -26,14 +24,14 @@
   line-height: 1.8em;
 }
 
-@include small {
+@include m.small {
   .content .subTitle {
     margin-bottom: 50px;
     font-size: 1.1rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content .subTitle {
     font-size: 1rem;
     margin-bottom: 40px;
@@ -48,7 +46,7 @@
   width: 340px;
 }
 
-@include small {
+@include m.small {
   .content .description {
     width: 290px;
     font-size: .8rem;

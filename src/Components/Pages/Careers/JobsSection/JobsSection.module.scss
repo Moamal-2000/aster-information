@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .jobsSection {
   padding: 200px 0 300px;
@@ -7,7 +7,7 @@
   position: relative;
 }
 
-@include large {
+@include m.large {
   .jobsSection {
     padding: 120px 0;
   }
@@ -19,7 +19,7 @@
   margin-bottom: 120px;
 }
 
-@include large {
+@include m.large {
   .jobsSection [data-container] {
     flex-direction: column;
     align-items: center;
@@ -35,7 +35,7 @@
   top: 50px;
 }
 
-@include large {
+@include m.large {
   .jobsSectionBg {
     display: none;
   }

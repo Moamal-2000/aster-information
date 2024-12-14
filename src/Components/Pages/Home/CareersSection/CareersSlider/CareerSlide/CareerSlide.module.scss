@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .slide {
   height: 460px;
@@ -18,7 +18,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .slide {
     width: calc(100% - 40px);
     left: 20px;
@@ -35,7 +35,7 @@
   height: 70px;
 }
 
-@include small {
+@include m.small {
   .title {
     margin-bottom: 40px;
     font-size: .9rem;
@@ -51,7 +51,7 @@
   color: var(--light-gray);
 }
 
-@include small {
+@include m.small {
   .location {
     font-size: .7rem;
   }
@@ -69,7 +69,7 @@
   height: 150px;
 }
 
-@include small {
+@include m.small {
   .description {
     font-size: .8rem;
     height: 130px;

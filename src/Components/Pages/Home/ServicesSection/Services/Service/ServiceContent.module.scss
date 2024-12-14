@@ -1,29 +1,29 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .serviceContent {
   width: 340px;
 }
 
-@include large {
+@include m.large {
   .serviceContent {
     width: auto;
   }
 }
 
-@include medium {
+@include m.medium {
   .serviceContent {
     width: 374px;
   }
 }
 
-@include small {
+@include m.small {
   .serviceContent {
     width: 290px;
     margin-left: var(--left-margin-content);
   }
 }
 
-@include very-small {
+@include m.very-small {
   .serviceContent {
     width: 260px;
   }
@@ -45,26 +45,26 @@
   margin: 80px 0 43px;
 }
 
-@include large {
+@include m.large {
   .serviceContent>h2 {
     margin-bottom: 20px;
   }
 }
 
-@include medium {
+@include m.medium {
   .serviceContent>h2 {
     margin: 0 0 20px;
   }
 }
 
-@include small {
+@include m.small {
   .serviceContent>h2 {
     font-size: 1.5rem;
     margin: 40px 0 20px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .serviceContent>h2 {
     font-size: 1.3rem;
   }
@@ -77,7 +77,7 @@
   margin-bottom: 32px;
 }
 
-@include small {
+@include m.small {
   .serviceContent>p {
     font-size: .9rem;
   }

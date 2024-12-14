@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .journeySection {
   background-color: var(--website-bg);
@@ -6,14 +6,14 @@
   min-height: 1000px;
 }
 
-@include medium {
+@include m.medium {
   .journeySection {
     min-height: 950px;
     padding-bottom: 0;
   }
 }
 
-@include small {
+@include m.small {
   .journeySection {
     padding: 100px 0 0;
     min-height: 800px;
@@ -26,7 +26,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .journeySection {
     min-height: 920px;
   }
@@ -40,7 +40,7 @@
   margin-bottom: 50px;
 }
 
-@include small {
+@include m.small {
   .journeySection h2 {
     font-size: 1.4rem;
   }

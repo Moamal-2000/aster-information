@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .servicesIntro {
   display: flex;
@@ -6,20 +6,20 @@
   position: relative;
 }
 
-@include large {
+@include m.large {
   .servicesIntro {
     margin: 0 auto 60px;
     width: fit-content;
   }
 }
 
-@include medium {
+@include m.medium {
   .servicesIntro {
     margin-bottom: 120px;
   }
 }
 
-@include small {
+@include m.small {
   .content {
     margin-left: var(--left-margin-content);
   }
@@ -32,7 +32,7 @@
   font-weight: 400;
 }
 
-@include very-small {
+@include m.very-small {
   .content>h2 {
     font-size: .8rem;
   }
@@ -45,14 +45,14 @@
   width: 374px;
 }
 
-@include small {
+@include m.small {
   .content>p {
     width: 290px;
     font-size: 1.1rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content>p {
     width: 260px;
     font-size: 1rem;

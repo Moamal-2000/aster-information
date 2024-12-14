@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .backgroundImage {
   width: 100%;
@@ -10,13 +10,13 @@
   background-color: var(--website-bg);
 }
 
-@include medium {
+@include m.medium {
   .backgroundImage {
     height: 700px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .backgroundImage {
     height: 100dvh;
   }
@@ -34,13 +34,13 @@
   object-position: 100% 0;
 }
 
-@include small {
+@include m.small {
   .backgroundImage .top {
     top: 60px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .backgroundImage .top {
     top: 70px;
     scale: 1 1.1;
@@ -55,7 +55,7 @@
   scale: 1 1.05;
 }
 
-@include small {
+@include m.small {
   .backgroundImage .bottom {
     bottom: 0;
   }
@@ -67,7 +67,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .backgroundImage .bottom {
     bottom: -120px;
     scale: 1 1.2;
@@ -87,13 +87,13 @@
   z-index: 1;
 }
 
-@include medium {
+@include m.medium {
   .backgroundImage::before {
     --shadow-height: 240px;
   }
 }
 
-@include small {
+@include m.small {
   .backgroundImage::after {
     content: '';
     position: absolute;

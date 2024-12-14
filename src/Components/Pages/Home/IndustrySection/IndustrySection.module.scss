@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .industrySection {
   padding: 150px 0 82px;
@@ -23,7 +23,7 @@
   justify-content: space-between;
 }
 
-@include large {
+@include m.large {
   .industrySection [data-container] {
     flex-direction: column;
     align-items: center;
@@ -31,7 +31,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .industrySection [data-container] {
     gap: 70px;
   }

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .input {
   position: relative;
@@ -42,7 +42,7 @@
   pointer-events: none;
 }
 
-@include small {
+@include m.small {
   .input>svg {
     width: 12px;
     height: 12px;
@@ -57,7 +57,7 @@
   padding-right: 10px;
 }
 
-@include small {
+@include m.small {
   .input>label {
     font-size: .9rem;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .input>:where(input, textarea) {
     font-size: .9rem;
     padding: 10px;

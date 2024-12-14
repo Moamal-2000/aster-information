@@ -1,11 +1,11 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .footerBottom {
   display: flex;
   justify-content: space-between;
 }
 
-@include medium {
+@include m.medium {
   .footerBottom {
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@
   line-height: 1.8em;
 }
 
-@include small {
+@include m.small {
   .copyright {
     font-size: .9rem;
   }

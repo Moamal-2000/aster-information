@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .navIcon {
   -webkit-tap-highlight-color: transparent;
@@ -7,7 +7,7 @@
   z-index: 2;
 }
 
-@include small {
+@include m.small {
   .navIcon {
     width: 22px;
     height: 12px;

@@ -1,11 +1,11 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .socialMedia {
   display: flex;
   gap: 32px;
 }
 
-@include small {
+@include m.small {
   .socialMedia {
     gap: 20px;
   }
@@ -16,7 +16,7 @@
   display: block;
   width: 24px;
   height: 24px;
-  @include center-x-y;
+  @include m.center-x-y;
 }
 
 .socialMedia>li>a>svg {

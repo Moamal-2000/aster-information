@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .button {
   border: solid 1px var(--black);
@@ -13,7 +13,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .button {
     scale: .9;
     position: relative;
@@ -51,7 +51,7 @@
 .button .arrowHolder {
   width: 40px;
   border-left: solid 1px var(--black);
-  @include center-x-y;
+  @include m.center-x-y;
 }
 
 .button.invert .arrowHolder {

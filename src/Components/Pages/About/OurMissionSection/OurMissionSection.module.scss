@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .ourMissionSection {
   padding: 127px 0 77px;
@@ -8,7 +8,7 @@
   border-left: none;
 }
 
-@include large {
+@include m.large {
   .ourMissionSection {
     padding: 120px 0;
   }
@@ -19,7 +19,7 @@
   justify-content: space-between;
 }
 
-@include large {
+@include m.large {
   .ourMissionSection [data-container] {
     flex-direction: column;
     align-items: center;
@@ -34,7 +34,7 @@
   border-radius: 20px;
 }
 
-@include small {
+@include m.small {
   .ourMissionBg {
     width: 340px;
     height: 520px;
@@ -48,7 +48,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .ourMissionBg {
     width: 100%;
     height: 480px;

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .content {
   color: var(--white);
@@ -9,7 +9,7 @@
   flex-shrink: 0;
 }
 
-@include small {
+@include m.small {
   .content {
     max-width: 290px;
     gap: 30px;
@@ -17,7 +17,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content {
     max-width: 260px;
   }
@@ -34,7 +34,7 @@
   font-size: 1.5rem;
 }
 
-@include small {
+@include m.small {
   .subTitle {
     font-size: 1.2rem;
   }
@@ -45,7 +45,7 @@
   font-size: 1rem;
 }
 
-@include small {
+@include m.small {
   .description {
     font-size: .9rem;
   }

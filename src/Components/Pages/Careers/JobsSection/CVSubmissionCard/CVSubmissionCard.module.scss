@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .card {
   background-color: var(--white);
@@ -9,20 +9,20 @@
   margin-top: 100px;
 }
 
-@include medium {
+@include m.medium {
   .card {
     margin: 100px auto 0;
   }
 }
 
-@include small {
+@include m.small {
   .card {
     width: 320px;
     padding: 30px 20px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .card {
     width: 100%;
   }
@@ -36,7 +36,7 @@
   width: 330px;
 }
 
-@include small {
+@include m.small {
   .card>p {
     width: 260px;
     font-size: 1.2rem;
@@ -44,7 +44,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .card>p {
     width: 100%;
     font-size: 1rem;

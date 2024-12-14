@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .wrapper {
   position: relative;
@@ -8,14 +8,14 @@
   width: 374px;
 }
 
-@include small {
+@include m.small {
   .content {
     margin-left: var(--left-margin-content);
     width: 307px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content {
     width: calc(100% - var(--left-margin-content));
   }
@@ -29,7 +29,7 @@
   font-weight: 400;
 }
 
-@include small {
+@include m.small {
   .content .title {
     margin-bottom: 30px;
     font-size: .7rem;
@@ -43,14 +43,14 @@
   margin-bottom: 90px;
 }
 
-@include small {
+@include m.small {
   .content .subTitle {
     margin-bottom: 50px;
     font-size: 1.2rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content .subTitle {
     font-size: 1rem;
   }

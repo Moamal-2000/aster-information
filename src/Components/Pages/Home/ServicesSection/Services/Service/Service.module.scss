@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .service {
   display: flex;
@@ -18,14 +18,14 @@
   }
 }
 
-@include large {
+@include m.large {
   .service {
     height: auto;
     width: 100%;
   }
 }
 
-@include medium {
+@include m.medium {
   .service {
     flex-direction: column;
     align-items: center;

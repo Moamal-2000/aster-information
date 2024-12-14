@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .card {
   position: relative;
@@ -23,13 +23,13 @@
   }
 }
 
-@include large {
+@include m.large {
   .card {
     margin: 0 auto;
   }
 }
 
-@include small {
+@include m.small {
   .card {
     width: 400px;
     gap: 30px;
@@ -42,7 +42,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .card {
     padding: 30px 20px;
   }

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .line {
   background-color: var(--gray);
@@ -7,13 +7,13 @@
   position: relative;
 }
 
-@include small {
+@include m.small {
   .line {
     width: 100%;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .line {
     width: calc(100% - 20px);
   }

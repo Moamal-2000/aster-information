@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .inputs {
   display: flex;
@@ -33,7 +33,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .submitButton {
     font-size: .9rem;
   }
@@ -53,7 +53,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .submitMessage {
     margin-bottom: 24px;
     line-height: 1.5em;

@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .jobsCards {
   display: grid;
@@ -7,7 +7,7 @@
   row-gap: 100px;
 }
 
-@include medium {
+@include m.medium {
   .jobsCards {
     display: flex;
     flex-direction: column;
@@ -16,13 +16,13 @@
   }
 }
 
-@include small {
+@include m.small {
   .jobsCards {
     width: 320px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .jobsCards {
     width: 100%;
   }

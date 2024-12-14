@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .card {
   border: solid 2px var(--white);
@@ -6,7 +6,7 @@
   padding: 50px 40px 32px;
 }
 
-@include small {
+@include m.small {
   .card {
     padding: 30px 20px 20px;
   }
@@ -21,7 +21,7 @@
   height: 70px;
 }
 
-@include small {
+@include m.small {
   .title {
     margin-bottom: 40px;
     font-size: .9rem;
@@ -37,7 +37,7 @@
   color: var(--light-gray);
 }
 
-@include small {
+@include m.small {
   .location {
     font-size: .7rem;
   }
@@ -55,7 +55,7 @@
   height: 150px;
 }
 
-@include small {
+@include m.small {
   .description {
     font-size: .8rem;
     height: 130px;

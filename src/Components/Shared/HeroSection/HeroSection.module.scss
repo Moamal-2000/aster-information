@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .heroSection {
   background-color: var(--website-bg);
@@ -11,11 +11,11 @@
   align-items: center;
 }
 
-@include small {
+@include m.small {
   .heroSection {
     min-height: calc(100dvh - 190px);
   }
-} 
+}
 
 .heroSection>h1 {
   margin-bottom: 40px;
@@ -25,13 +25,13 @@
   font-size: 4rem;
 }
 
-@include medium {
+@include m.medium {
   .heroSection>h1 {
     font-size: 3rem;
   }
 }
 
-@include small {
+@include m.small {
   .heroSection>h1 {
     font-size: 1.5rem;
   }
@@ -56,14 +56,14 @@
   margin-bottom: 10px;
 }
 
-@include medium {
+@include m.medium {
   .heroSection>p {
     font-size: 1.2rem;
     width: 680px;
   }
 }
 
-@include small {
+@include m.small {
   .heroSection>p {
     width: 550px;
     font-size: 1rem;
@@ -77,7 +77,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .heroSection>p {
     font-size: .8rem;
   }

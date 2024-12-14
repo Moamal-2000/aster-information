@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 :root {
   --website-width: 1518px;
@@ -28,14 +28,14 @@
   }
 }
 
-@include large {
+@include m.large {
   :root {
     --container-width: 900px;
     --journey-slider-left: 50px;
   }
 }
 
-@include medium {
+@include m.medium {
   :root {
     --container-width: 700px;
     --why-us-section-padding: 80px;
@@ -43,14 +43,14 @@
   }
 }
 
-@include small {
+@include m.small {
   :root {
     --container-width: 88%;
     --journey-slider-left: 0;
   }
 }
 
-@include very-small {
+@include m.very-small {
   :root {
     --container-width: 94%;
   }

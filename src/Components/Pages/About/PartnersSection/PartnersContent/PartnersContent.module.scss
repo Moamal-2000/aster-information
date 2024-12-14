@@ -1,30 +1,30 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .wrapper {
   width: 430px;
   position: relative;
 }
 
-@include large {
+@include m.large {
   .wrapper {
     margin-left: 60px;
   }
 }
 
-@include small {
+@include m.small {
   .wrapper {
     width: 100%;
     margin-left: 20px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .wrapper {
     margin-left: 0;
   }
 }
 
-@include small {
+@include m.small {
   .content {
     margin-left: var(--left-margin-content);
   }
@@ -38,13 +38,13 @@
   font-weight: 400;
 }
 
-@include large {
+@include m.large {
   .content .title {
     margin-bottom: 0;
   }
 }
 
-@include small {
+@include m.small {
   .content .title {
     margin-bottom: 30px;
     font-size: .7rem;
@@ -58,14 +58,14 @@
   margin-bottom: 90px;
 }
 
-@include small {
+@include m.small {
   .content .description {
     margin-bottom: 50px;
     font-size: 1.2rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .content .description {
     font-size: 1rem;
   }

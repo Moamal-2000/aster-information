@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .logos {
   display: grid;
@@ -9,19 +9,19 @@
   padding-top: 10px;
 }
 
-@include large {
+@include m.large {
   .logos {
     gap: 60px 0;
   }
 }
 
-@include small {
+@include m.small {
   .logos {
     gap: 40px 50px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .logos {
     gap: 40px 0;
   }

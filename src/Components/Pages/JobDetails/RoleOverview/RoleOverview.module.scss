@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .roleOverview {
   padding: 120px 0;
@@ -17,7 +17,7 @@
   margin-bottom: 17px;
 }
 
-@include small {
+@include m.small {
   .roleOverview h2 {
     font-size: 1.3rem;
   }
@@ -28,13 +28,13 @@
   margin-bottom: 40px;
 }
 
-@include small {
+@include m.small {
   .lineWrapper {
     width: 300px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .lineWrapper {
     width: 100%;
   }
@@ -47,7 +47,7 @@
   gap: 30px;
 }
 
-@include medium {
+@include m.medium {
   .roleOverview ul {
     grid-template-columns: repeat(1, 400px);
   }
@@ -66,20 +66,20 @@
   font-size: 1rem;
 }
 
-@include small {
+@include m.small {
   .roleOverview ul li {
     font-size: .9rem;
     line-height: 1.6em;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .roleOverview ul li {
     font-size: .8rem;
     list-style-position: inside;
   }
 }
 
-.roleOverview ul + * {
+.roleOverview ul+* {
   margin-top: 30px;
 }

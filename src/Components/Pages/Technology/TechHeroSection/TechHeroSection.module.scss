@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .technology {
   position: relative;
@@ -10,7 +10,7 @@
   z-index: -1;
 }
 
-@include small {
+@include m.small {
   .technology .technologyBg {
     height: 695px;
     object-fit: cover;
@@ -30,7 +30,7 @@
   }
 }
 
-@include very-small {
+@include m.very-small {
   .technology .technologyBg {
     height: 500px;
     object-position: -300px 0;
@@ -52,21 +52,21 @@
   top: 100px;
 }
 
-@include medium {
+@include m.medium {
   .technology>h1 {
     font-size: 3rem;
     width: 700px;
   }
 }
 
-@include small {
+@include m.small {
   .technology>h1 {
     font-size: 1.8rem;
     width: 340px;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .technology>h1 {
     font-size: 1.5rem;
     width: 100%;
@@ -84,19 +84,19 @@
   top: -50px;
 }
 
-@include medium {
+@include m.medium {
   .technology>p {
     font-size: 1.3rem;
   }
 }
 
-@include small {
+@include m.small {
   .technology>p {
     font-size: 1rem;
   }
 }
 
-@include very-small {
+@include m.very-small {
   .technology>p {
     font-size: .9rem;
   }

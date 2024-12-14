@@ -1,4 +1,4 @@
-@import "src/Styles/mixins.scss";
+@use"src/Styles/mixins" as m;
 
 .wrapper {
   min-height: 1148px;
@@ -11,7 +11,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .wrapper {
     min-height: auto;
     max-height: auto;
@@ -36,7 +36,7 @@
   }
 }
 
-@include small {
+@include m.small {
   .backgroundImg {
     object-fit: contain;
     position: static;
