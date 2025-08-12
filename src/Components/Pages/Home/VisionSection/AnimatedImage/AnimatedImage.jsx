@@ -18,7 +18,7 @@ const AnimatedImage = () => {
   useEffect(() => {
     const isMobileScreen = windowWidth <= SCREEN_SIZES.smaller;
     if (isMobileScreen) visionImageRef.current?.style?.objectPosition = "center";
-  });
+  }, [windowWidth]);
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {
     const distanceFromTop = visionImageRef.current?.offsetTop - window.scrollY;
