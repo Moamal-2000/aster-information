@@ -4,7 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import RouteLayout from "./RouteLayout";
+import RouteLayout from "./RouteLayout/RouteLayout";
 import { ROUTES_CONFIG } from "./routes";
 
 const AppRoutes = () => {

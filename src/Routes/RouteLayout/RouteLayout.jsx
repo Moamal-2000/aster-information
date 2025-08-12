@@ -1,14 +1,14 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Footer from "../Components/Footer/Footer";
-import Header from "../Components/Header/Header";
-import ScrollToTopIcon from "../Components/Shared/MiniComponents/ScrollToTopIcon/ScrollToTopIcon";
-import SkipContentLink from "../Components/Shared/MiniComponents/SkipContentLink/SkipContentLink";
-import { useGlobalContext } from "../Context/GlobalContext";
-import { SCREEN_SIZES } from "../Data/variables";
-import useGetResizeWindow from "../Hooks/Helper/useGetResizeWindow";
+import Footer from "../../Components/Footer/Footer";
+import Header from "../../Components/Header/Header";
+import ScrollToTopIcon from "../../Components/Shared/MiniComponents/ScrollToTopIcon/ScrollToTopIcon";
+import SkipContentLink from "../../Components/Shared/MiniComponents/SkipContentLink/SkipContentLink";
+import { useGlobalContext } from "../../Context/GlobalContext";
+import { SCREEN_SIZES } from "../../Data/variables";
+import useGetResizeWindow from "../../Hooks/Helper/useGetResizeWindow";
+import { PAGES_PATHS } from "../routes";
 import s from "./RouteLayout.module.scss";
-import { PAGES_PATHS } from "./routes";
 
 const RouteLayout = () => {
   const { windowWidth } = useGetResizeWindow();
