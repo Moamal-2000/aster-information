@@ -51,6 +51,7 @@ const Input = ({
         <label htmlFor={name} className={requiredClass}>
           {label}
         </label>
+
         <textarea
           className={resizeClass}
           id={name}
@@ -69,6 +70,7 @@ const Input = ({
       <label htmlFor={name} className={requiredClass}>
         {label}
       </label>
+
       <input
         type={type}
         value={value}
