@@ -27,7 +27,7 @@ const FooterSubscribeSection = () => {
   return (
     <section className={s.subscribeSection}>
       <h2>SUBSCRIBE</h2>
-      <p>Sign up to receive Auto no news and updates.</p>
+      <p>Sign up to receive auto news and updates.</p>
 
       <form className={s.subEmailForm} onSubmit={handleSubmitEmail}>
         <label htmlFor="subEmail">Email *</label>
