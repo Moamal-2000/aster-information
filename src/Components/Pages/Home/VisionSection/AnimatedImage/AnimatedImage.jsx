@@ -11,23 +11,23 @@ const AnimatedImage = () => {
 
   useEventListener(window, "scroll", () => {
     const isMobileScreen = windowWidth <= SCREEN_SIZES.smaller;
-    if (isMobileScreen) visionImageRef.current.style.objectPosition = "center";
+    if (isMobileScreen) visionImageRef.current?.style?.objectPosition = "center";
     else moveImageOnScroll(90, 0, 1000);
   });
 
   useEffect(() => {
     const isMobileScreen = windowWidth <= SCREEN_SIZES.smaller;
-    if (isMobileScreen) visionImageRef.current.style.objectPosition = "center";
+    if (isMobileScreen) visionImageRef.current?.style?.objectPosition = "center";
   });
 
   function moveImageOnScroll(startValue, endValue, scrollRange) {
-    const distanceFromTop = visionImageRef.current.offsetTop - window.scrollY;
+    const distanceFromTop = visionImageRef.current?.offsetTop - window.scrollY;
     const newPositionX = Math.min(
       startValue,
       startValue + (distanceFromTop / scrollRange) * (startValue - endValue)
     );
 
-    visionImageRef.current.style.objectPosition = `${newPositionX}px`;
+    visionImageRef.current?.style?.objectPosition = `${newPositionX}px`;
   }
 
   return (
