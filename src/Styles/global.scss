@@ -1,7 +1,7 @@
 @use "./mixins/mixins" as m;
 @use "./colors" as c;
 @use "./variables" as v;
-@import "./fonts.css";
+@use "./fonts.scss";
 
 * {
   margin: 0;

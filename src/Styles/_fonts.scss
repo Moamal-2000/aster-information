@@ -1,0 +1,16 @@
+@use "./mixins/generateFontFaces" as gfc;
+
+$montserrat-font-map: (
+  name: "Montserrat",
+  format: 'truetype',
+  ext: "ttf",
+  weights: ("300": "Light",
+    400: "Regular",
+    500: "Medium",
+    600: "SemiBold",
+    700: "Bold",
+    800: "ExtraBold"
+  )
+);
+
+@include gfc.generate-font-faces($montserrat-font-map);
