@@ -8,8 +8,7 @@ const TechHeroSection = () => {
         className={s.technologyBg}
         src={techPageBg}
         alt="Geometric network of interconnected points forming a mesh-like structure on a white background."
-        width="100%"
-        height="1000px"
+        height="1000"
       />
       <h1>INNOVATIVE DATA-DRIVEN SOLUTIONS</h1>
 

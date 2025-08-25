@@ -13,8 +13,7 @@ const CoreExpertise = () => {
         className={s.coreExpertiseBg}
         src={coreExpertiseBg}
         alt="Dark background with white, blurred text resembling computer code or a data dump."
-        width="734px"
-        height="894px"
+        height="894"
         loading="lazy"
       />
     </section>

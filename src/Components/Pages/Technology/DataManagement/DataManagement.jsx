@@ -17,8 +17,7 @@ const DataManagement = () => {
         src={dataManagementBg}
         srcSet={`${smallDataManagementBg} 768w, ${dataManagementBg} 1200w`}
         alt="Network of interconnected points with lines, representing relationships or data structures."
-        width="734px"
-        height="894px"
+        height="894"
         loading="lazy"
       />
     </section>
