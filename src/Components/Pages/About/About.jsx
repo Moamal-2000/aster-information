@@ -1,5 +1,3 @@
-import { Helmet } from "react-helmet-async";
-import { WEBSITE_NAME } from "src/Data/variables";
 import s from "./About.module.scss";
 import AboutBackgroundImage from "./AboutBackgroundImage.jsx/AboutBackgroundImage";
 import AboutHeroSection from "./AboutHeroSection/AboutHeroSection";
@@ -9,20 +7,13 @@ import PartnersSection from "./PartnersSection/PartnersSection";
 
 const About = () => {
   return (
-    <>
-      <Helmet>
-        <title>About | {WEBSITE_NAME}</title>
-        <meta name="description" content="About page description" />
-      </Helmet>
-
-      <main className={s.about} id="aboutPage">
-        <AboutHeroSection />
-        <OurMissionSection />
-        <JourneySection />
-        <AboutBackgroundImage />
-        <PartnersSection />
-      </main>
-    </>
+    <main className={s.about} id="aboutPage">
+      <AboutHeroSection />
+      <OurMissionSection />
+      <JourneySection />
+      <AboutBackgroundImage />
+      <PartnersSection />
+    </main>
   );
 };
 export default About;
